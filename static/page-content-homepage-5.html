@@ -1,0 +1,296 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+<title>Duo Mobile PWA Kit</title>
+<link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="fonts/bootstrap-icons.css">
+<link rel="stylesheet" type="text/css" href="styles/style.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="manifest" href="_manifest.json">
+<meta id="theme-check" name="theme-color" content="#FFFFFF">
+<link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png"></head>
+
+<body class="theme-light">
+
+<div id="preloader"><div class="spinner-border color-highlight" role="status"></div></div>
+
+<div id="page">
+
+    <!-- Header -->
+    <div class="header-bar header-fixed header-app header-bar-detached">
+		<a data-back-button href="#"><i class="bi bi-caret-left-fill font-11 color-theme ps-2"></i></a>
+		<a href="#" class="header-title color-theme font-13">Back to Pages</a>
+		<a data-bs-toggle="offcanvas" data-bs-target="#menu-color" href="#"><i class="bi bi-palette-fill font-13 color-highlight"></i></a>
+		<a href="#" class="show-on-theme-light" data-toggle-theme><i class="bi bi-moon-fill font-13"></i></a>
+		<a href="#" class="show-on-theme-dark" data-toggle-theme ><i class="bi bi-lightbulb-fill color-yellow-dark font-13"></i></a>
+	</div>
+
+	<!-- Footer Bar-->
+    <div id="footer-bar" class="footer-bar footer-bar-detached">
+		<a href="index-pages.html" class="active-nav"><i class="bi bi-heart-fill font-15"></i><span>Pages</span></a>
+        <a href="index-components.html" ><i class="bi bi-star-fill font-17"></i><span>Features</span></a>
+        <a href="index.html"><i class="bi bi-house-fill font-16"></i><span>Home</span></a>
+        <a href="index-media.html"><i class="bi bi-image font-16"></i><span>Media</span></a>
+        <a href="#" data-bs-toggle="offcanvas" data-bs-target="#menu-main"><i class="bi bi-list"></i><span>Menu</span></a>
+    </div>
+
+	<!-- Main Sidebar-->
+	<div id="menu-main" data-menu-active="nav-pages" data-menu-load="menu-main.html"
+		style="width:280px;" class="offcanvas offcanvas-start offcanvas-detached rounded-m">
+	</div>
+	<!-- Menu Highlights-->
+	<div id="menu-color" data-menu-load="menu-highlights.html"
+		style="height:340px" class="offcanvas offcanvas-bottom offcanvas-detached rounded-m">
+	</div>
+
+    <!-- Your Page Content Goes Here-->
+    <div class="page-content header-clear-medium pb-4">
+
+		<div style="position:fixed; height:450px; width:100%;" class="splide single-slider slider-no-arrows slider-no-dots" id="single-slider-2">
+			<div class="splide__track">
+				<div class="splide__list">
+					<div class="splide__slide">
+						<a href="#" class="card card-style bg-14" data-card-height="450">
+							<div class="card-bottom bg-theme px-3 pt-3 pb-2 m-3 rounded-m">
+								<h3 class="pb-2">How to Stay Updated with the Latest Tech and News?</h3>
+								<span class="color-highlight font-700 font-10 float-start">NEWS</span>
+								<span class="color-theme opacity-30 font-400 font-10 float-end">15th March 2022</span>
+							</div>
+							<div class="card-overlay bg-gradient"></div>
+						</a>
+					</div>
+					<div class="splide__slide">
+						<a href="#" class="card card-style bg-21" data-card-height="450">
+							<div class="card-bottom bg-theme px-3 pt-3 pb-2 m-3 rounded-m">
+								<h3 class="pb-2">Laptops Are Now More Powerful Than Ever! </h3>
+								<span class="color-highlight font-700 font-10 float-start">TECHNOLOGY</span>
+								<span class="color-theme opacity-30 font-400 font-10 float-end">15th March 2022</span>
+							</div>
+							<div class="card-overlay bg-gradient"></div>
+						</a>
+					</div>
+					<div class="splide__slide">
+						<a href="#" class="card card-style bg-18" data-card-height="450">
+							<div class="card-bottom bg-theme px-3 pt-3 pb-2 m-3 rounded-m">
+								<h3 class="pb-2">The Impact of Cars on Smog and Pollution.</h3>
+								<span class="color-highlight font-700 font-10 float-start">EARTH & NATURE</span>
+								<span class="color-theme opacity-30 font-400 font-10 float-end">15th March 2022</span>
+							</div>
+							<div class="card-overlay bg-gradient"></div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="card card-style bg-transparent shadow-0 no-click" data-card-height="450"></div>
+		
+		<div class="card card-style mx-0">
+			<div class="content">
+				<a href="#">
+					<div class="d-flex">
+						<div>
+							<img src="images/pictures/10t.jpg" class="me-3 rounded-m" width="110">
+						</div>
+						<div>
+							<span class="badge shadow-bg shadow-bg-xs rounded-xs gradient-red text-uppercase px-2 py-1">News</span>
+							<h1 class="font-700 font-15 line-height-m pb-2">Privacy Features Prevent Apps from Tracking You.</h1>
+							<span class="color-theme opacity-30 font-400 font-10"><i class="bi bi-clock pe-2"></i>2 hours ago</span>
+							<span class="color-theme opacity-30 font-400 font-10 px-2"><i class="bi bi-chat pe-2"></i>26 Comments</span>
+						</div>
+					</div>
+				</a>
+				<div class="divider mt-3 mb-3"></div>
+				<a href="#">
+					<div class="d-flex">
+						<div>
+							<img src="images/pictures/21t.jpg" class="me-3 rounded-m" width="110">
+						</div>
+						<div>
+							<span class="badge shadow-bg shadow-bg-xs rounded-xs gradient-blue text-uppercase px-2 py-1">NEWS</span>
+							<h1 class="font-700 font-15 line-height-m pb-2">Technology Has Become Part of Every Aspect of Our Lives.</h1>
+							<span class="color-theme opacity-30 font-400 font-10"><i class="bi bi-clock pe-2"></i>2 hours ago</span>
+							<span class="color-theme opacity-30 font-400 font-10 px-2"><i class="bi bi-chat pe-2"></i>26 Comments</span>
+						</div>
+					</div>
+				</a>
+				<div class="divider mt-3 mb-3"></div>
+				<a href="#">
+					<div class="d-flex">
+						<div>
+							<img src="images/pictures/14t.jpg" class="me-3 rounded-m" width="110">
+						</div>
+						<div>
+							<span class="badge shadow-bg shadow-bg-xs rounded-xs gradient-green text-uppercase px-2 py-1">NEWS</span>
+							<h1 class="font-700 font-15 line-height-m pb-2">Why Typography Matters in Web Design.</h1>
+							<span class="color-theme opacity-30 font-400 font-10"><i class="bi bi-clock pe-2"></i>2 hours ago</span>
+							<span class="color-theme opacity-30 font-400 font-10 px-2"><i class="bi bi-chat pe-2"></i>26 Comments</span>
+						</div>
+					</div>
+				</a>
+			</div>
+		
+			<div class="divider divider-margins"></div>
+		
+			<div class="row mb-0">
+				<div class="col-6 pe-0">
+					<a href="#" class="card card-style bg-20 mb-2" data-card-height="135">
+						<div class="card-top text-center">
+							<span class="badge shadow-bg shadow-bg-xs rounded-xs gradient-red px-2 py-1 color-white m-3">FRESH NOW</span>
+						</div>
+						<div class="card-bottom p-3">
+							<h5 class="color-white font-500 font-14 mb-n1">
+								Appkit Outselling All New Products.
+							</h5>
+							<span class="color-white opacity-50 font-10">2 hours ago</span>
+						</div>
+						<div class="card-overlay bg-black opacity-70"></div>
+					</a>
+					<a href="#" class="card card-style bg-14 mb-2" data-card-height="135">
+						<div class="card-top text-center">
+							<span class="badge shadow-bg shadow-bg-xs rounded-xs gradient-blue px-2 py-1 color-white m-3">LATEST NEWS</span>
+						</div>
+						<div class="card-bottom p-3">
+							<h5 class="color-white font-500 font-14 mb-n1">
+								Azures Loved by All Our Customers.
+							</h5>
+							<span class="color-white opacity-50 font-10">2 hours ago</span>
+						</div>
+						<div class="card-overlay bg-black opacity-70"></div>
+					</a>
+				</div>
+				<div class="col-6 ps-0">
+					<a href="#" class="card card-style ms-0 bg-18" data-card-height="280">
+						<div class="card-top text-center">
+							<span class="badge shadow-bg shadow-bg-xs rounded-xs gradient-green px-2 py-1 color-white m-3">TRENDING NOW</span>
+						</div>
+						<div class="card-bottom p-3">
+							<h5 class="color-white font-500">
+								Sticky is the Absolute Best PWA Selling on Envato
+							</h5>
+							<span class="color-white opacity-50 font-10">2 hours ago</span>
+						</div>
+						<div class="card-overlay bg-black opacity-70"></div>
+					</a>
+				</div>
+			</div>
+		
+			<div class="card card-style mt-n3 bg-5" data-card-height="200">
+				<div class="card-top">
+					<a href="#" class="btn btn-s m-3 rounded-sm text-uppercase font-700 bg-red-dark float-end">WATCH LIVE <i class="bi bi-play-circle ps-2"></i></a>
+				</div>
+				<div class="card-bottom p-3">
+					<h1 class="font-24 font-700 mb-n1 color-white">Live Feed</h1>
+					<p class="color-white mb-0 opacity-50">
+						Join the live coverage now!
+					</p>
+				</div>
+				<div class="card-overlay bg-gradient-fade"></div>
+			</div>
+		
+			<div class="divider divider-margins"></div>
+		
+			<div class="content mt-n2 mb-3">
+				<a href="#">
+					<div class="d-flex mb-3">
+						<div class="align-self-center me-auto">
+							<img src="images/pictures/18s.jpg" class="rounded-m me-3" width="90">
+							<span class="badge text-uppercase px-2 py-1 shadow-bg shadow-bg-xs gradient-blue d-block me-3 mt-n3 rounded-xxs under-slider-btn">ECONOMICS</span>
+						</div>
+						<div class="align-self-center w-100">
+							<h5 class="font-15 pt-2">Global Warming is Accelerating the Development of Electric Cars.</h5>
+							<span class="color-theme font-11 opacity-50">25 Minutes Ago</span>
+						</div>
+					</div>
+				</a>
+				<div class="divider mb-3"></div>
+				<a href="#">
+					<div class="d-flex mb-3">
+						<div class="align-self-center me-auto">
+							<img src="images/pictures/11s.jpg" class="rounded-m me-3" width="90">
+							<span class="badge text-uppercase px-2 py-1 shadow-bg shadow-bg-xs gradient-green d-block me-3 mt-n3 rounded-xxs under-slider-btn">SOCIAL</span>
+						</div>
+						<div class="align-self-center w-100">
+							<h5 class="font-15 pt-2">Influencer Hosting Fees Have Doubled. Here's Why.</h5>
+							<span class="color-theme font-11 opacity-50">25 Minutes Ago</span>
+						</div>
+					</div>
+				</a>
+				<div class="divider mb-3"></div>
+				<a href="#">
+					<div class="d-flex mb-3">
+						<div class="align-self-center me-auto">
+							<img src="images/pictures/21s.jpg" class="rounded-m me-3" width="90">
+							<span class="badge text-uppercase px-2 py-1 shadow-bg shadow-bg-xs gradient-red d-block me-3 mt-n3 rounded-xxs under-slider-btn">TECHNOLOGY</span>
+						</div>
+						<div class="align-self-center w-100">
+							<h5 class="font-15 pt-2">Apple’s Sales Skyrocketed After Macbook M1 Release.</h5>
+							<span class="color-theme font-11 opacity-50">25 Minutes Ago</span>
+						</div>
+					</div>
+				</a>
+			</div>
+		
+			<div class="divider divider-margins"></div>
+		
+			<a href="#" class="card card-style bg-20 mb-3" data-card-height="125">
+				<div class="card-center px-3">
+					<h1 class="color-white line-height-m font-24">
+						Latest News
+					</h1>
+					<p class="color-white opacity-70 mb-0 mt-n2">The latest news covered live for you.</p>
+				</div>
+				<div class="card-center">
+					<i class="bi bi-arrow-right text-end color-white d-block font-24 opacity-50 pe-3 pb-1"></i>
+				</div>
+				<div class="card-overlay bg-black opacity-70"></div>
+			</a>
+			<a href="#" class="card card-style bg-12 mb-3" data-card-height="125">
+				<div class="card-center px-3">
+					<h1 class="color-white line-height-m font-24">
+						Technology
+					</h1>
+					<p class="color-white opacity-70 mb-0 mt-n2">Gadgets we know you love.</p>
+				</div>
+				<div class="card-center">
+					<i class="bi bi-arrow-right text-end color-white d-block font-24 opacity-50 pe-3 pb-1"></i>
+				</div>
+				<div class="card-overlay bg-black opacity-70"></div>
+			</a>
+			<a href="#" class="card card-style bg-18" data-card-height="125">
+				<div class="card-center px-3">
+					<h1 class="color-white line-height-m font-24">
+						Environment
+					</h1>
+					<p class="color-white opacity-70 mb-0 mt-n2">Don't Ignore Earth. It's Our Home.</p>
+				</div>
+				<div class="card-center">
+					<i class="bi bi-arrow-right text-end color-white d-block font-24 opacity-50 pe-3 pb-1"></i>
+				</div>
+				<div class="card-overlay bg-black opacity-70"></div>
+			</a>
+		
+			<div class="divider divider-margins mb-0"></div>
+
+			<div class="content px-2 text-center mb-5">
+				<h5 class="mb-n1 font-12 color-highlight font-700 text-uppercase">Time to Go Mobile</h5>
+				<h2>Get Duo Mobile Today</h2>
+				<p class="mb-3">
+					Start your next project with Duo and enjoy the power of a Progressive Web App.
+				</p>
+				<a href="https://1.envato.market/2ryjKA" target="_blank" class="default-link btn btn-m rounded-s gradient-highlight shadow-bg shadow-bg-s px-5 mb-0 mt-2">Get Duo Now</a>
+			</div>
+		</div>
+
+    </div>
+	<!-- End of Page Content-->
+</div>
+<!--End of Page ID-->
+
+<script src="scripts/bootstrap.min.js"></script>
+<script src="scripts/custom.js"></script>
+</body>

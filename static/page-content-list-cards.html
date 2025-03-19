@@ -1,0 +1,156 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+<title>Duo Mobile PWA Kit</title>
+<link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="fonts/bootstrap-icons.css">
+<link rel="stylesheet" type="text/css" href="styles/style.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="manifest" href="_manifest.json">
+<meta id="theme-check" name="theme-color" content="#FFFFFF">
+<link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png"></head>
+
+<body class="theme-light">
+
+<div id="preloader"><div class="spinner-border color-highlight" role="status"></div></div>
+
+<div id="page">
+
+    <!-- Header -->
+    <div class="header-bar header-fixed header-app header-bar-detached">
+		<a data-back-button href="#"><i class="bi bi-caret-left-fill font-11 color-theme ps-2"></i></a>
+		<a href="#" class="header-title color-theme font-13">Back to Pages</a>
+		<a data-bs-toggle="offcanvas" data-bs-target="#menu-color" href="#"><i class="bi bi-palette-fill font-13 color-highlight"></i></a>
+		<a href="#" class="show-on-theme-light" data-toggle-theme><i class="bi bi-moon-fill font-13"></i></a>
+		<a href="#" class="show-on-theme-dark" data-toggle-theme ><i class="bi bi-lightbulb-fill color-yellow-dark font-13"></i></a>
+	</div>
+
+	<!-- Footer Bar-->
+    <div id="footer-bar" class="footer-bar footer-bar-detached">
+		<a href="index-pages.html" class="active-nav"><i class="bi bi-heart-fill font-15"></i><span>Pages</span></a>
+        <a href="index-components.html" ><i class="bi bi-star-fill font-17"></i><span>Features</span></a>
+        <a href="index.html"><i class="bi bi-house-fill font-16"></i><span>Home</span></a>
+        <a href="index-media.html"><i class="bi bi-image font-16"></i><span>Media</span></a>
+        <a href="#" data-bs-toggle="offcanvas" data-bs-target="#menu-main"><i class="bi bi-list"></i><span>Menu</span></a>
+    </div>
+
+	<!-- Main Sidebar-->
+	<div id="menu-main" data-menu-active="nav-pages" data-menu-load="menu-main.html"
+		style="width:280px;" class="offcanvas offcanvas-start offcanvas-detached rounded-m">
+	</div>
+	<!-- Menu Highlights-->
+	<div id="menu-color" data-menu-load="menu-highlights.html"
+		style="height:340px" class="offcanvas offcanvas-bottom offcanvas-detached rounded-m">
+	</div>
+
+    <!-- Your Page Content Goes Here-->
+    <div class="page-content header-clear-medium">
+
+		<div data-card-height="300" class="card card-style bg-18 rounded-l shadow-l">
+			<div class="card-top">
+				<span class="badge gradient-blue shadow-bg shadow-bg-s text-uppercase p-2 rounded-s m-3">Internet</span>
+			</div>
+			<div class="card-top">
+				<a href="#" class="bg-theme color-theme rounded-sm icon icon-xs float-end m-3"><i class="bi bi-bookmark font-16"></i></a>
+			</div>
+			<div class="card-bottom px-3 mb-3">
+				<a href="#">
+					<h1 class="font-18 line-height-m color-white font-500 mb-0">
+						Mobile Web has outgrown Desktop Web by about 40%
+					</h1>
+				</a>
+				<div class="d-flex pt-3">
+					<div class="align-self-center">
+						<img src="images/pictures/7s.jpg" width="23" class="rounded-xs me-3" alt="img">
+					</div>
+					<div class="align-self-center">
+						<a href="#" class="color-white font-14 d-block font-500 opacity-80">by Enabled </a>
+					</div>
+					<div class="align-self-center ms-auto">
+						<strong class="font-300 color-white opacity-30">26 min ago</strong>
+					</div>
+				</div>
+			</div>
+			<div class="card-overlay bg-gradient-fade"></div>
+		</div>
+		<div class="card card-style">
+			<img src="images/pictures/7w.jpg" class="img-fluid" alt="img">
+			<div class="d-flex mt-n2 ms-3">
+				<span class="badge text-uppercase px-2 py-1 gradient-red shadow-bg shadow-bg-m">LIVE COVERAGE</span>
+			</div>
+			<div class="content">
+				<div class="d-flex">
+					<div class="align-self-center">
+						<h4 class="font-600 mb-0">Apple Watch Release</h4>
+						<p>
+							Join the live coverage now.
+						</p>
+					</div>
+					<div class="align-self-center ms-auto">
+						<a href="#" class="btn btn-s gradient-blue shadow-bg shadow-bg-s text-uppercase font-700 rounded-sm ms-3">Watch</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="card card-style bg-14" data-card-height="230">
+			<div class="card-top">
+				<span class="badge gradient-brown shadow-bg shadow-bg-s color-white px-2 py-2 m-3 float-end"><i class="bi bi-star-fill pe-2"></i>EDITOR'S CHOICE</span>
+			</div>
+			<div class="card-bottom bg-white m-3 p-3 rounded-s shadow">
+				<h4 class="font-500 font-16">
+					Card Design is now taking over the internet. Everyone loves them.
+				</h4>
+				<span class="opacity-50 font-10 d-block mb-n2">By Enabled: 2 hours ago</span>
+			</div>
+		</div>
+
+		<div data-card-height="400" class="card card-style bg-3 rounded-m shadow-l">
+			<div class="card-top">
+				<span class="badge bg-blue-dark shadow-bg shadow-bg-xs text-uppercase p-2 px-3 rounded-s my-4 ms-3">Photography</span>
+			</div>
+			<div class="card-top">
+				<a href="#" class="bg-theme color-theme rounded-m icon icon-xs float-end m-3"><i class="bi bi-camera-fill font-19"></i></a>
+			</div>
+			<div class="card-bottom p-3 m-2 rounded-m bg-white">
+				<div class="d-flex pb-2">
+					<div class="align-self-center">
+						<span class="badge px-2 py-1 gradient-yellow shadow-bg shadow-bg-s"><i class="bi bi-star-fill pe-2"></i>EDITOR'S CHOICE</span>
+					</div>
+					<div class="align-self-center ms-auto">
+						<strong class="font-300 opacity-30">26 min ago</strong>
+					</div>
+				</div>
+				<a href="#">
+					<h1 class="font-16 line-height-m font-500 mb-0">
+						Urban landscape with a great camera looks amazing.
+					</h1>
+				</a>
+			</div>
+		</div>
+
+
+
+		<div class="card card-style py-3">
+			<div class="content px-2 text-center">
+				<h5 class="mb-n1 font-12 color-highlight font-700 text-uppercase">Time to Go Mobile</h5>
+				<h2>Get Duo Mobile Today</h2>
+				<p class="mb-3">
+					Start your next project with Duo and enjoy the power of a Progressive Web App.
+				</p>
+				<a href="https://1.envato.market/2ryjKA" target="_blank" class="default-link btn btn-m rounded-s gradient-highlight shadow-bg shadow-bg-s px-5 mb-0 mt-2">Get Duo Now</a>
+			</div>
+		</div>
+
+    </div>
+	<!-- End of Page Content-->
+</div>
+<!--End of Page ID-->
+
+<script src="scripts/bootstrap.min.js"></script>
+<script src="scripts/custom.js"></script>
+</body>

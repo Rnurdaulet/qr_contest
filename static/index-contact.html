@@ -1,0 +1,161 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+<title>Duo Mobile PWA Kit</title>
+<link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="fonts/bootstrap-icons.css">
+<link rel="stylesheet" type="text/css" href="styles/style.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="manifest" href="_manifest.json">
+<meta id="theme-check" name="theme-color" content="#FFFFFF">
+<link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png"></head>
+
+<body class="theme-light">
+
+<div id="preloader"><div class="spinner-border color-highlight" role="status"></div></div>
+
+<div id="page">
+
+    <!-- Header -->
+	<div class="header-bar header-fixed header-app header-bar-detached">
+		<a data-bs-toggle="offcanvas" data-bs-target="#menu-main" href="#"><i class="bi bi-list color-theme"></i></a>
+		<a href="#" class="header-title color-theme">Contact</a>
+		<a data-bs-toggle="offcanvas" data-bs-target="#menu-color" href="#"><i class="bi bi-palette-fill font-13 color-highlight"></i></a>
+		<a href="#" class="show-on-theme-light" data-toggle-theme><i class="bi bi-moon-fill font-13"></i></a>
+		<a href="#" class="show-on-theme-dark" data-toggle-theme ><i class="bi bi-lightbulb-fill color-yellow-dark font-13"></i></a>
+	</div>
+
+	<!-- Footer Bar-->
+    <div id="footer-bar" class="footer-bar footer-bar-detached">
+		<a href="index-pages.html"><i class="bi bi-heart-fill font-15"></i><span>Pages</span></a>
+        <a href="index-components.html" ><i class="bi bi-star-fill font-17"></i><span>Features</span></a>
+        <a href="index.html"  class="active-nav"><i class="bi bi-house-fill font-16"></i><span>Home</span></a>
+        <a href="index-media.html"><i class="bi bi-image font-16"></i><span>Media</span></a>
+        <a href="#" data-bs-toggle="offcanvas" data-bs-target="#menu-main"><i class="bi bi-list"></i><span>Menu</span></a>
+    </div>
+
+	<!-- Main Sidebar-->
+	<div id="menu-main" data-menu-active="nav-mails" data-menu-load="menu-main.html"
+		style="width:280px;" class="offcanvas offcanvas-start offcanvas-detached rounded-m">
+	</div>
+	<!-- Menu Highlights-->
+	<div id="menu-color" data-menu-load="menu-highlights.html"
+		style="height:340px" class="offcanvas offcanvas-bottom offcanvas-detached rounded-m">
+	</div>
+
+    <!-- Your Page Content Goes Here-->
+    <div class="page-content header-clear-medium">
+
+		<div class="card card-style">
+			<div class="responsive-iframe">
+				<iframe src='https://www.google.com/maps/embed/v1/view?key=AIzaSyAM3nxDVrkjyKwdIZp8QOplmBKLRVI5S_Y&center=-33.8569,151.2152&zoom=16&maptype=satellite' frameborder='0' allowfullscreen></iframe>
+			</div>
+		</div>
+		<div id="validator-name" class="disabled bg-red-dark content rounded-sm shadow-xl text-center line-height-xs py-3 text-uppercase font-700">Name is required!</div>
+		<div id="validator-mail1" class="disabled bg-red-dark content rounded-sm shadow-xl text-center line-height-xs py-3 text-uppercase font-700">Email Address is required!</div>
+		<div id="validator-mail2" class="disabled bg-red-dark content rounded-sm shadow-xl text-center line-height-xs py-3 text-uppercase font-700">Invalid email Address!</div>
+		<div id="validator-text" class="disabled bg-red-dark content rounded-sm shadow-xl text-center line-height-xs py-3 text-uppercase font-700">Please enter your message!</div>
+		<div class="card card-style contact-form">
+			<div class="content">
+				<form action="php/contact.php" method="post" class="contactForm" id="contactForm">
+					<fieldset>
+						<div class="form-field form-name">
+							<label class="contactNameField color-theme" for="contactNameField">Name:<span>(required)</span></label>
+							<input type="text" name="contactNameField" value="" class="round-small" id="contactNameField" />
+						</div>
+						<div class="form-field form-email">
+							<label class="contactEmailField color-theme" for="contactEmailField">Email:<span>(required)</span></label>
+							<input type="text" name="contactEmailField" value="" class="round-small" id="contactEmailField" />
+						</div>
+						<div class="form-field form-text">
+							<label class="contactMessageTextarea color-theme" for="contactMessageTextarea">Message:<span>(required)</span></label>
+							<textarea name="contactMessageTextarea" class="round-small" id="contactMessageTextarea"></textarea>
+						</div>
+						<div class="form-button">
+							<input type="submit" class="btn gradient-highlight shadow-bg shadow-bg-l text-uppercase font-700 btn-m btn-full rounded-s contactSubmitButton" value="Send Message" data-formId="contactForm" />
+						</div>
+					</fieldset>
+				</form>
+			</div>
+		</div>
+		<div class="form-sent disabled">
+			<div class="card card-style gradient-green shadow-bg shadow-bg-m">
+				<div class="rounded-m  me-n1 ms-n1 mb-n1 ">
+					<h1 class="color-white text-center pt-4"><i class="bi bi-check-circle font-50 rounded-circle"></i></h1>
+					<h2 class="color-white font-800 text-center pt-3">Message Sent</h2>
+					<p class="color-white pb-4 text-center mt-n2 mb-0 opacity-70">We'll get back to you shortly.</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="card card-style">
+			<div class="content">
+				<h5 class="color-highlight font-13 mb-n1">Send your Package</h5>
+				<h2 class="font-700 pb-0">Postal Information</h2>
+				<p class="pb-0 mb-0">PO Box 22161 Street Collins East</p>
+				<p class="pb-0 mb-0">PO Box 16122 Collins Street West</p>
+				<p class="pb-0">Victoria 8007 Australia</p>
+				<div class="divider"></div>
+				<h5 class="color-highlight font-13 mb-n1">Come over for Coffee</h5>
+				<h2 class="font-700 pb-0">Envato Headquarters</h2>
+				<p class="pb-0 mb-0">121 King Street, Melbourne</p>
+				<p class="pb-0 mb-0">PO Box 16122 Collins Street West</p>
+				<p class="pb-0">Victoria 3000 Australia</p>
+
+				<h5 class="color-highlight font-13 mb-n1">Get in Touch</h5>
+				<h2 class="font-700 pb-0">Contact Information</h2>
+				<div class="list-group list-custom list-group-m rounded-xs list-group-flush">
+					<a href="tel:+1 234 567 8083" class="default-link list-group-item">
+						<i class="bi color-green-dark bi-telephone-fill"></i>
+						<div>Call Us</div>
+						<span class="badge rounded-xl font-500 px-2 font-8 text-uppercase">Tap to Call</span>
+					</a>
+					<a href="mailto:name@domain.com" class="default-link list-group-item">
+						<i class="bi color-blue-dark bi-envelope-fill"></i>
+						<div>Email Us</div>
+						<span class="badge rounded-xl font-500 px-2 font-8 text-uppercase">Tap to Mail</span>
+					</a>
+					<a href="https://twitter.com/iEnabled" class="default-link list-group-item">
+						<i class="bi color-twitter bi-twitter"></i>
+						<div>Follow Us</div>
+						<span class="badge rounded-xl font-500 px-2 font-8 text-uppercase">Tap to Open</span>
+					</a>
+					<a href="https://www.facebook.com/enabled.labs/" class="default-link list-group-item">
+						<i class="bi color-facebook bi-facebook"></i>
+						<div>Like our Page</div>
+						<span class="badge rounded-xl font-500 px-2 font-8 text-uppercase">Tap to Open</span>
+					</a>
+					<a href="https://www.instagram.com/enabled.labs/" class="default-link list-group-item">
+						<i class="bi color-instagram bi-instagram"></i>
+						<div>Follow our Feed</div>
+						<span class="badge rounded-xl font-500 px-2 font-8 text-uppercase">Tap to Open</span>
+					</a>
+				</div>
+
+			</div>
+		</div>
+
+		<div class="card card-style py-3">
+			<div class="content px-2 text-center">
+				<h5 class="mb-n1 font-12 color-highlight font-700 text-uppercase">Time to Go Mobile</h5>
+				<h2>Get Duo Mobile Today</h2>
+				<p class="mb-3">
+					Start your next project with Duo and enjoy the power of a Progressive Web App.
+				</p>
+				<a href="https://1.envato.market/2ryjKA" target="_blank" class="default-link btn btn-m rounded-s gradient-highlight shadow-bg shadow-bg-s px-5 mb-0 mt-2">Get Duo Now</a>
+			</div>
+		</div>
+
+    </div>
+	<!-- End of Page Content-->
+</div>
+<!--End of Page ID-->
+
+<script src="scripts/bootstrap.min.js"></script>
+<script src="scripts/custom.js"></script>
+</body>

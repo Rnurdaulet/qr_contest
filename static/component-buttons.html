@@ -1,0 +1,248 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+<title>Duo Mobile PWA Kit</title>
+<link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="fonts/bootstrap-icons.css">
+<link rel="stylesheet" type="text/css" href="styles/style.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="manifest" href="_manifest.json">
+<meta id="theme-check" name="theme-color" content="#FFFFFF">
+<link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png"></head>
+
+<body class="theme-light">
+
+<div id="preloader"><div class="spinner-border color-highlight" role="status"></div></div>
+
+<div id="page">
+
+    <!-- Header -->
+    <div class="header-bar header-fixed header-app header-bar-detached">
+		<a data-back-button href="#"><i class="bi bi-caret-left-fill font-11 color-theme ps-2"></i></a>
+		<a href="#" class="header-title color-theme font-13">Back to Components</a>
+		<a data-bs-toggle="offcanvas" data-bs-target="#menu-color" href="#"><i class="bi bi-palette-fill font-13 color-highlight"></i></a>
+		<a href="#" class="show-on-theme-light" data-toggle-theme><i class="bi bi-moon-fill font-13"></i></a>
+		<a href="#" class="show-on-theme-dark" data-toggle-theme ><i class="bi bi-lightbulb-fill color-yellow-dark font-13"></i></a>
+	</div>
+
+	<!-- Footer Bar-->
+    <div id="footer-bar" class="footer-bar footer-bar-detached">
+		<a href="index-pages.html"><i class="bi bi-heart-fill font-15"></i><span>Pages</span></a>
+        <a href="index-components.html" class="active-nav"><i class="bi bi-star-fill font-17"></i><span>Features</span></a>
+        <a href="index.html"><i class="bi bi-house-fill font-16"></i><span>Home</span></a>
+        <a href="index-media.html"><i class="bi bi-image font-16"></i><span>Media</span></a>
+        <a href="#" data-bs-toggle="offcanvas" data-bs-target="#menu-main"><i class="bi bi-list"></i><span>Menu</span></a>
+    </div>
+
+	<!-- Main Sidebar-->
+	<div id="menu-main" data-menu-active="nav-comps" data-menu-load="menu-main.html"
+		style="width:280px;" class="offcanvas offcanvas-start offcanvas-detached rounded-m">
+	</div>
+	<!-- Menu Highlights-->
+	<div id="menu-color" data-menu-load="menu-highlights.html"
+		style="height:340px" class="offcanvas offcanvas-bottom offcanvas-detached rounded-m">
+	</div>
+
+    <!-- Your Page Content Goes Here-->
+    <div class="page-content header-clear-medium">
+
+		<div class="card card-style">
+			<div class="content">
+				<h6 class="font-700 mb-n1 color-highlight">Tap or Click</h6>
+				<h1 class="pb-2">Buttons</h1>
+				<p>
+					Absolutely any style of button you can think of. Tones of styles, highly customizable.
+				</p>
+
+				<a href="component-colors.html" class="pb-3 d-block text-center font-13 color-theme font-700"><i class="bi bi-palette-fill color-highlight pe-3"></i>Click to view all available colors <i class="bi bi-arrow-right ps-3"></i></a>
+
+				<div class="divider"></div>
+
+				<h6 class="font-600 opacity-50 pb-1">Shadow Color Buttons</h6>
+
+				<div class="row">
+					<div class="col-4">
+						<a href="#" class="btn-full btn gradient-red shadow-bg shadow-bg-m">Btn</a>
+					</div>
+					<div class="col-4">
+						<a href="#" class="btn-full btn gradient-green shadow-bg shadow-bg-m">Btn</a>
+					</div>
+					<div class="col-4 mb-4 pb-1">
+						<a href="#" class="btn-full btn gradient-blue shadow-bg shadow-bg-m">Btn</a>
+					</div>
+				</div>
+
+				<div class="divider"></div>
+				<h6 class="font-600 opacity-50 pb-1">Classic Gradient Buttons</h6>
+
+				<div class="row">
+					<div class="col-4">
+						<a href="#" class="btn-full btn gradient-red">Btn</a>
+					</div>
+					<div class="col-4">
+						<a href="#" class="btn-full btn gradient-green">Btn</a>
+					</div>
+					<div class="col-4 mb-4">
+						<a href="#" class="btn-full btn gradient-blue">Btn</a>
+					</div>
+				</div>
+
+				<div class="divider"></div>
+				<h6 class="font-600 opacity-50 pb-1">Classic Solid Buttons</h6>
+
+				<div class="row">
+					<div class="col-4">
+						<a href="#" class="btn-full btn bg-red-dark">Btn</a>
+					</div>
+					<div class="col-4">
+						<a href="#" class="btn-full btn bg-green-dark">Btn</a>
+					</div>
+					<div class="col-4 mb-4 pb-1">
+						<a href="#" class="btn-full btn bg-blue-dark">Btn</a>
+					</div>
+				</div>
+
+				<div class="divider"></div>
+				<h6 class="font-600 opacity-50 pb-1">3D Effect Buttons</h6>
+
+				<div class="row pb-1">
+					<div class="col-4">
+						<a class="btn btn-3d bg-red-light border-red-dark" href="#">Btn</a><br>
+					</div>
+					<div class="col-4">
+						<a class="btn btn-3d bg-green-light border-green-dark" href="#">Btn</a><br>
+					</div>
+					<div class="col-4">
+						<a class="btn btn-3d bg-blue-light border-blue-dark" href="#">Btn</a><br>
+					</div>
+				</div>
+
+				<div class="divider mt-4"></div>
+				<h6 class="font-600 opacity-50 pb-1">Faded Buttons</h6>
+
+				<div class="row">
+					<div class="col-4">
+						<a href="#" class="btn-full btn bg-fade2-red color-red-dark">Btn</a>
+					</div>
+					<div class="col-4">
+						<a href="#" class="btn-full btn bg-fade2-green color-green-dark">Btn</a>
+					</div>
+					<div class="col-4 mb-4 pb-1">
+						<a href="#" class="btn-full btn bg-fade2-blue color-blue-dark">Btn</a>
+					</div>
+				</div>
+
+				<div class="divider"></div>
+				<h6 class="font-600 opacity-50 pb-1">Inverted Buttons</h6>
+
+				<div class="row">
+					<div class="col-4">
+						<a href="#" class="btn-full btn border border-red-dark color-red-dark">Btn</a>
+					</div>
+					<div class="col-4">
+						<a href="#" class="btn-full btn border-green-dark color-green-dark">Btn</a>
+					</div>
+					<div class="col-4 mb-4 pb-1">
+						<a href="#" class="btn-full btn border-blue-dark color-blue-dark">Btn</a>
+					</div>
+				</div>
+
+				<div class="divider"></div>
+				<h6 class="font-600 opacity-50 pb-1">With Icons</h6>
+
+				<div class="row">
+					<div class="col-6">
+						<a href="#" class="btn gradient-red shadow-bg shadow-bg-m text-start"><i class="bi bi-heart-fill pe-3 ms-n1"></i>Button</a>
+					</div>
+					<div class="col-6">
+						<a href="#" class="btn gradient-green shadow-bg-m text-start"><i class="bi bi-check-circle-fill pe-3 ms-n1"></i>Button</a>
+					</div>
+					<div class="col-12 pb-3"></div>
+					<div class="col-6">
+						<a href="#" class="btn bg-blue-dark shadow-bg-m text-start"><i class="bi bi-gear-fill pe-3 ms-n1"></i>Button</a>
+					</div>
+					<div class="col-6">
+						<a class="btn btn-3d bg-orange-light border-red-dark text-start"><i class="bi bi-person-circle pe-3 ms-n1"></i>Button</a>
+					</div>
+					<div class="col-12 pb-3"></div>
+					<div class="col-6">
+						<a href="#" class="btn bg-fade2-yellow color-yellow-dark  text-start"><i class="bi bi-star-fill pe-3 ms-n1"></i>Button</a>
+					</div>
+					<div class="col-6 mb-4 pb-1">
+						<a href="#" class="btn border-mint-dark color-mint-dark text-start"><i class="bi bi-x-circle-fill pe-3 ms-n1"></i>Button</a>
+					</div>
+				</div>
+
+				<div class="divider"></div>
+				<h6 class="font-600 opacity-50 pb-1">With Badges</h6>
+
+				<div class="row">
+					<div class="col-6">
+						<a href="#" class="btn gradient-red shadow-bg shadow-bg-m text-start">Btn  <span class="badge bg-theme color-theme ms-2">NEW</span></a>
+					</div>
+					<div class="col-6">
+						<a href="#" class="btn gradient-green shadow-bg-m text-start">Btn  <span class="badge bg-theme color-theme ms-2">NEW</span></a>
+					</div>
+					<div class="col-12 pb-3"></div>
+					<div class="col-6">
+						<a href="#" class="btn bg-blue-dark shadow-bg-m text-start">Btn  <span class="badge bg-theme color-theme ms-2">NEW</span></a>
+					</div>
+					<div class="col-6">
+						<a class="btn btn-3d bg-orange-light border-red-dark text-start">Btn  <span class="badge bg-theme color-theme ms-2">NEW</span></a>
+					</div>
+					<div class="col-12 pb-3"></div>
+					<div class="col-6">
+						<a href="#" class="btn bg-fade2-yellow color-yellow-dark  text-start">Btn  <span class="badge bg-yellow-light color-white ms-2">NEW</span></a>
+					</div>
+					<div class="col-6 mb-4 pb-1">
+						<a href="#" class="btn border-mint-dark color-mint-dark text-start">Btn  <span class="badge bg-teal-dark color-teal-dark ms-2">NEW</span></a>
+					</div>
+				</div>
+
+				<div class="divider"></div>
+				<h6 class="font-600 opacity-50 pb-1">Sizes</h6>
+
+				<a href="#" class="btn btn-xxs gradient-highlight">Button - XXS</a>
+				<div class="mb-2 pb-2"></div>
+				<a href="#" class="btn btn-xs gradient-highlight">Button - XS</a>
+				<div class="mb-2 pb-2"></div>
+				<a href="#" class="btn btn-s gradient-highlight">Button - S</a>
+				<div class="mb-2 pb-2"></div>
+				<a href="#" class="btn btn-m gradient-highlight">Button - M</a>
+				<div class="mb-2 pb-2"></div>
+				<a href="#" class="btn btn-l gradient-highlight">Button - L</a>
+				<div class="mb-2 pb-2"></div>
+				<a href="#" class="btn btn-xl gradient-highlight">Button - XL</a>
+				<div class="mb-2 pb-2"></div>
+				<a href="#" class="btn btn-xxl gradient-highlight">Button - XXL</a>
+				<div class="mb-2"></div>
+
+
+			</div>
+		</div>
+
+
+		<div class="card card-style py-3">
+			<div class="content px-2 text-center">
+				<h5 class="mb-n1 font-12 color-highlight font-700 text-uppercase">Time to Go Mobile</h5>
+				<h2>Get Duo Mobile Today</h2>
+				<p class="mb-3">
+					Start your next project with Duo and enjoy the power of a Progressive Web App.
+				</p>
+				<a href="https://1.envato.market/2ryjKA" target="_blank" class="default-link btn btn-m rounded-s gradient-highlight shadow-bg shadow-bg-s px-5 mb-0 mt-2">Get Duo Now</a>
+			</div>
+		</div>
+
+    </div>
+	<!-- End of Page Content-->
+</div>
+<!--End of Page ID-->
+
+<script src="scripts/bootstrap.min.js"></script>
+<script src="scripts/custom.js"></script>
+</body>

@@ -1,0 +1,212 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+<title>Duo Mobile PWA Kit</title>
+<link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="fonts/bootstrap-icons.css">
+<link rel="stylesheet" type="text/css" href="styles/style.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="manifest" href="_manifest.json">
+<meta id="theme-check" name="theme-color" content="#FFFFFF">
+<link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png"></head>
+
+<body class="theme-light">
+
+<div id="preloader"><div class="spinner-border color-highlight" role="status"></div></div>
+
+<div id="page">
+
+    <!-- Header -->
+    <div class="header-bar header-fixed header-app header-bar-detached">
+		<a data-back-button href="#"><i class="bi bi-caret-left-fill font-11 color-theme ps-2"></i></a>
+		<a href="#" class="header-title color-theme font-13">Back to Components</a>
+		<a data-bs-toggle="offcanvas" data-bs-target="#menu-color" href="#"><i class="bi bi-palette-fill font-13 color-highlight"></i></a>
+		<a href="#" class="show-on-theme-light" data-toggle-theme><i class="bi bi-moon-fill font-13"></i></a>
+		<a href="#" class="show-on-theme-dark" data-toggle-theme ><i class="bi bi-lightbulb-fill color-yellow-dark font-13"></i></a>
+	</div>
+
+	<!-- Footer Bar-->
+    <div id="footer-bar" class="footer-bar footer-bar-detached">
+		<a href="index-pages.html"><i class="bi bi-heart-fill font-15"></i><span>Pages</span></a>
+        <a href="index-components.html" class="active-nav"><i class="bi bi-star-fill font-17"></i><span>Features</span></a>
+        <a href="index.html"><i class="bi bi-house-fill font-16"></i><span>Home</span></a>
+        <a href="index-media.html"><i class="bi bi-image font-16"></i><span>Media</span></a>
+        <a href="#" data-bs-toggle="offcanvas" data-bs-target="#menu-main"><i class="bi bi-list"></i><span>Menu</span></a>
+    </div>
+
+	<!-- Main Sidebar-->
+	<div id="menu-main" data-menu-active="nav-comps" data-menu-load="menu-main.html"
+		style="width:280px;" class="offcanvas offcanvas-start offcanvas-detached rounded-m">
+	</div>
+	<!-- Menu Highlights-->
+	<div id="menu-color" data-menu-load="menu-highlights.html"
+		style="height:340px" class="offcanvas offcanvas-bottom offcanvas-detached rounded-m">
+	</div>
+
+    <!-- Your Page Content Goes Here-->
+    <div class="page-content header-clear-medium">
+
+		<div class="card card-style">
+			<div class="content">
+				<h6 class="font-700 mb-n1 color-highlight">Compress Content</h6>
+				<h1 class="pb-2">Dropdown & Collapse</h1>
+				<p>
+					Any element can act like a collapse or dropdown system. A great feature to have to maximise your content.
+				</p>
+			</div>
+			<div class="content mt-0">
+				<div>
+					<a class="btn btn-full bg-highlight btn-s font-11 text-uppercase rounded-xs shadow-m text-uppercase font-700" data-bs-toggle="collapse" href="#collapse1" aria-controls="collapse1">
+						Tap to Show a Card
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="collapse" id="collapse1">
+			<div class="card card-style">
+				<div class="content">
+					<h6 class="mb-0 opacity-50">Hello there!</h6>
+					<h4>I'm a Collapse</h4>
+					<p class="mb-0">
+						You can show cards or even classic content. It's as simple as adding a class.
+					</p>
+					<a class="py-2 d-block mb-n2 font-11" data-bs-toggle="collapse" href="#collapse1" aria-controls="collapse1">
+						Tap to Hide
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="card card-style">
+			<div class="content">
+				<h4>List Groups</h4>
+				<p>
+					Using list groups allows you to easily create absolutely amazing drop down menus. You can use any style from the <a href="list-group.html">List Group</a> component.
+				</p>
+			</div>
+			<div class="list-group list-custom list-group-m mx-3 mb-4">
+				<a class="list-group-item" data-bs-toggle="collapse" href="#collapse-list-1" aria-controls="collapse-list-1">
+					<i class="bi color-red-dark bi-heart-fill"></i>
+					<div><strong>Dropdown Simple</strong><span>List item Description</span></div>
+					<i class="bi bi-chevron-down"></i>
+				</a>
+				<div id="collapse-list-1" class="collapse">
+					<a href="#" class="list-group-item">
+						<div class="ps-1"><strong class="font-12">Sub List Item 1</strong></div>
+						<i class="bi bi-chevron-right font-9 color-gray-dark ps-4"></i>
+					</a>
+					<a href="#" class="list-group-item">
+						<div class="ps-1"><strong class="font-12">Sub List Item 2</strong></div>
+						<i class="bi bi-chevron-right font-9 color-gray-dark ps-4"></i>
+					</a>
+					<a href="#" class="list-group-item">
+						<div class="ps-1"><strong class="font-12">Sub List Item 3</strong></div>
+						<i class="bi bi-chevron-right font-9 color-gray-dark ps-4"></i>
+					</a>
+				</div>
+				<a class="list-group-item"  href="#collapse-list-2" aria-controls="collapse-list-2" data-bs-toggle="collapse">
+					<i class="bi color-yellow-dark bi-star-fill"></i>
+					<div><strong>Dropdown Icons</strong><span>List item Description</span></div>
+					<span class="badge rounded-xl">3</span>
+				</a>
+				<div id="collapse-list-2" class="collapse">
+					<a href="#" class="list-group-item">
+						<i class="bi bi-facebook color-facebook"></i>
+						<div class="ps-1"><strong class="font-12">Sub List Item 1</strong></div>
+						<i class="bi bi-chevron-right font-9 color-gray-dark ps-4"></i>
+					</a>
+					<a href="#" class="list-group-item">
+						<i class="bi bi-twitter color-twitter"></i>
+						<div class="ps-1"><strong class="font-12">Sub List Item 1</strong></div>
+						<i class="bi bi-chevron-right font-9 color-gray-dark ps-4"></i>
+					</a>
+					<a href="#" class="list-group-item">
+						<i class="bi bi-instagram color-instagram"></i>
+						<div class="ps-1"><strong class="font-12">Sub List Item 1</strong></div>
+						<i class="bi bi-chevron-right font-9 color-gray-dark ps-4"></i>
+					</a>
+				</div>
+				<a class="list-group-item" data-trigger-switch="switch-4" data-bs-toggle="collapse" href="#collapse-list-3" aria-controls="collapse-list-3">
+					<i class="bi color-blue-dark bi-gear-fill"></i>
+					<div><strong>Dropdown Complex</strong><span>List item description</span></div>
+					<div class="form-switch ios-switch switch-green switch-m">
+						<input type="checkbox" class="ios-input" id="switch-4">
+						<label class="custom-control-label" for="switch-4"></label>
+					</div>
+				</a>
+				<div id="collapse-list-3" class="collapse">
+					<a href="#" class="list-group-item">
+						<div class="ps-1"><strong>Sub List Item 1</strong><span>Even small descriptions</span></div>
+						<i class="bi bi-chevron-right font-9 color-gray-dark ps-4"></i>
+					</a>
+					<a href="#" class="list-group-item">
+						<div class="ps-1"><strong>Sub List Item 2</strong><span>Even small descriptions</span></div>
+						<i class="bi bi-chevron-right font-9 color-gray-dark ps-4"></i>
+					</a>
+					<a href="#" class="list-group-item">
+						<div class="ps-1"><strong>Sub List Item 3</strong><span>Even small descriptions</span></div>
+						<i class="bi bi-chevron-right font-9 color-gray-dark ps-4"></i>
+					</a>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="card card-style">
+			<div class="content">
+				<h4>Read More Links</h4>
+				<p class="mb-0">
+					When you want to compress content and offer you users the ability to tap and show more content.
+				</p>
+				<div class="collapse" id="collapse-list-more">
+					<p class="mb-0">
+						This content will appear if you tap the read more button. You can add anything you want here. In this demo, it's just a simple paragraph.
+					</p>
+				</div>
+				<a data-bs-toggle="collapse" href="#collapse-list-more" aria-controls="collapse-list-more" class="d-block pt-3">Read More</a>
+			</div>
+		</div>
+
+		<div class="card card-style">
+			<div class="content">
+				<h5>More Collapsible Components</h5>
+				<p class="mb-3">
+					Our collapse system can be applied to any button or link, so you can collapse anything you want.
+				</p>
+				<div class="list-group list-custom list-group-m rounded-xs">
+					<a href="component-tabs.html" class="list-group-item">
+						<div>Tabs</div>
+						<i class="bi bi-chevron-right"></i>
+					</a>
+					<a href="component-accordion.html" class="list-group-item">
+						<div>Accordions</div>
+						<i class="bi bi-chevron-right"></i>
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="card card-style py-3">
+			<div class="content px-2 text-center">
+				<h5 class="mb-n1 font-12 color-highlight font-700 text-uppercase">Time to Go Mobile</h5>
+				<h2>Get Duo Mobile Today</h2>
+				<p class="mb-3">
+					Start your next project with Duo and enjoy the power of a Progressive Web App.
+				</p>
+				<a href="https://1.envato.market/2ryjKA" target="_blank" class="default-link btn btn-m rounded-s gradient-highlight shadow-bg shadow-bg-s px-5 mb-0 mt-2">Get Duo Now</a>
+			</div>
+		</div>
+
+    </div>
+	<!-- End of Page Content-->
+</div>
+<!--End of Page ID-->
+
+<script src="scripts/bootstrap.min.js"></script>
+<script src="scripts/custom.js"></script>
+</body>

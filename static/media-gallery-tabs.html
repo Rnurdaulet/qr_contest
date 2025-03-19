@@ -1,0 +1,195 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+<title>Duo Mobile PWA Kit</title>
+<link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="fonts/bootstrap-icons.css">
+<link rel="stylesheet" type="text/css" href="styles/style.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="manifest" href="_manifest.json">
+<meta id="theme-check" name="theme-color" content="#FFFFFF">
+<link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png"></head>
+
+<body class="theme-light">
+
+<div id="preloader"><div class="spinner-border color-highlight" role="status"></div></div>
+
+<div id="page">
+
+    <!-- Header -->
+    <div class="header-bar header-fixed header-app header-bar-detached">
+		<a data-back-button href="#"><i class="bi bi-caret-left-fill font-11 color-theme ps-2"></i></a>
+		<a href="#" class="header-title color-theme font-13">Back to Media</a>
+		<a data-bs-toggle="offcanvas" data-bs-target="#menu-color" href="#"><i class="bi bi-palette-fill font-13 color-highlight"></i></a>
+		<a href="#" class="show-on-theme-light" data-toggle-theme><i class="bi bi-moon-fill font-13"></i></a>
+		<a href="#" class="show-on-theme-dark" data-toggle-theme ><i class="bi bi-lightbulb-fill color-yellow-dark font-13"></i></a>
+	</div>
+
+	<!-- Footer Bar-->
+	<div id="footer-bar" class="footer-bar footer-bar-detached">
+		<a href="index-pages.html"><i class="bi bi-heart-fill font-15"></i><span>Pages</span></a>
+		<a href="index-components.html"><i class="bi bi-star-fill font-17"></i><span>Features</span></a>
+		<a href="index.html"><i class="bi bi-house-fill font-16"></i><span>Home</span></a>
+		<a href="index-media.html" class="active-nav"><i class="bi bi-image font-16"></i><span>Media</span></a>
+		<a href="#" data-bs-toggle="offcanvas" data-bs-target="#menu-main"><i class="bi bi-list"></i><span>Menu</span></a>
+	</div>
+
+	<!-- Main Sidebar-->
+	<div id="menu-main" data-menu-active="nav-media" data-menu-load="menu-main.html"
+		style="width:280px;" class="offcanvas offcanvas-start offcanvas-detached rounded-m">
+	</div>
+	<!-- Menu Highlights-->
+	<div id="menu-color" data-menu-load="menu-highlights.html"
+		style="height:340px" class="offcanvas offcanvas-bottom offcanvas-detached rounded-m">
+	</div>
+
+    <!-- Your Page Content Goes Here-->
+    <div class="page-content header-clear-medium">
+
+		<div class="card card-style">
+			<div class="content">
+				<h6 class="font-700 mb-n1 color-highlight">Touch your Photos</h6>
+				<h1 class="pb-2">Tabs Gallery</h1>
+				<p class="mb-3 mt-n1">
+					Use any style tab from the Tab Components and create awesome galleries that are stacked.
+				</p>
+				<a href="#" class="btn btn-s gradient-highlight shadow-bg shadow-bg-xs btn-full text-uppercase font-700">View Tab Component</a>
+			</div>
+		</div>
+
+		<div class="tabs tabs-cards" id="tab-group-5">
+			<div class="tab-controls">
+				<a class="font-13" data-bs-toggle="collapse" href="#tab-13" aria-expanded="true">About</a>
+				<a class="font-13" data-bs-toggle="collapse" href="#tab-14" aria-expanded="false">Pricing</a>
+				<a class="font-13" data-bs-toggle="collapse" href="#tab-15" aria-expanded="false">Contact</a>
+			</div>
+			<div class="card card-style">
+				<div class="collapse show" id="tab-13" data-bs-parent="#tab-group-5">
+					<div class="content mb-0">
+						<h3 class="font-18 mb-1">Circle Thumbs - Caption</h3>
+						<p>
+							Simple thumbnails with caption attached to them. These will all open a gallery when tapped.
+						</p>
+						<div class="row text-center row-cols-3 mb-0">
+							<a class="col" data-gallery="gallery-1" href="images/pictures/23t.jpg" title="Cyber Punk">
+								<img src="images/empty.png" data-src="images/pictures/23t.jpg" class="preload-img img-fluid rounded-circle" alt="img">
+								<p class="font-600 color-theme font-12 pb-3">Cyber Punk</p>
+							</a>
+							<a class="col" data-gallery="gallery-1" href="images/pictures/14t.jpg" title="Jelly Fish">
+								<img src="images/empty.png" data-src="images/pictures/14s.jpg" class="preload-img img-fluid rounded-circle" alt="img">
+								<p class="font-600 color-theme font-12 pb-3">Jelly Fish</p>
+							</a>
+							<a class="col" data-gallery="gallery-1" href="images/pictures/3t.jpg" title="Ice Cube">
+								<img src="images/empty.png" data-src="images/pictures/3s.jpg" class="preload-img img-fluid rounded-circle" alt="img">
+								<p class="font-600 color-theme font-12 pb-3">Ice Cube</p>
+							</a>
+							<a class="col" data-gallery="gallery-1" href="images/pictures/7t.jpg" title="Portrait">
+								<img src="images/empty.png" data-src="images/pictures/7t.jpg" class="preload-img img-fluid rounded-circle" alt="img">
+								<p class="font-600 color-theme font-12 pb-3">Portrait</p>
+							</a>
+							<a class="col" data-gallery="gallery-1" href="images/pictures/10t.jpg" title="Neons">
+								<img src="images/empty.png" data-src="images/pictures/10s.jpg" class="preload-img img-fluid rounded-circle" alt="img">
+								<p class="font-600 color-theme font-12 pb-3">Neons</p>
+							</a>
+							<a class="col" data-gallery="gallery-1" href="images/pictures/11t.jpg" title="Flower">
+								<img src="images/empty.png" data-src="images/pictures/11s.jpg" class="preload-img img-fluid rounded-circle" alt="img">
+								<p class="font-600 color-theme font-12 pb-3">Flower</p>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="collapse" id="tab-14" data-bs-parent="#tab-group-5">
+					<div class="content mb-0">
+						<h3 class="font-18 mb-1">Rounded Thumbs - Caption</h3>
+						<p>
+							Simple thumbnails with caption attached to them. These will all open a gallery when tapped.
+						</p>
+						<div class="row text-center row-cols-3 mb-0">
+							<a class="col" data-gallery="gallery-2" href="images/pictures/23t.jpg" title="Cyber Punk">
+								<img src="images/empty.png" data-src="images/pictures/23t.jpg" class="preload-img img-fluid rounded-l" alt="img">
+								<p class="font-600 color-theme font-12 pb-3">Cyber Punk</p>
+							</a>
+							<a class="col" data-gallery="gallery-2" href="images/pictures/14t.jpg" title="Jelly Fish">
+								<img src="images/empty.png" data-src="images/pictures/14s.jpg" class="preload-img img-fluid rounded-l" alt="img">
+								<p class="font-600 color-theme font-12 pb-3">Jelly Fish</p>
+							</a>
+							<a class="col" data-gallery="gallery-2" href="images/pictures/3t.jpg" title="Ice Cube">
+								<img src="images/empty.png" data-src="images/pictures/3s.jpg" class="preload-img img-fluid rounded-l" alt="img">
+								<p class="font-600 color-theme font-12 pb-3">Ice Cube</p>
+							</a>
+							<a class="col" data-gallery="gallery-2" href="images/pictures/7t.jpg" title="Portrait">
+								<img src="images/empty.png" data-src="images/pictures/7t.jpg" class="preload-img img-fluid rounded-l" alt="img">
+								<p class="font-600 color-theme font-12 pb-3">Portrait</p>
+							</a>
+							<a class="col" data-gallery="gallery-2" href="images/pictures/10t.jpg" title="Neons">
+								<img src="images/empty.png" data-src="images/pictures/10s.jpg" class="preload-img img-fluid rounded-l" alt="img">
+								<p class="font-600 color-theme font-12 pb-3">Neons</p>
+							</a>
+							<a class="col" data-gallery="gallery-2" href="images/pictures/11t.jpg" title="Flower">
+								<img src="images/empty.png" data-src="images/pictures/11s.jpg" class="preload-img img-fluid rounded-l" alt="img">
+								<p class="font-600 color-theme font-12 pb-3">Flower</p>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="collapse" id="tab-15" data-bs-parent="#tab-group-5">
+					<div class="content mb-0">
+						<h3 class="font-18 mb-1">Square Thumbs - Caption</h3>
+						<p>
+							Simple thumbnails with caption attached to them. These will all open a gallery when tapped.
+						</p>
+						<div class="row text-center row-cols-3 mb-0">
+							<a class="col" data-gallery="gallery-3" href="images/pictures/23t.jpg" title="Cyber Punk">
+								<img src="images/empty.png" data-src="images/pictures/23t.jpg" class="preload-img img-fluid rounded-xs" alt="img">
+								<p class="font-600 color-theme font-12 pb-3">Cyber Punk</p>
+							</a>
+							<a class="col" data-gallery="gallery-3" href="images/pictures/14t.jpg" title="Jelly Fish">
+								<img src="images/empty.png" data-src="images/pictures/14s.jpg" class="preload-img img-fluid rounded-xs" alt="img">
+								<p class="font-600 color-theme font-12 pb-3">Jelly Fish</p>
+							</a>
+							<a class="col" data-gallery="gallery-3" href="images/pictures/3t.jpg" title="Ice Cube">
+								<img src="images/empty.png" data-src="images/pictures/3s.jpg" class="preload-img img-fluid rounded-xs" alt="img">
+								<p class="font-600 color-theme font-12 pb-3">Ice Cube</p>
+							</a>
+							<a class="col" data-gallery="gallery-3" href="images/pictures/7t.jpg" title="Portrait">
+								<img src="images/empty.png" data-src="images/pictures/7t.jpg" class="preload-img img-fluid rounded-xs" alt="img">
+								<p class="font-600 color-theme font-12 pb-3">Portrait</p>
+							</a>
+							<a class="col" data-gallery="gallery-3" href="images/pictures/10t.jpg" title="Neons">
+								<img src="images/empty.png" data-src="images/pictures/10s.jpg" class="preload-img img-fluid rounded-xs" alt="img">
+								<p class="font-600 color-theme font-12 pb-3">Neons</p>
+							</a>
+							<a class="col" data-gallery="gallery-3" href="images/pictures/11t.jpg" title="Flower">
+								<img src="images/empty.png" data-src="images/pictures/11s.jpg" class="preload-img img-fluid rounded-xs" alt="img">
+								<p class="font-600 color-theme font-12 pb-3">Flower</p>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="card card-style py-3">
+			<div class="content px-2 text-center">
+				<h5 class="mb-n1 font-12 color-highlight font-700 text-uppercase">Time to Go Mobile</h5>
+				<h2>Get Duo Mobile Today</h2>
+				<p class="mb-3">
+					Start your next project with Duo and enjoy the power of a Progressive Web App.
+				</p>
+				<a href="https://1.envato.market/2ryjKA" target="_blank" class="default-link btn btn-m rounded-s gradient-highlight shadow-bg shadow-bg-s px-5 mb-0 mt-2">Get Duo Now</a>
+			</div>
+		</div>
+
+    </div>
+	<!-- End of Page Content-->
+</div>
+<!--End of Page ID-->
+
+<script src="scripts/bootstrap.min.js"></script>
+<script src="scripts/custom.js"></script>
+</body>

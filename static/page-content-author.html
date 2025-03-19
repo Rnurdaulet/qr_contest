@@ -1,0 +1,180 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+<title>Duo Mobile PWA Kit</title>
+<link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="fonts/bootstrap-icons.css">
+<link rel="stylesheet" type="text/css" href="styles/style.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="manifest" href="_manifest.json">
+<meta id="theme-check" name="theme-color" content="#FFFFFF">
+<link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png"></head>
+
+<body class="theme-light">
+
+<div id="preloader"><div class="spinner-border color-highlight" role="status"></div></div>
+
+<div id="page">
+
+    <!-- Header -->
+    <div class="header-bar header-fixed header-app header-bar-detached">
+		<a data-back-button href="#"><i class="bi bi-caret-left-fill font-11 color-theme ps-2"></i></a>
+		<a href="#" class="header-title color-theme font-13">Back to Pages</a>
+		<a data-bs-toggle="offcanvas" data-bs-target="#menu-color" href="#"><i class="bi bi-palette-fill font-13 color-highlight"></i></a>
+		<a href="#" class="show-on-theme-light" data-toggle-theme><i class="bi bi-moon-fill font-13"></i></a>
+		<a href="#" class="show-on-theme-dark" data-toggle-theme ><i class="bi bi-lightbulb-fill color-yellow-dark font-13"></i></a>
+	</div>
+
+	<!-- Footer Bar-->
+    <div id="footer-bar" class="footer-bar footer-bar-detached">
+		<a href="index-pages.html" class="active-nav"><i class="bi bi-heart-fill font-15"></i><span>Pages</span></a>
+        <a href="index-components.html" ><i class="bi bi-star-fill font-17"></i><span>Features</span></a>
+        <a href="index.html"><i class="bi bi-house-fill font-16"></i><span>Home</span></a>
+        <a href="index-media.html"><i class="bi bi-image font-16"></i><span>Media</span></a>
+        <a href="#" data-bs-toggle="offcanvas" data-bs-target="#menu-main"><i class="bi bi-list"></i><span>Menu</span></a>
+    </div>
+
+	<!-- Main Sidebar-->
+	<div id="menu-main" data-menu-active="nav-pages" data-menu-load="menu-main.html"
+		style="width:280px;" class="offcanvas offcanvas-start offcanvas-detached rounded-m">
+	</div>
+	<!-- Menu Highlights-->
+	<div id="menu-color" data-menu-load="menu-highlights.html"
+		style="height:340px" class="offcanvas offcanvas-bottom offcanvas-detached rounded-m">
+	</div>
+
+    <!-- Your Page Content Goes Here-->
+    <div class="page-content header-clear-medium">
+
+
+		<img style="margin-bottom:-80px; z-index:2;" src="images/pictures/5s.jpg" alt="img" class="mx-auto shadow-xl rounded-circle position-relative" width="150">
+		<div style="padding-top:80px;" class="card card-style">
+			<div class="content">
+				<h1 class="text-center font-32">Jane Smith</h1>
+				<a href="#" class="color-highlight text-center d-block mt-n2 font-11 pb-3">Senior Writer and Editor</a>
+				<div class="text-center">
+					<a href="#" class="icon icon-l mx-2 mb-4 rounded-circle shadow-bg shadow-bg-s bg-facebook"><i class="bi font-18 bi-facebook"></i></a>
+					<a href="#" class="icon icon-l mx-2 mb-4 rounded-circle shadow-bg shadow-bg-s bg-instagram"><i class="bi font-18 bi-instagram"></i></a>
+					<a href="#" class="icon icon-l mx-2 mb-4 rounded-circle shadow-bg shadow-bg-s bg-twitter"><i class="bi font-18 bi-twitter"></i></a>
+				</div>
+				<em class="text-center font-18 font-300 d-block color-theme opacity-50 mb-3">Create, inspire, and help others along the way. I believe in balance, hard work, and a lot of laughter.</em>
+				<div class="divider mt-4 mb-0"></div>
+				<div class="row mb-0">
+					<div class="col-5">
+						<a href="#" class="btn btn-full rounded-sm border-highlight color-highlight shadow-bg shadow-bg-s text-uppercase font-700 btn-m mt-4">Chat</a>
+					</div>
+					<div class="col-7">
+						<a href="#" class="btn btn-full rounded-sm gradient-highlight shadow-bg shadow-bg-s text-uppercase font-700 btn-m mt-4">Follow</a>
+					</div>
+				</div>
+                <div class="divider mt-4"></div>
+
+                <h4>Biography</h4>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel dapibus nulla.
+                    Donec bibendum felis orci, at posuere lacus hendrerit non. Donec at ultrices lorem.
+                    Aliquam viverra dolor nec est congue, ut consectetur lacus pharetra.
+                </p>
+
+                <div class="divider"></div>
+
+                <h4>Experience</h4>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel dapibus nulla.
+                    Donec bibendum felis orci, at posuere lacus hendrerit non.
+                </p>
+				<div class="list-group list-custom list-group-m list-group-flush rounded-xs">
+					<a href="#" class="list-group-item">
+						<i class="has-bg bg-red-dark rounded-xs bi bi-heart-fill"></i>
+						<div><strong>Main Editor</strong><span>Here at Enableds.com</span></div>
+						<i class="bi bi-chevron-left"></i>
+					</a>
+					<a href="#" class="list-group-item">
+						<i class="has-bg bg-yellow-dark rounded-xs bi bi-star-fill"></i>
+						<div><strong>Writer</strong><span>Envato News Blog</span></div>
+						<span class="badge rounded-xl">15</span>
+					</a>
+					<a href="#" class="list-group-item pe-2" data-trigger-switch="switch-5">
+						<i class="has-bg bg-blue-dark rounded-xs bi bi-gear-fill"></i>
+						<div><strong>Reporter</strong><span>Envato Author Hub</span></div>
+						<span class="badge rounded-xl">15</span>
+					</a>
+				</div>
+
+                <div class="divider"></div>
+
+                <h4 class="mb-3">Posts by John Doe</h4>
+                <a href="#">
+					<div class="d-flex mb-3">
+						<div class="align-self-center me-auto">
+							<img src="images/pictures/18l.jpg" class="rounded-m me-3" width="90">
+						</div>
+						<div class="align-self-center w-100">
+							<span class="badge gradient-blue rounded-xxs shadow-bg shadow-bg-xs text-uppercase px-2 py-1">TECHNOLOGY</span>
+							<h5 class="font-500 font-15 pt-2">Global warming accelerates electric vehicle development.</h5>
+							<span class="color-theme font-11 opacity-50">25 Minutes Ago</span>
+						</div>
+					</div>
+				</a>
+				<a href="#">
+					<div class="d-flex mb-3">
+						<div class="align-self-center me-auto">
+							<img src="images/pictures/2l.jpg" class="rounded-m me-3" width="90">
+						</div>
+						<div class="align-self-center w-100">
+							<span class="badge gradient-green rounded-xxs shadow-bg shadow-bg-xs text-uppercase px-2 py-1">BUSINESS</span>
+							<h5 class="font-500 font-15 pt-2">Influencer hosting fees have surged dramatically. Here's why.</h5>
+							<span class="color-theme font-11 opacity-50">25 Minutes Ago</span>
+						</div>
+					</div>
+				</a>
+				<a href="#">
+					<div class="d-flex mb-3">
+						<div class="align-self-center me-auto">
+							<img src="images/pictures/3l.jpg" class="rounded-m me-3" width="90">
+						</div>
+						<div class="align-self-center w-100">
+							<span class="badge gradient-red rounded-xxs shadow-bg shadow-bg-xs text-uppercase px-2 py-1">NEWS</span>
+							<h5 class="font-500 font-15 pt-2">MacBook M1 release causes Apple sales to skyrocket.</h5>
+							<span class="color-theme font-11 opacity-50">25 Minutes Ago</span>
+						</div>
+					</div>
+				</a>
+
+                <div class="divider mt-4 mb-0"></div>
+                <div class="row mb-0">
+                    <div class="col-5">
+                        <a href="#" class="btn btn-full rounded-sm border-highlight color-highlight text-uppercase font-700 btn-m mt-4">Chat</a>
+                    </div>
+                    <div class="col-7">
+                        <a href="#" class="btn btn-full rounded-sm bg-highlight text-uppercase font-700 btn-m mt-4">Follow</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+                        
+		<div class="card card-style py-3">
+			<div class="content px-2 text-center">
+				<h5 class="mb-n1 font-12 color-highlight font-700 text-uppercase">Time to Go Mobile</h5>
+				<h2>Get Duo Mobile Today</h2>
+				<p class="mb-3">
+					Start your next project with Duo and enjoy the power of a Progressive Web App.
+				</p>
+				<a href="https://1.envato.market/2ryjKA" target="_blank" class="default-link btn btn-m rounded-s gradient-highlight shadow-bg shadow-bg-s px-5 mb-0 mt-2">Get Duo Now</a>
+			</div>
+		</div>
+
+    </div>
+	<!-- End of Page Content-->
+</div>
+<!--End of Page ID-->
+
+<script src="scripts/bootstrap.min.js"></script>
+<script src="scripts/custom.js"></script>
+</body>

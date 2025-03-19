@@ -1,0 +1,136 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+<title>Duo Mobile PWA Kit</title>
+<link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="fonts/bootstrap-icons.css">
+<link rel="stylesheet" type="text/css" href="styles/style.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="manifest" href="_manifest.json">
+<meta id="theme-check" name="theme-color" content="#FFFFFF">
+<link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png"></head>
+
+<body class="theme-light">
+
+<div id="preloader"><div class="spinner-border color-highlight" role="status"></div></div>
+
+<div id="page">
+
+    <!-- Header -->
+    <div class="header-bar header-fixed header-app header-bar-detached">
+		<a data-back-button href="#"><i class="bi bi-caret-left-fill font-11 color-theme ps-2"></i></a>
+		<a href="#" class="header-title color-theme font-13">Back to Components</a>
+		<a data-bs-toggle="offcanvas" data-bs-target="#menu-color" href="#"><i class="bi bi-palette-fill font-13 color-highlight"></i></a>
+		<a href="#" class="show-on-theme-light" data-toggle-theme><i class="bi bi-moon-fill font-13"></i></a>
+		<a href="#" class="show-on-theme-dark" data-toggle-theme ><i class="bi bi-lightbulb-fill color-yellow-dark font-13"></i></a>
+	</div>
+
+	<!-- Footer Bar-->
+    <div id="footer-bar" class="footer-bar footer-bar-detached">
+		<a href="index-pages.html"><i class="bi bi-heart-fill font-15"></i><span>Pages</span></a>
+        <a href="index-components.html" class="active-nav"><i class="bi bi-star-fill font-17"></i><span>Features</span></a>
+        <a href="index.html"><i class="bi bi-house-fill font-16"></i><span>Home</span></a>
+        <a href="index-media.html"><i class="bi bi-image font-16"></i><span>Media</span></a>
+        <a href="#" data-bs-toggle="offcanvas" data-bs-target="#menu-main"><i class="bi bi-list"></i><span>Menu</span></a>
+    </div>
+
+	<!-- Main Sidebar-->
+	<div id="menu-main" data-menu-active="nav-comps" data-menu-load="menu-main.html"
+		style="width:280px;" class="offcanvas offcanvas-start offcanvas-detached rounded-m">
+	</div>
+	<!-- Menu Highlights-->
+	<div id="menu-color" data-menu-load="menu-highlights.html"
+		style="height:340px" class="offcanvas offcanvas-bottom offcanvas-detached rounded-m">
+	</div>
+
+    <!-- Your Page Content Goes Here-->
+    <div class="page-content header-clear-medium">
+
+		<div class="card card-style">
+			<div class="content">
+				<h6 class="font-700 mb-n1 color-highlight">Find your Style</h6>
+				<h1 class="pb-2">Footer Bars</h1>
+				<p>
+					Footer Bars with countless options to make your mobile navigation a perfect experience.
+				</p>
+				<ul class="px-3 mb-0">
+					<li>Colorful Icons</li>
+					<li>No Icon Limit</li>
+					<li>Multiple Select Styles</li>
+					<li>Text or Number Badges</li>
+				</ul>
+			</div>
+		</div>
+
+		<h6 class="opacity-30 px-3">Icon Colors</h6>
+		<nav id="footer-bar" class="position-relative shadow-m">
+			<a href="#"><i class="bi bi-star-fill color-yellow-dark"></i><span>Features</span></a>
+			<a href="#"><i class="bi bi-heart-fill color-red-dark"></i><span>Pages</span></a>
+			<a href="#"><i class="bi bi-house-fill color-green-dark"></i><span>Home</span></a>
+			<a href="#"><i class="bi bi-search color-brown-dark"></i><span>Search</span></a>
+			<a href="#"><i class="bi bi-gear-fill color-blue-dark"></i><span>Settings</span></a>
+		</nav>
+
+
+		<h6 class="opacity-30 px-3 pt-3">Badges</h6>
+		<nav id="footer-bar" class="position-relative shadow-m">
+			<a href="#"><em class="badge badge-text bg-green-dark">NEW</em><i class="bi bi-star-fill color-yellow-dark"></i><span>Features</span></a>
+			<a href="#"><i class="bi bi-heart-fill color-red-dark"></i><span>Pages</span></a>
+			<a href="#"><i class="bi bi-house-fill color-green-dark"></i><span>Home</span></a>
+			<a href="#"><i class="bi bi-gear-fill color-brown-dark"></i><span>Settings</span></a>
+			<a href="#"><em class="badge badge-text bg-red-dark">5</em><i class="bi bi-bell-fill color-blue-dark"></i><span>Alerts</span></a>
+		</nav>
+
+
+		<h6 class="opacity-30 px-3 pt-3">Mixed Styles</h6>
+		<nav id="footer-bar" class="position-relative shadow-m">
+			<a href="#"><em class="badge badge-text bg-green-dark">NEW</em><i class="bi bi-star-fill color-yellow-dark"></i><span>Features</span></a>
+			<a href="#"><i class="bi bi-house-fill color-green-dark"></i><span>Home</span></a>
+			<a href="#"><em class="badge badge-text bg-red-dark">5</em><i class="bi bi-bell-fill color-blue-dark"></i><span>Alerts</span></a>
+			<a href="#" class="btn btn-s bg-highlight rounded-m font-700 shadow-bg shadow-bg-s">CALL NOW</a>
+		</nav>
+
+
+		<h6 class="opacity-30 px-3 pt-5">Classic Selected Icon</h6>
+		<nav id="footer-bar" class="footer-bar position-relative shadow-m">
+			<a href="#"><i class="bi bi-star-fill"></i><span>Features</span></a>
+			<a href="#"><i class="bi bi-heart-fill"></i><span>Pages</span></a>
+			<a href="#" class="active-nav"><i class="bi bi-house-fill"></i><span>Home</span></a>
+			<a href="#"><i class="bi bi-search"></i><span>Search</span></a>
+			<a href="#" data-menu="menu-settings"><i class="bi bi-gear-fill"></i><span>Settings</span></a>
+		</nav>
+		<div class="pt-2"></div>
+		<nav id="footer-bar" class="footer-bar footer-bar-no-text position-relative shadow-m">
+			<a href="#"><i class="bi bi-star-fill"></i></a>
+			<a href="#"><i class="bi bi-heart-fill"></i></a>
+			<a href="#" class="active-nav"><i class="bi bi-house-fill"></i></a>
+			<a href="#"><i class="bi bi-search"></i></a>
+			<a href="#" data-menu="menu-settings"><i class="bi bi-gear-fill"></i></a>
+		</nav>
+
+		<div class="divider my-4"></div>
+
+		<div class="card card-style py-3">
+			<div class="content px-2 text-center">
+				<h5 class="mb-n1 font-12 color-highlight font-700 text-uppercase">Time to Go Mobile</h5>
+				<h2>Get Duo Mobile Today</h2>
+				<p class="mb-3">
+					Start your next project with Duo and enjoy the power of a Progressive Web App.
+				</p>
+				<a href="https://1.envato.market/2ryjKA" target="_blank" class="default-link btn btn-m rounded-s gradient-highlight shadow-bg shadow-bg-s px-5 mb-0 mt-2">Get Duo Now</a>
+			</div>
+		</div>
+
+    </div>
+	<!-- End of Page Content-->
+</div>
+<!--End of Page ID-->
+
+<script src="scripts/bootstrap.min.js"></script>
+<script src="scripts/custom.js"></script>
+</body>

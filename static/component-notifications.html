@@ -1,0 +1,276 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+<title>Duo Mobile PWA Kit</title>
+<link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="fonts/bootstrap-icons.css">
+<link rel="stylesheet" type="text/css" href="styles/style.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="manifest" href="_manifest.json">
+<meta id="theme-check" name="theme-color" content="#FFFFFF">
+<link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png"></head>
+
+<body class="theme-light">
+
+<div id="preloader"><div class="spinner-border color-highlight" role="status"></div></div>
+
+<div id="page">
+
+    <!-- Header -->
+    <div class="header-bar header-fixed header-app header-bar-detached">
+		<a data-back-button href="#"><i class="bi bi-caret-left-fill font-11 color-theme ps-2"></i></a>
+		<a href="#" class="header-title color-theme font-13">Back to Components</a>
+		<a data-bs-toggle="offcanvas" data-bs-target="#menu-color" href="#"><i class="bi bi-palette-fill font-13 color-highlight"></i></a>
+		<a href="#" class="show-on-theme-light" data-toggle-theme><i class="bi bi-moon-fill font-13"></i></a>
+		<a href="#" class="show-on-theme-dark" data-toggle-theme ><i class="bi bi-lightbulb-fill color-yellow-dark font-13"></i></a>
+	</div>
+
+	<!-- Footer Bar-->
+    <div id="footer-bar" class="footer-bar footer-bar-detached">
+		<a href="index-pages.html"><i class="bi bi-heart-fill font-15"></i><span>Pages</span></a>
+        <a href="index-components.html" class="active-nav"><i class="bi bi-star-fill font-17"></i><span>Features</span></a>
+        <a href="index.html"><i class="bi bi-house-fill font-16"></i><span>Home</span></a>
+        <a href="index-media.html"><i class="bi bi-image font-16"></i><span>Media</span></a>
+        <a href="#" data-bs-toggle="offcanvas" data-bs-target="#menu-main"><i class="bi bi-list"></i><span>Menu</span></a>
+    </div>
+
+	<!-- Main Sidebar-->
+	<div id="menu-main" data-menu-active="nav-comps" data-menu-load="menu-main.html"
+		style="width:280px;" class="offcanvas offcanvas-start offcanvas-detached rounded-m">
+	</div>
+	<!-- Menu Highlights-->
+	<div id="menu-color" data-menu-load="menu-highlights.html"
+		style="height:340px" class="offcanvas offcanvas-bottom offcanvas-detached rounded-m">
+	</div>
+
+    <!-- Your Page Content Goes Here-->
+    <div class="page-content header-clear-medium">
+
+		<div class="card card-style">
+			<div class="content">
+				<h6 class="font-700 mb-n1 color-highlight">Mobile Styled</h6>
+				<h1 class="pb-2">Notifications</h1>
+				<p>
+					Built using default Bootstrap elements so these can provide the best user experience and
+					are super easy to programmatically use.
+				</p>
+				<!-- <ul class="ps-3">
+					<li>Any content supported</li>
+					<li>Auto Hide Delay Data</li>
+					<li>Round, Square, Flushed</li>
+					<li>Programatic or Click Calls</li>
+				</ul>
+				<div class="divider mt-4"></div> -->
+				<h6 class="opacity-30 font-11">Tap list items to see Toast Demos</h6>
+				<div class="list-group list-custom list-group-m rounded-xs">
+					<a data-toast="notification-bar-1" href="#" class="list-group-item">
+						<i class="bi bi-dash color-brown-dark font-16"></i>
+						<div>Classic Bar</div>
+						<i class="bi bi-chevron-right"></i>
+					</a>
+					<a data-toast="notification-bar-2" href="#" class="list-group-item">
+						<i class="bi bi-droplet-fill color-red-dark font-14"></i>
+						<div>Gradient Bar</div>
+						<i class="bi bi-chevron-right"></i>
+					</a>
+					<a data-toast="notification-bar-3" href="#" class="list-group-item">
+						<i class="bi bi-megaphone-fill color-blue-dark font-14"></i>
+						<div>News Bar</div>
+						<i class="bi bi-chevron-right"></i>
+					</a>
+					<a data-toast="notification-bar-4" href="#" class="list-group-item">
+						<i class="bi bi-chat-fill color-green-dark font-13"></i>
+						<div>Chat Bar</div>
+						<i class="bi bi-chevron-right"></i>
+					</a>
+					<a data-toast="notification-bar-5" href="#" class="list-group-item">
+						<i class="bi bi-exclamation-triangle color-orange-dark font-13"></i>
+						<div>Action Bar - 1</div>
+						<i class="bi bi-chevron-right"></i>
+					</a>
+					<a data-toast="notification-bar-5a" href="#" class="list-group-item">
+						<i class="bi bi-check-circle color-green-dark font-13"></i>
+						<div>Action Bar - 2</div>
+						<i class="bi bi-chevron-right"></i>
+					</a>
+					<a data-toast="notification-bar-6" href="#" class="list-group-item">
+						<i class="bi bi-check-circle-fill color-dark-dark font-13"></i>
+						<div>Call to Action</div>
+						<i class="bi bi-chevron-right"></i>
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="card card-style py-3">
+			<div class="content px-2 text-center">
+				<h5 class="mb-n1 font-12 color-highlight font-700 text-uppercase">Time to Go Mobile</h5>
+				<h2>Get Duo Mobile Today</h2>
+				<p class="mb-3">
+					Start your next project with Duo and enjoy the power of a Progressive Web App.
+				</p>
+				<a href="https://1.envato.market/2ryjKA" target="_blank" class="default-link btn btn-m rounded-s gradient-highlight shadow-bg shadow-bg-s px-5 mb-0 mt-2">Get Duo Now</a>
+			</div>
+		</div>
+
+    </div>
+	<!-- End of Page Content-->
+
+	<!-- iOS Toast Bar-->
+	<div id="notification-bar-1" class="notification-bar glass-effect detached rounded-s shadow-xxl" data-bs-delay="5000">
+		<div class="toast-header px-3 py-3">
+			<i class="bi bi-check-circle-fill pe-2 color-green-dark"></i>
+			<strong class="me-auto color-theme">Classic Bar</strong>
+			<small>a minute ago</small>
+			<button type="button" class="btn-close font-10 pe-2" data-bs-dismiss="toast" aria-label="Close"></button>
+		</div>
+		<div class="toast-body px-3 py-3">
+			<p class="mb-0 font-13">
+				Our products are the best selling Mobile PWA templates on the entire Envato Marketplaces!
+			</p>
+		</div>
+	</div>
+
+	<!-- iOS Toast Bar-->
+	<div id="notification-bar-2" class="notification-bar detached gradient-red rounded-s shadow-l" data-bs-delay="5000">
+		<div class="toast-header bg-transparent border-0 rounded-s px-3 py-3 pb-0">
+			<i class="bi bi-check-circle-fill pe-2 color-white"></i>
+			<strong class="me-auto color-white font-15">Gradient Notification</strong>
+			<a href="#" class="font-10 color-white opacity-60 px-3 me-n3" data-bs-dismiss="toast" aria-label="Close">X</a>
+		</div>
+		<div class="toast-body px-3">
+			<p class="mb-0 font-12 mt-n1 color-white opacity-70">
+				Gradients are awesome and they can make things look even more modern and elegant.
+			</p>
+		</div>
+	</div>
+
+
+	<!-- iOS Toast Bar-->
+	<div id="notification-bar-3" class="notification-bar glass-effect detached rounded-m shadow-l" data-bs-delay="7000">
+		<div class="toast-header px-3 py-3">
+			<i class="bi bi-bell-fill pe-2 color-yellow-dark"></i>
+			<strong class="me-auto color-theme">Breaking News</strong>
+			<small>25 mins ago</small>
+			<button type="button" class="btn-close font-10 pe-2" data-bs-dismiss="toast" aria-label="Close"></button>
+		</div>
+		<div class="d-flex p-3 pb-0">
+			<div class="pe-2">
+				<i class="bi bi-check-circle-fill font-36 color-green-dark"></i>
+				<h3 class="pt-3">iOS 25 Released</h3>
+				<p class="mb-0">
+					The latest operating system for your Apple
+					device is available.
+				</p>
+			</div>
+			<div class="ms-auto">
+				<img src="images/pictures/23l.jpg" width="112" class="rounded-s" alt="img">
+			</div>
+		</div>
+		<a data-bs-dismiss="toast" href="#" class="p-3 color-red-dark font-11 pt-3 d-inline-block">Dismiss</a>
+		<a data-bs-dismiss="toast" href="#" class="p-3 color-blue-dark font-11 pt-3 d-inline-block float-end">Save for Later</a>
+	</div>
+
+	<!-- iOS Toast Bar-->
+	<div id="notification-bar-4" class="notification-bar glass-effect detached rounded-s shadow-l" data-bs-delay="5000">
+		<div class="toast-header px-3 py-2 bg-transparent">
+			<strong class="me-auto color-theme opacity-50 font-11">Messenger</strong>
+			<small>a few seconds ago</small>
+			<button type="button" class="btn-close font-8 pe-2" data-bs-dismiss="toast" aria-label="Close"></button>
+		</div>
+		<div class="toast-body px-3 py-3">
+			<div class="d-flex">
+				<div>
+					<img src="images/pictures/1s.jpg" width="25" class="rounded-xs me-2">
+				</div>
+				<div>
+					<h5 class="font-14 line-height-m">John Doe</h5>
+				</div>
+			</div>
+			<p class="font-12 pt-1 mb-3">
+				This looks so absolutely wonderful. It looks like a native Mobile notification.
+			</p>
+			<div class="divider mb-2"></div>
+			<div class="d-flex mb-n2">
+				<div class="m-auto font-12">
+					<a href="#" class="pe-3 color-theme opacity-70"><i class="bi bi-reply-fill font-13 mt-0 float-start pe-2" data-bs-dismiss="toast" aria-label="Close"></i>Reply</a>
+				</div>
+				<div class="m-auto font-12">
+					<a href="#" class="color-red-dark opacity-70"><i class="bi bi-x-circle-fill mt-0 font-10 pe-2 float-start" data-bs-dismiss="toast" aria-label="Close"></i>Dismiss</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- iOS Toast Bar-->
+	<div id="notification-bar-5" class="notification-bar glass-effect detached rounded-s shadow-l" data-bs-delay="15000">
+		<div class="toast-body px-3 py-3">
+			<div class="d-flex">
+				<div class="align-self-center">
+					<span class="icon icon-xxs rounded-xs bg-fade-red scale-box"><i class="bi bi-exclamation-triangle color-red-dark font-16"></i></span>
+				</div>
+				<div class="align-self-center">
+					<h5 class="font-16 ps-2 ms-1 mb-0">Action Required</h5>
+				</div>
+			</div>
+			<p class="font-12 pt-2 mb-3">
+				This notification requires that you manually dismiss it. It will not disappear on its own.
+			</p>
+			<a href="#" data-bs-dismiss="toast" class="btn btn-s text-uppercase rounded-xs font-11 font-700 btn-full btn-border border-fade-red color-red-dark" aria-label="Close">Dismiss</a>
+		</div>
+	</div>
+
+	<!-- iOS Toast Bar-->
+	<div id="notification-bar-5a" class="notification-bar bg-green-dark detached rounded-s shadow-l" data-bs-delay="15000">
+		<div class="toast-body px-3 py-3">
+			<div class="d-flex">
+				<div class="align-self-center">
+					<span class="icon icon-xxs rounded-xs bg-green-light scale-box"><i class="bi bi-check-circle-fill color-white font-16"></i></span>
+				</div>
+				<div class="align-self-center">
+					<h5 class="font-16 ps-2 ms-1 mb-0 color-white">Action Required</h5>
+				</div>
+			</div>
+			<p class="font-12 pt-2 mb-3 color-white opacity-80">
+				This notification requires that you manually dismiss it. It will not disappear on its own.
+			</p>
+			<a href="#" data-bs-dismiss="toast" class="btn btn-s text-uppercase rounded-xs font-11 font-700 btn-full bg-white color-black" aria-label="Close">Dismiss</a>
+		</div>
+	</div>
+
+	<!-- iOS Toast Bar-->
+	<div id="notification-bar-6" class="notification-bar bg-dark-dark detached rounded-s shadow-l" data-bs-delay="15000">
+		<div class="toast-body px-3 py-3">
+			<div class="d-flex">
+				<div class="align-self-center">
+					<span class="icon icon-xxs rounded-xl bg-fade2-green scale-box"><i class="bi bi-check-circle color-green-dark font-17"></i></span>
+				</div>
+				<div class="align-self-center">
+					<h5 class="font-16 ps-2 ms-1 mb-0 color-white">Call to Action</h5>
+				</div>
+			</div>
+			<p class="font-12 pt-2 mb-3 color-white opacity-70">
+				Please click a button to dismiss the notification. These are user action based.
+			</p>
+			<div class="row">
+				<div class="col-6">
+					<a href="#" data-bs-dismiss="toast" class="btn btn-s text-uppercase rounded-xs font-11 font-700 btn-full btn-border border-fade-green color-green-dark" aria-label="Close">Okay</a>
+				</div>
+				<div class="col-6">
+					<a href="#" data-bs-dismiss="toast" class="btn btn-s text-uppercase rounded-xs font-11 font-700 btn-full btn-border bg-green-dark color-green-dark" aria-label="Close">AWESOME</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</div>
+<!--End of Page ID-->
+
+<script src="scripts/bootstrap.min.js"></script>
+<script src="scripts/custom.js"></script>
+</body>

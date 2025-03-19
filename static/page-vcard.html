@@ -1,0 +1,231 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+<title>Duo Mobile PWA Kit</title>
+<link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="fonts/bootstrap-icons.css">
+<link rel="stylesheet" type="text/css" href="styles/style.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="manifest" href="_manifest.json">
+<meta id="theme-check" name="theme-color" content="#FFFFFF">
+<link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png"></head>
+
+<body class="theme-light">
+
+<div id="preloader"><div class="spinner-border color-highlight" role="status"></div></div>
+
+<div id="page">
+
+    <!-- Header -->
+    <div class="header-bar header-fixed header-app header-bar-detached">
+		<a data-back-button href="#"><i class="bi bi-caret-left-fill font-11 color-theme ps-2"></i></a>
+		<a href="#" class="header-title color-theme font-13">Back to Pages</a>
+		<a data-bs-toggle="offcanvas" data-bs-target="#menu-color" href="#"><i class="bi bi-palette-fill font-13 color-highlight"></i></a>
+		<a href="#" class="show-on-theme-light" data-toggle-theme><i class="bi bi-moon-fill font-13"></i></a>
+		<a href="#" class="show-on-theme-dark" data-toggle-theme ><i class="bi bi-lightbulb-fill color-yellow-dark font-13"></i></a>
+	</div>
+
+	<!-- Footer Bar-->
+    <div id="footer-bar" class="footer-bar footer-bar-detached">
+		<a href="index-pages.html" class="active-nav"><i class="bi bi-heart-fill font-15"></i><span>Pages</span></a>
+        <a href="index-components.html" ><i class="bi bi-star-fill font-17"></i><span>Features</span></a>
+        <a href="index.html"><i class="bi bi-house-fill font-16"></i><span>Home</span></a>
+        <a href="index-media.html"><i class="bi bi-image font-16"></i><span>Media</span></a>
+        <a href="#" data-bs-toggle="offcanvas" data-bs-target="#menu-main"><i class="bi bi-list"></i><span>Menu</span></a>
+    </div>
+
+	<!-- Main Sidebar-->
+	<div id="menu-main" data-menu-active="nav-pages" data-menu-load="menu-main.html"
+		style="width:280px;" class="offcanvas offcanvas-start offcanvas-detached rounded-m">
+	</div>
+	<!-- Menu Highlights-->
+	<div id="menu-color" data-menu-load="menu-highlights.html"
+		style="height:340px" class="offcanvas offcanvas-bottom offcanvas-detached rounded-m">
+	</div>
+
+    <!-- Your Page Content Goes Here-->
+    <div class="page-content header-clear-medium">
+
+		<div class="card card-style overflow-visible mt-4">
+			<div class="content text-center">
+				<img src="images/pictures/7s.jpg" width="120" class="mt-n5 mb-3 rounded-l shadow-l" alt="img">
+				<h5 class="color-highlight font-13 mb-0">Contact Info</h5>
+				<h1 class="font-700 font-30 pb-2">Karla Black</h1>
+				<p class="mb-3">
+					Get in touch. Here's my vCard. You can save it to your device.
+				</p>
+				<a href="scripts/vcard.vcf" class="default-link btn btn-s gradient-highlight shadow-bg shadow-bg-xs">Download vCard</a>
+			</div>
+		</div>
+
+
+		<div class="card card-style">
+			<div class="content">
+				<h5 class="color-highlight font-11 mb-n1">Tap to Call</h5>
+				<h1 class="font-700 pb-2">Phone</h1>
+				<p class="mb-3">
+					Tapping any field will have an action on your Mobile. Tap a field below to call the numbers.
+				</p>
+				<div class="divider my-3"></div>
+				<a href="tel:+1 234 567 890" class="default-link d-flex">
+					<div>
+						<span class="font-11 d-block mb-n2 opacity-50 color-theme">Mobile</span>
+						<span class="default-link d-block color-theme font-15 font-400">+1 234 567 890</span>
+					</div>
+					<div class="ms-auto align-self-center">
+						<i class="bi-telephone-fill color-theme opacity-30 pt-3 mt-1"></i>
+					</div>
+				</a>
+				<div class="divider my-3"></div>
+				<a href="tel:+2 234 567 890" class="default-link d-flex">
+					<div>
+						<span class="font-11 d-block mb-n2 opacity-50 color-theme">Office</span>
+						<span class="default-link d-block color-theme font-15 font-400">+2 234 567 890</span>
+					</div>
+					<div class="ms-auto align-self-center">
+						<i class="bi-briefcase-fill color-theme opacity-30 pt-3 mt-1"></i>
+					</div>
+				</a>
+				<div class="divider my-3"></div>
+				<a href="tel:+3 234 567 890" class="default-link d-flex">
+					<div>
+						<span class="font-11 d-block mb-n2 opacity-50 color-theme">Personal</span>
+						<span class="default-link d-block color-theme font-15 font-400">+3 234 567 890</span>
+					</div>
+					<div class="ms-auto align-self-center">
+						<i class="bi-person-circle color-theme opacity-30 pt-3 mt-1"></i>
+					</div>
+				</a>
+			</div>
+		</div>
+		<div class="card card-style">
+			<div class="content">
+				<h5 class="color-highlight font-11 mb-n1">Tap to get Directions</h5>
+				<h1 class="font-700 pb-2">Address</h1>
+				<p class="mb-3">
+					Tap a field below to open in your maps app.
+				</p>
+				<div class="divider my-3"></div>
+				<a href="https://www.google.com/maps/place/Envato/@-37.8172057,144.953734,17z/data=!3m2!4b1!5s0x6ad65d4dd5ac6fdb:0x84b4d146477d3888!4m5!3m4!1s0x6ad65d4c2b349649:0xb6899234e561db11!8m2!3d-37.81721!4d144.955928" class="default-link d-flex">
+					<div>
+						<span class="font-11 d-block mb-n2 opacity-50 color-theme">Headquarters</span>
+						<span class="default-link d-block color-theme font-15 font-400">Level 1, 121 King Street<br> Melbourne, Victoria, Australia</span>
+					</div>
+					<div class="ms-auto align-self-center">
+						<i class="bi-pin-map color-theme opacity-30 pt-4 mt-3"></i>
+					</div>
+				</a>
+			</div>
+		</div>
+		<div class="card card-style">
+			<div class="content">
+				<h5 class="color-highlight font-13 mb-n1">Tap to get Mail</h5>
+				<h1 class="font-700 pb-2">Email</h1>
+				<p class="mb-3">
+					Tap a field below to open in your email app.
+				</p>
+				<div class="divider my-3"></div>
+				<a href="mailto:home@domain.com" class="default-link d-flex">
+					<div>
+						<span class="font-11 d-block mb-n2 opacity-50 color-theme">Home</span>
+						<span class="default-link d-block color-theme font-15 font-400">home@domain.com</span>
+					</div>
+					<div class="ms-auto align-self-center">
+						<i class="bi-telephone-fill color-theme opacity-30 pt-3 mt-1"></i>
+					</div>
+				</a>
+				<div class="divider my-3"></div>
+				<a href="maillto:office@domain.com" class="default-link d-flex">
+					<div>
+						<span class="font-11 d-block mb-n2 opacity-50 color-theme">Office</span>
+						<span class="default-link d-block color-theme font-15 font-400">office@domain.com</span>
+					</div>
+					<div class="ms-auto align-self-center">
+						<i class="bi-briefcase-fill color-theme opacity-30 pt-3 mt-1"></i>
+					</div>
+				</a>
+				<div class="divider my-3"></div>
+				<a href="mailto:personal@domain.com" class="default-link d-flex">
+					<div>
+						<span class="font-11 d-block mb-n2 opacity-50 color-theme">Personal</span>
+						<span class="default-link d-block color-theme font-15 font-400">personal@domain.com</span>
+					</div>
+					<div class="ms-auto align-self-center">
+						<i class="bi-person-circle color-theme opacity-30 pt-3 mt-1"></i>
+					</div>
+				</a>
+			</div>
+		</div>
+		<div class="card card-style">
+			<div class="content">
+				<h5 class="color-highlight font-13 mb-n1">Tap to Visit</h5>
+				<h1 class="font-700 pb-2">Websites</h1>
+				<p class="mb-3">
+					Tap a field below to open in the address.
+				</p>
+				<div class="divider my-3"></div>
+				<a href="https://www.enableds.com" class="default-link d-flex">
+					<div>
+						<span class="font-11 d-block mb-n2 opacity-50 color-theme">URL</span>
+						<span class="default-link d-block color-theme font-15 font-400">https://enableds.com</span>
+					</div>
+					<div class="ms-auto align-self-center">
+						<i class="bi-globe color-theme opacity-30 pt-3 mt-1"></i>
+					</div>
+				</a>
+			</div>
+		</div>
+		<div class="card card-style">
+			<div class="content">
+				<h5 class="color-highlight font-13 mb-n1">Tap to get connect</h5>
+				<h1 class="font-700 pb-2">Social</h1>
+				<p class="mb-3">
+					Tap a field below to call the numbers.
+				</p>
+				<div class="divider my-3"></div>
+				<a href="https://www.facebook.com/enabled.labs" class="default-link d-flex">
+					<div>
+						<span class="font-11 d-block mb-n2 opacity-50 color-theme">Facebook</span>
+						<span class="default-link d-block color-theme font-15 font-400">karla.black</span>
+					</div>
+					<div class="ms-auto align-self-center">
+						<i class="bi-facebook color-theme opacity-30 pt-3 mt-1"></i>
+					</div>
+				</a>
+				<div class="divider my-3"></div>
+				<a href="https://twitter.com/iEnabled" class="default-link d-flex">
+					<div>
+						<span class="font-11 d-block mb-n2 opacity-50 color-theme">Twitter</span>
+						<span class="default-link d-block color-theme font-15 font-400">@karla.black</span>
+					</div>
+					<div class="ms-auto align-self-center">
+						<i class="bi-x font-20 color-theme opacity-30 pt-3 mt-1"></i>
+					</div>
+				</a>
+			</div>
+		</div>
+
+		<div class="card card-style py-3">
+			<div class="content px-2 text-center">
+				<h5 class="mb-n1 font-12 color-highlight font-700 text-uppercase">Time to Go Mobile</h5>
+				<h2>Get Duo Mobile Today</h2>
+				<p class="mb-3">
+					Start your next project with Duo and enjoy the power of a Progressive Web App.
+				</p>
+				<a href="https://1.envato.market/2ryjKA" target="_blank" class="default-link btn btn-m rounded-s gradient-highlight shadow-bg shadow-bg-s px-5 mb-0 mt-2">Get Duo Now</a>
+			</div>
+		</div>
+
+    </div>
+	<!-- End of Page Content-->
+</div>
+<!--End of Page ID-->
+
+<script src="scripts/bootstrap.min.js"></script>
+<script src="scripts/custom.js"></script>
+</body>

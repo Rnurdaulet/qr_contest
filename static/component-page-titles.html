@@ -1,0 +1,211 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+<title>Duo Mobile PWA Kit</title>
+<link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="fonts/bootstrap-icons.css">
+<link rel="stylesheet" type="text/css" href="styles/style.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="manifest" href="_manifest.json">
+<meta id="theme-check" name="theme-color" content="#FFFFFF">
+<link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png"></head>
+
+<body class="theme-light">
+
+<div id="preloader"><div class="spinner-border color-highlight" role="status"></div></div>
+
+<div id="page">
+
+    <!-- Header -->
+    <div class="header-bar header-fixed header-app header-bar-detached">
+		<a data-back-button href="#"><i class="bi bi-caret-left-fill font-11 color-theme ps-2"></i></a>
+		<a href="#" class="header-title color-theme font-13">Back to Components</a>
+		<a data-bs-toggle="offcanvas" data-bs-target="#menu-color" href="#"><i class="bi bi-palette-fill font-13 color-highlight"></i></a>
+		<a href="#" class="show-on-theme-light" data-toggle-theme><i class="bi bi-moon-fill font-13"></i></a>
+		<a href="#" class="show-on-theme-dark" data-toggle-theme ><i class="bi bi-lightbulb-fill color-yellow-dark font-13"></i></a>
+	</div>
+
+	<!-- Footer Bar-->
+    <div id="footer-bar" class="footer-bar footer-bar-detached">
+		<a href="index-pages.html"><i class="bi bi-heart-fill font-15"></i><span>Pages</span></a>
+        <a href="index-components.html" class="active-nav"><i class="bi bi-star-fill font-17"></i><span>Features</span></a>
+        <a href="index.html"><i class="bi bi-house-fill font-16"></i><span>Home</span></a>
+        <a href="index-media.html"><i class="bi bi-image font-16"></i><span>Media</span></a>
+        <a href="#" data-bs-toggle="offcanvas" data-bs-target="#menu-main"><i class="bi bi-list"></i><span>Menu</span></a>
+    </div>
+
+	<!-- Main Sidebar-->
+	<div id="menu-main" data-menu-active="nav-comps" data-menu-load="menu-main.html"
+		style="width:280px;" class="offcanvas offcanvas-start offcanvas-detached rounded-m">
+	</div>
+	<!-- Menu Highlights-->
+	<div id="menu-color" data-menu-load="menu-highlights.html"
+		style="height:340px" class="offcanvas offcanvas-bottom offcanvas-detached rounded-m">
+	</div>
+
+    <!-- Your Page Content Goes Here-->
+    <div class="page-content header-clear-medium">
+
+		<div class="card card-style">
+			<div class="content">
+				<p class="mb-n1 font-700 font-11 text-uppercase color-highlight">Page Titles</p>
+				<h4 class="font-800">Duo is Awesome</h4>
+				<p class="mb-0">
+					Create awesome Page Titles and Content Titles for your page. We've included a few awesome
+					examples for you.
+				</p>
+			</div>
+		</div>
+
+		<div class="card card-style">
+			<div class="content">
+				<div class="d-flex">
+					<div>
+						<p class="mb-n1 font-700 font-11 text-uppercase color-highlight">Page Titles</p>
+						<h4 class="font-800">Duo is Awesome</h4>
+					</div>
+					<div class="ms-auto">
+						<a href="#" data-auto-hide-target="#menu-heart" data-auto-hide-time="1500" class="icon icon-xs gradient-red rounded-s"><i class="bi bi-heart-fill color-white "></i></a>
+					</div>
+				</div>
+				<p class="mb-0">
+					Create awesome Page Titles and Content Titles for your page. We've included a few awesome
+					examples for you.
+				</p>
+			</div>
+		</div>
+
+		<div class="card card-style">
+			<div class="content">
+				<div class="d-flex pb-2">
+					<div class="align-self-center pe-3">
+						<a href="#" class="icon icon-xs gradient-dark rounded-s"><i class="bi bi-chevron-left color-white"></i></a>
+					</div>
+					<div class="align-self-center">
+						<p class="mb-n2 font-700 font-11 text-uppercase color-highlight">Tap and Share</p>
+						<h4 class="font-800 mb-0">Components</h4>
+					</div>
+					<div class="align-self-center ms-auto">
+						<a href="#" data-bs-toggle="offcanvas" data-bs-target="#menu-notifications" class="icon icon-xs gradient-yellow rounded-s"><i class="bi bi-bell-fill font-14 color-white"></i></a>
+					</div>
+					<div class="align-self-center ms-2">
+						<a href="#" data-bs-toggle="offcanvas" data-bs-target="#menu-share" class="icon icon-xs gradient-blue rounded-s"><i class="bi bi-share-fill font-12 color-white"></i></a>
+					</div>
+				</div>
+				<p class="mb-0">
+					Create awesome Page Titles and Content Titles for your page. We've included a few awesome
+					examples for you.
+				</p>
+			</div>
+		</div>
+
+		<div class="card card-style">
+			<div class="content">
+				<div class="d-flex pb-2">
+					<div class="align-self-center pe-3">
+						<a href="#" data-bs-toggle="offcanvas" data-bs-target="#menu-main" class="icon icon-xs gradient-blue rounded-s"><i class="bi bi-list color-white font-18"></i></a>
+					</div>
+					<div class="align-self-center">
+						<p class="mb-n2 font-700 font-11 text-uppercase color-highlight">Meet the Best</p>
+						<h4 class="font-800 mb-0">Duo PWA</h4>
+					</div>
+					<div class="align-self-center ms-auto">
+						<a href="#" data-bs-toggle="offcanvas" data-bs-target="#menu-share" class="icon icon-xs gradient-green rounded-s"><i class="bi bi-share-fill color-white"></i></a>
+					</div>
+				</div>
+				<p class="mb-0">
+					Create awesome Page Titles and Content Titles for your page. We've included a few awesome
+					examples for you.
+				</p>
+			</div>
+		</div>
+
+		<div class="card card-style py-3">
+			<div class="content px-2 text-center">
+				<h5 class="mb-n1 font-12 color-highlight font-700 text-uppercase">Time to Go Mobile</h5>
+				<h2>Get Duo Mobile Today</h2>
+				<p class="mb-3">
+					Start your next project with Duo and enjoy the power of a Progressive Web App.
+				</p>
+				<a href="https://1.envato.market/2ryjKA" target="_blank" class="default-link btn btn-m rounded-s gradient-highlight shadow-bg shadow-bg-s px-5 mb-0 mt-2">Get Duo Now</a>
+			</div>
+		</div>
+
+    </div>
+	<!-- End of Page Content-->
+
+
+	<!-- Share -->
+   <div class="offcanvas offcanvas-bottom rounded-m offcanvas-detached bg-theme" id="menu-share">
+		<div class="content mt-3">
+			<div class="d-flex pb-2">
+				<div class="align-self-center">
+					<h5 class="mb-n1 font-12 color-highlight font-700 text-uppercase pt-1">Just tap and</h5>
+					<h1 class="font-700">Share Duo</h1>
+				</div>
+				<div class="align-self-center ms-auto">
+					<a href="#"  data-bs-dismiss="offcanvas" class="icon icon-m"><i class="bi bi-x-circle-fill color-red-dark font-18 me-n4"></i></a>
+				</div>
+			</div>
+			<div class="list-group list-custom list-group-m rounded-xs list-group-flush bg-theme">
+				<a href="auto_generated" class="shareToFacebook list-group-item">
+					<i class="bi bi-facebook color-facebook font-16"></i>
+					<div>Facebook</div>
+					<i class="bi bi-chevron-right pe-1"></i>
+				</a>
+				<a href="auto_generated" class="shareToTwitter list-group-item">
+					<i class="bi bi-twitter color-twitter font-16"></i>
+					<div>Twitter</div>
+					<i class="bi bi-chevron-right pe-1"></i>
+				</a>
+				<a href="auto_generated" class="shareToLinkedIn list-group-item">
+					<i class="bi bi-linkedin color-linkedin font-16"></i>
+					<div>LinkedIn</div>
+					<i class="bi bi-chevron-right pe-1"></i>
+				</a>
+				<a href="auto_generated" class="shareToPinterest list-group-item">
+					<i class="bi bi-pinterest color-pinterest font-16"></i>
+					<div>Pinterest</div>
+					<i class="bi bi-chevron-right pe-1"></i>
+				</a>
+				<a href="auto_generated" class="shareToWhatsApp list-group-item">
+					<i class="bi bi-whatsapp color-whatsapp font-16"></i>
+					<div>WhatsApp</div>
+					<i class="bi bi-chevron-right pe-1"></i>
+				</a>
+				<a href="auto_generated" class="shareToMail list-group-item">
+					<i class="bi bi-envelope-open-fill color-blue-dark font-16"></i>
+					<div>Mail</div>
+					<i class="bi bi-chevron-right pe-1"></i>
+				</a>
+			</div>
+		</div>
+   </div>
+
+   <!-- Main Bell-->
+   <div id="menu-notifications"	data-menu-load="menu-bell.html"
+	   style="height:400px;" class="offcanvas offcanvas-top offcanvas-detached rounded-m">
+   </div>
+
+   <!-- Main Bell-->
+   <div id="menu-heart" style="height:150px; width:150px;" class="offcanvas offcanvas-modal offcanvas-detached rounded-m">
+	   <div class="card card-style m-0" style="height:150px">
+		   <div class="card-center text-center">
+			   <i class="bi bi-heart-fill font-50 color-red-dark"></i>
+			   <h4 class="pt-3 mb-0">Loved</h4>
+		   </div>
+	   </div>
+   </div>
+
+
+</div>
+<!--End of Page ID-->
+
+<script src="scripts/bootstrap.min.js"></script>
+<script src="scripts/custom.js"></script>
+</body>

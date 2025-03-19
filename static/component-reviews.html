@@ -1,0 +1,281 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+<title>Duo Mobile PWA Kit</title>
+<link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="fonts/bootstrap-icons.css">
+<link rel="stylesheet" type="text/css" href="styles/style.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="manifest" href="_manifest.json">
+<meta id="theme-check" name="theme-color" content="#FFFFFF">
+<link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png"></head>
+
+<body class="theme-light">
+
+<div id="preloader"><div class="spinner-border color-highlight" role="status"></div></div>
+
+<div id="page">
+
+    <!-- Header -->
+    <div class="header-bar header-fixed header-app header-bar-detached">
+		<a data-back-button href="#"><i class="bi bi-caret-left-fill font-11 color-theme ps-2"></i></a>
+		<a href="#" class="header-title color-theme font-13">Back to Components</a>
+		<a data-bs-toggle="offcanvas" data-bs-target="#menu-color" href="#"><i class="bi bi-palette-fill font-13 color-highlight"></i></a>
+		<a href="#" class="show-on-theme-light" data-toggle-theme><i class="bi bi-moon-fill font-13"></i></a>
+		<a href="#" class="show-on-theme-dark" data-toggle-theme ><i class="bi bi-lightbulb-fill color-yellow-dark font-13"></i></a>
+	</div>
+
+	<!-- Footer Bar-->
+    <div id="footer-bar" class="footer-bar footer-bar-detached">
+		<a href="index-pages.html"><i class="bi bi-heart-fill font-15"></i><span>Pages</span></a>
+        <a href="index-components.html" class="active-nav"><i class="bi bi-star-fill font-17"></i><span>Features</span></a>
+        <a href="index.html"><i class="bi bi-house-fill font-16"></i><span>Home</span></a>
+        <a href="index-media.html"><i class="bi bi-image font-16"></i><span>Media</span></a>
+        <a href="#" data-bs-toggle="offcanvas" data-bs-target="#menu-main"><i class="bi bi-list"></i><span>Menu</span></a>
+    </div>
+
+	<!-- Main Sidebar-->
+	<div id="menu-main" data-menu-active="nav-comps" data-menu-load="menu-main.html"
+		style="width:280px;" class="offcanvas offcanvas-start offcanvas-detached rounded-m">
+	</div>
+	<!-- Menu Highlights-->
+	<div id="menu-color" data-menu-load="menu-highlights.html"
+		style="height:340px" class="offcanvas offcanvas-bottom offcanvas-detached rounded-m">
+	</div>
+
+    <!-- Your Page Content Goes Here-->
+    <div class="page-content header-clear-medium">
+
+		<div class="card card-style">
+			<div class="content">
+				<h6 class="font-700 mb-n1 color-highlight">Feedback</h6>
+				<h1 class="pb-2">Reviews</h1>
+				<p>
+					Showcase your customers opinions about your products, with the most gorgeous mobile review designs.
+				</p>
+			</div>
+		</div>
+
+		<div class="card card-style">
+			<div class="content">
+				<h3 class="text-center mb-0">Customer Reactions</h3>
+				<p class="text-center font-11 mt-n1 mb-3">How our customers feel about our services</p>
+				<div class="d-flex">
+					<div class="m-auto text-center">
+						<h1 class="font-30">😍</h1>
+						<strong class="font-12 opacity-70 color-theme">55%</strong>
+					</div>
+					<div class="m-auto text-center">
+						<h1 class="font-30">😃</h1>
+						<strong class="font-12 opacity-70 color-theme">10%</strong>
+					</div>
+					<div class="m-auto text-center">
+						<h1 class="font-30">😐</h1>
+						<strong class="font-12 opacity-70 color-theme">14%</strong>
+					</div>
+					<div class="m-auto text-center">
+						<h1 class="font-30">☹️</h1>
+						<strong class="font-12 opacity-70 color-theme">10%</strong>
+					</div>
+					<div class="m-auto text-center">
+						<h1 class="font-30">😡</h1>
+						<strong class="font-12 opacity-70 color-theme">11%</strong>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<div class="card card-style">
+			<div class="content">
+				<h1 class="text-center mb-0 font-900 font-30">4.73</h1>
+				<p class="mb-2 mt-0 text-center font-10 opacity-50">Based on 40 Customer Ratings</p>
+				<div class="rounded-xl text-center pb-3">
+					<i class="font-18 color-yellow-dark px-1 bi bi-star-fill"></i>
+					<i class="font-18 color-yellow-dark px-1 bi bi-star-fill"></i>
+					<i class="font-18 color-yellow-dark px-1 bi bi-star-fill"></i>
+					<i class="font-18 color-yellow-dark px-1 bi bi-star-fill"></i>
+					<i class="font-18 color-gray-dark px-1 bi bi-star-fill"></i>
+				</div>
+				<div class="d-flex">
+					<div class="flex-grow-1 w-25 align-self-center"><strong class="color-theme">Perfect</strong></div>
+					<div class="w-75 align-self-center">
+						<div class="ms-2 progress rounded-m" style="height:8px">
+							<div class="progress-bar bg-green-dark" role="progressbar" style="width: 53%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+						</div>
+					</div>
+					<div class="align-self-center"><strong class="color-theme ps-3">53%</strong></div>
+				</div>
+				<div class="d-flex">
+					<div class="flex-grow-1 w-25 align-self-center"><strong class="color-theme">Good</strong></div>
+					<div class="w-75 align-self-center">
+						<div class="ms-2 progress rounded-m" style="height:8px">
+							<div class="progress-bar bg-green-light" role="progressbar" style="width: 25%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+						</div>
+					</div>
+					<div class="align-self-center"><strong class="color-theme ps-3">25%</strong></div>
+				</div>
+				<div class="d-flex">
+					<div class="flex-grow-1 w-25 align-self-center"><strong class="color-theme">Average</strong></div>
+					<div class="w-75 align-self-center">
+						<div class="ms-2 progress rounded-m" style="height:8px">
+							<div class="progress-bar bg-yellow-dark" role="progressbar" style="width: 18%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+						</div>
+					</div>
+					<div class="align-self-center"><strong class="color-theme ps-3">18%</strong></div>
+				</div>
+				<div class="d-flex">
+					<div class="flex-grow-1 w-25 align-self-center"><strong class="color-theme">Bad</strong></div>
+					<div class="w-75 align-self-center">
+						<div class="ms-2 progress rounded-m" style="height:8px">
+							<div class="progress-bar bg-orange-light" role="progressbar" style="width: 9%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+						</div>
+					</div>
+					<div class="align-self-center"><strong class="color-theme ps-3">9%</strong></div>
+				</div>
+				<div class="d-flex">
+					<div class="flex-grow-1 w-25 align-self-center"><strong class="color-theme">Horible</strong></div>
+					<div class="w-75 align-self-center">
+						<div class="ms-2 progress rounded-m" style="height:8px">
+							<div class="progress-bar bg-red-dark" role="progressbar" style="width: 7%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+						</div>
+					</div>
+					<div class="align-self-center"><strong class="color-theme ps-3">2%</strong></div>
+				</div>
+
+				<div class="divider mt-3"></div>
+				<div class="mb-4">
+					<div class="d-flex">
+						<div>
+							<img src="images/pictures/1s.jpg" width="40" class="rounded-m me-2">
+						</div>
+						<div>
+							<h6 class="font-12 mb-n1">Jack Son</h6>
+							<i class="bi bi-star-fill color-yellow-dark"></i>
+							<i class="bi bi-star-fill color-yellow-dark"></i>
+							<i class="bi bi-star-fill color-yellow-dark"></i>
+							<i class="bi bi-star-fill color-yellow-dark"></i>
+							<i class="bi bi-star-fill color-yellow-dark"></i>
+							<strong class="color-theme opacity-30 ps-2">5.0</strong>
+						</div>
+						<div class="ms-auto align-self-end">
+							<strong class="color-theme font-10">1 day ago</strong>
+						</div>
+					</div>
+					<p class="line-height-m pt-2">
+						Probably the best item I've ever worked with. The customer support is outstanding
+						and there are so many options! Highlight recommended.
+					</p>
+				</div>
+				<div>
+					<div class="d-flex">
+						<div>
+							<img src="images/pictures/2s.jpg" width="40" class="rounded-m me-2">
+						</div>
+						<div>
+							<h6 class="font-12 mb-n1">Diane Doeson</h6>
+							<i class="bi bi-star-fill color-yellow-dark"></i>
+							<i class="bi bi-star-fill color-yellow-dark"></i>
+							<i class="bi bi-star-fill color-yellow-dark"></i>
+							<i class="bi bi-star-fill color-yellow-dark"></i>
+							<i class="bi bi-star-fill color-yellow-dark"></i>
+							<strong class="color-theme opacity-30 ps-2">4.5</strong>
+						</div>
+						<div class="ms-auto align-self-end">
+							<strong class="color-theme font-10">1 day ago</strong>
+						</div>
+					</div>
+					<p class="line-height-m pt-2">
+						Loved every part of it. However, I had a problem while downloading
+						which really annoyed me. Everything else was perfect.
+					</p>
+				</div>
+
+			</div>
+		</div>
+
+		<div class="card card-style">
+			<div class="content">
+				<h3 class="text-center mb-0">Customer Reviews</h3>
+				<p class="text-center font-12 mt-n1 mb-3">What our customers are saying</p>
+				<div class="rounded-xl text-center bg-fade2-gray py-2 px-2 align-middle">
+					<i class="font-16 color-yellow-dark px-1 bi bi-star-fill"></i>
+					<i class="font-16 color-yellow-dark px-1 bi bi-star-fill"></i>
+					<i class="font-16 color-yellow-dark px-1 bi bi-star-fill"></i>
+					<i class="font-16 color-yellow-dark px-1 bi bi-star-fill"></i>
+					<i class="font-16 color-yellow-dark px-1 bi bi-star-fill"></i>
+					<strong class="ps-2 font-11 color-theme">4.75 out of 5.00</strong>
+				</div>
+				<p class="mb-3 mt-3 text-center font-10 opacity-50">Calculated based on 40 Customer Ratings</p>
+				<div class="d-flex">
+					<div class="flex-grow-1 w-25 align-self-center"><strong class="color-theme">5 Stars</strong></div>
+					<div class="w-75 align-self-center">
+						<div class="progress rounded-m" style="height:8px">
+							<div class="progress-bar bg-yellow-dark" role="progressbar" style="width: 73%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+						</div>
+					</div>
+					<div class="align-self-center"><strong class="color-theme ps-3">73%</strong></div>
+				</div>
+				<div class="d-flex pt-1">
+					<div class="flex-grow-1 w-25 align-self-center"><strong class="color-theme">4 Stars</strong></div>
+					<div class="w-75 align-self-center">
+						<div class="progress rounded-m" style="height:8px">
+							<div class="progress-bar bg-yellow-dark" role="progressbar" style="width: 15%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+						</div>
+					</div>
+					<div class="align-self-center"><strong class="color-theme ps-3">15%</strong></div>
+				</div>
+				<div class="d-flex pt-1">
+					<div class="flex-grow-1 w-25 align-self-center"><strong class="color-theme">3 Stars</strong></div>
+					<div class="w-75 align-self-center">
+						<div class="progress rounded-m" style="height:8px">
+							<div class="progress-bar bg-yellow-dark" role="progressbar" style="width: 8%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+						</div>
+					</div>
+					<div class="align-self-center"><strong class="color-theme ps-3">1%</strong></div>
+				</div>
+				<div class="d-flex pt-1">
+					<div class="flex-grow-1 w-25 align-self-center"><strong class="color-theme">2 Stars</strong></div>
+					<div class="w-75 align-self-center">
+						<div class="progress rounded-m" style="height:8px">
+							<div class="progress-bar bg-yellow-dark" role="progressbar" style="width: 9%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+						</div>
+					</div>
+					<div class="align-self-center"><strong class="color-theme ps-3">9%</strong></div>
+				</div>
+				<div class="d-flex pt-1">
+					<div class="flex-grow-1 w-25 align-self-center"><strong class="color-theme">1 Stars</strong></div>
+					<div class="w-75 align-self-center">
+						<div class="progress rounded-m" style="height:8px">
+							<div class="progress-bar bg-yellow-dark" role="progressbar" style="width: 7%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+						</div>
+					</div>
+					<div class="align-self-center"><strong class="color-theme ps-3">2%</strong></div>
+				</div>
+			</div>
+		</div>
+
+		<div class="card card-style py-3">
+			<div class="content px-2 text-center">
+				<h5 class="mb-n1 font-12 color-highlight font-700 text-uppercase">Time to Go Mobile</h5>
+				<h2>Get Duo Mobile Today</h2>
+				<p class="mb-3">
+					Start your next project with Duo and enjoy the power of a Progressive Web App.
+				</p>
+				<a href="https://1.envato.market/2ryjKA" target="_blank" class="default-link btn btn-m rounded-s gradient-highlight shadow-bg shadow-bg-s px-5 mb-0 mt-2">Get Duo Now</a>
+			</div>
+		</div>
+
+    </div>
+	<!-- End of Page Content-->
+</div>
+<!--End of Page ID-->
+
+<script src="scripts/bootstrap.min.js"></script>
+<script src="scripts/custom.js"></script>
+</body>

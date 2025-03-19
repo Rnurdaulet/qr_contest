@@ -1,0 +1,173 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+<title>Duo Mobile PWA Kit</title>
+<link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="fonts/bootstrap-icons.css">
+<link rel="stylesheet" type="text/css" href="styles/style.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="manifest" href="_manifest.json">
+<meta id="theme-check" name="theme-color" content="#FFFFFF">
+<link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png"></head>
+
+<body class="theme-light">
+
+<div id="preloader"><div class="spinner-border color-highlight" role="status"></div></div>
+
+<div id="page">
+
+    <!-- Header -->
+    <div class="header-bar header-fixed header-app header-bar-detached">
+		<a data-back-button href="#"><i class="bi bi-caret-left-fill font-11 color-theme ps-2"></i></a>
+		<a href="#" class="header-title color-theme font-13">Back to Pages</a>
+		<a data-bs-toggle="offcanvas" data-bs-target="#menu-color" href="#"><i class="bi bi-palette-fill font-13 color-highlight"></i></a>
+		<a href="#" class="show-on-theme-light" data-toggle-theme><i class="bi bi-moon-fill font-13"></i></a>
+		<a href="#" class="show-on-theme-dark" data-toggle-theme ><i class="bi bi-lightbulb-fill color-yellow-dark font-13"></i></a>
+	</div>
+
+	<!-- Footer Bar-->
+    <div id="footer-bar" class="footer-bar footer-bar-detached">
+		<a href="index-pages.html" class="active-nav"><i class="bi bi-heart-fill font-15"></i><span>Pages</span></a>
+        <a href="index-components.html" ><i class="bi bi-star-fill font-17"></i><span>Features</span></a>
+        <a href="index.html"><i class="bi bi-house-fill font-16"></i><span>Home</span></a>
+        <a href="index-media.html"><i class="bi bi-image font-16"></i><span>Media</span></a>
+        <a href="#" data-bs-toggle="offcanvas" data-bs-target="#menu-main"><i class="bi bi-list"></i><span>Menu</span></a>
+    </div>
+
+	<!-- Main Sidebar-->
+	<div id="menu-main" data-menu-active="nav-pages" data-menu-load="menu-main.html"
+		style="width:280px;" class="offcanvas offcanvas-start offcanvas-detached rounded-m">
+	</div>
+	<!-- Menu Highlights-->
+	<div id="menu-color" data-menu-load="menu-highlights.html"
+		style="height:340px" class="offcanvas offcanvas-bottom offcanvas-detached rounded-m">
+	</div>
+
+    <!-- Your Page Content Goes Here-->
+    <div class="page-content header-clear-medium">
+
+		<div class="card card-style bg-3 shadow-card shadow-card-l" data-card-height="150"> 
+			<div class="card-top text-end p-3">
+				<h1 class="color-white font-24">1/5</h1>
+				<p class="font-8 color-white mt-n3">Complete</p>
+			</div>
+			<div class="card-bottom p-3">
+				<h1 class="color-white mb-n1">Focus on your Goals</h1>
+				<p class="color-white mb-0 opacity-40">Your goals are here. Any style, any design.</p>
+			</div>
+			<div class="card-overlay bg-gradient-fade"></div>
+		</div>
+		
+		<div class="row text-center">
+			<div class="col-6 mb-n2">
+				<a href="#" class="card card-style me-0" style="height:170px">
+					<div class="card-top mt-4">
+						<span class="icon icon-l rounded-m gradient-green shadow-bg shadow-bg-xs"><i class="bi bi-truck font-24 color-white"></i></span>
+						<h1 class="font-22 pt-3 line-height-m">New Truck</h1>
+					</div>
+					<div class="card-bottom mx-3 mb-3">
+						<div class="progress rounded-xs bg-theme border border-green-light" style="height:20px">
+							<div class="progress-bar gradient-green text-start ps-3 font-600 font-10" role="progressbar" 
+								style="width: 84%" aria-valuenow="29" aria-valuemin="0" aria-valuemax="100">
+								84%
+							</div>
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="col-6 mb-n2">
+				<a href="#" class="card card-style ms-0" style="height:170px">
+					<div class="card-top mt-4">
+						<span class="icon icon-xl rounded-m gradient-orange shadow-bg shadow-bg-xs"><i class="bi bi-house font-24 color-white"></i></span>
+						<h1 class="font-22 pt-3">New House</h1>
+					</div>
+					<div class="card-bottom mx-3 mb-3">
+						<div class="progress rounded-xs bg-theme border border-blue-light" style="height:20px">
+							<div class="progress-bar gradient-blue text-start ps-3 font-600 font-10" role="progressbar" 
+								style="width: 64%" aria-valuenow="29" aria-valuemin="0" aria-valuemax="100">
+								64%
+							</div>
+						</div>
+					</div>
+				</a>
+			</div>
+		</div>
+
+		<div class="card card-style">
+			<div class="content">
+				<div class="d-flex">
+					<div>
+						<h6 class="opacity-30 mb-n1">Entertainment</h6>
+						<h3 class="mb-2">Gaming Console</h3>
+					</div>
+					<div class="align-self-end ms-auto">
+						<h3 class="mb-2">$1.499</h3>
+					</div>
+				</div>
+				<div class="progress rounded-xs bg-theme border border-blue-light" style="height:35px">
+					<div class="progress-bar gradient-blue text-start ps-3 font-600 font-10" role="progressbar" 
+						style="width: 78%" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100">
+						78%
+					</div>
+				</div>
+				<div class="d-flex mt-3">
+					<div>
+						<h6 class="opacity-30 mb-n1">Entertainment</h6>
+						<h3 class="mb-2">iPhone Fold</h3>
+					</div>
+					<div class="align-self-end ms-auto">
+						<h3 class="mb-2">$5.499</h3>
+					</div>
+				</div>
+				<div class="progress rounded-xs bg-theme border border-green-light" style="height:35px">
+					<div class="progress-bar gradient-green text-start ps-3 font-600 font-10" role="progressbar" 
+						style="width: 85%" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100">
+						85%
+					</div>
+				</div>
+				<div class="d-flex mt-3">
+					<div>
+						<h6 class="opacity-30 mb-n1">Long Term</h6>
+						<h3 class="mb-2">Vacation</h3>
+					</div>
+					<div class="align-self-end ms-auto">
+						<h3 class="mb-2">$4.999</h3>
+					</div>
+				</div>
+				<div class="progress rounded-xs bg-theme border border-yellow-light" style="height:35px">
+					<div class="progress-bar gradient-yellow text-start ps-3 font-600 font-10" role="progressbar" 
+						style="width: 53%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+						53%
+					</div>
+				</div>
+
+			</div>
+		</div>
+		
+		<a href="component-progress.html" class="btn btn-m btn-full mx-3 gradient-highlight shadow-bg shadow-bg-s mb-4">More Progress Components</a>
+
+
+		<div class="card card-style py-3">
+			<div class="content px-2 text-center">
+				<h5 class="mb-n1 font-12 color-highlight font-700 text-uppercase">Time to Go Mobile</h5>
+				<h2>Get Duo Mobile Today</h2>
+				<p class="mb-3">
+					Start your next project with Duo and enjoy the power of a Progressive Web App.
+				</p>
+				<a href="https://1.envato.market/2ryjKA" target="_blank" class="default-link btn btn-m rounded-s gradient-highlight shadow-bg shadow-bg-s px-5 mb-0 mt-2">Get Duo Now</a>
+			</div>
+		</div>
+
+    </div>
+	<!-- End of Page Content-->
+</div>
+<!--End of Page ID-->
+
+<script src="scripts/bootstrap.min.js"></script>
+<script src="scripts/custom.js"></script>
+</body>

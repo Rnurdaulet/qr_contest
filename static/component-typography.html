@@ -1,0 +1,197 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+<title>Duo Mobile PWA Kit</title>
+<link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="fonts/bootstrap-icons.css">
+<link rel="stylesheet" type="text/css" href="styles/style.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="manifest" href="_manifest.json">
+<meta id="theme-check" name="theme-color" content="#FFFFFF">
+<link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png"></head>
+
+<body class="theme-light">
+
+<div id="preloader"><div class="spinner-border color-highlight" role="status"></div></div>
+
+<div id="page">
+
+    <!-- Header -->
+    <div class="header-bar header-fixed header-app header-bar-detached">
+		<a data-back-button href="#"><i class="bi bi-caret-left-fill font-11 color-theme ps-2"></i></a>
+		<a href="#" class="header-title color-theme font-13">Back to Components</a>
+		<a data-bs-toggle="offcanvas" data-bs-target="#menu-color" href="#"><i class="bi bi-palette-fill font-13 color-highlight"></i></a>
+		<a href="#" class="show-on-theme-light" data-toggle-theme><i class="bi bi-moon-fill font-13"></i></a>
+		<a href="#" class="show-on-theme-dark" data-toggle-theme ><i class="bi bi-lightbulb-fill color-yellow-dark font-13"></i></a>
+	</div>
+
+	<!-- Footer Bar-->
+    <div id="footer-bar" class="footer-bar footer-bar-detached">
+		<a href="index-pages.html"><i class="bi bi-heart-fill font-15"></i><span>Pages</span></a>
+        <a href="index-components.html" class="active-nav"><i class="bi bi-star-fill font-17"></i><span>Features</span></a>
+        <a href="index.html"><i class="bi bi-house-fill font-16"></i><span>Home</span></a>
+        <a href="index-media.html"><i class="bi bi-image font-16"></i><span>Media</span></a>
+        <a href="#" data-bs-toggle="offcanvas" data-bs-target="#menu-main"><i class="bi bi-list"></i><span>Menu</span></a>
+    </div>
+
+	<!-- Main Sidebar-->
+	<div id="menu-main" data-menu-active="nav-comps" data-menu-load="menu-main.html"
+		style="width:280px;" class="offcanvas offcanvas-start offcanvas-detached rounded-m">
+	</div>
+	<!-- Menu Highlights-->
+	<div id="menu-color" data-menu-load="menu-highlights.html"
+		style="height:340px" class="offcanvas offcanvas-bottom offcanvas-detached rounded-m">
+	</div>
+
+    <!-- Your Page Content Goes Here-->
+    <div class="page-content header-clear-medium">
+
+		<div class="card card-style">
+			<div class="content">
+				<h6 class="font-700 mb-n1 color-highlight">Text and Content</h6>
+				<h1 class="pb-2">Typography</h1>
+				<p class="mb-0">
+					Elements required for any page to create beautiful, legible and easy to follow content.
+				</p>
+			</div>
+		</div>
+
+		<div class="card card-style">
+			<div class="row mb-0">
+				<div class="col pe-0">
+					<div class="content pb-0">
+						<h1 class="mb-0">H1</h1>
+						<p class="pb-4 mb-0">This is an example of heading one</p>
+						<h2 class="mb-0">H2</h2>
+						<p class="pb-4 mb-0">This is an example of heading two.</p>
+						<h3 class="mb-0">H3</h3>
+						<p class="pb-4 mb-0">This is an example of heading three.</p>
+						<h4 class="mb-0">H4</h4>
+						<p class="pb-4 mb-0">This is an example of heading four.</p>
+						<h5 class="mb-0">H5</h5>
+						<p class="pb-0">This is an example of heading five.</p>
+					</div>
+				</div>
+				<div class="col ps-0">
+					<div class="content pb-0">
+						<h1 class="mb-0">H1 - <span class="badge bg-highlight color-white">h1</span></h1>
+						<p class="pb-4 mb-0">This is an example of heading one.</p>
+						<h2 class="mb-0">H2 - <span class="badge bg-highlight color-white">h2</span></h2>
+						<p class="pb-4 mb-0">This is an example of heading two. </p>
+						<h3 class="mb-0">H3 - <span class="badge bg-highlight color-white">h3</span></h3>
+						<p class="pb-4 mb-0">This is an example of heading three.</p>
+						<h4 class="mb-0">H4 - <span class="badge bg-highlight color-white">h4</span></h4>
+						<p class="pb-4 mb-0">This is an example of heading four. </p>
+						<h5 class="mb-0">H5- <span class="badge bg-highlight color-white">h5</span></h5>
+						<p class="pb-0">This is an example of heading five.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="card card-style">
+			<div class="content">
+				<h3>Contrasts</h3>
+				<p>
+					Let's say you have a very light text on a dark background. Here is where contrasts are perfect.
+				</p>
+				<p class="opacity-90 mb-0">I'm set to 90% opacity.</p>
+				<p class="opacity-80 mb-0">I'm set to 80% opacity.</p>
+				<p class="opacity-70 mb-0">I'm set to 70% opacity.</p>
+				<p class="opacity-60 mb-0">I'm set to 60% opacity.</p>
+				<p class="opacity-50 mb-0">I'm set to 50% opacity.</p>
+				<p class="opacity-40 mb-0">I'm set to 40% opacity.</p>
+				<p class="opacity-30 mb-0">I'm set to 30% opacity.</p>
+				<p class="opacity-20 mb-0">I'm set to 20% opacity.</p>
+				<p class="opacity-10 mb-1">I'm set to 10% opacity.</p>
+			</div>
+		</div>
+		<div class="card card-style">
+			<div class="content">
+				<h3>Font Weights</h3>
+				<p>
+					Select the thickness of your font with ease. Add a secondary class that will change weights.
+				</p>
+				<p class="font-900 mb-0">This text is set to 900 weight.</p>
+				<p class="font-800 mb-0">This text is set to 800 weight.</p>
+				<p class="font-700 mb-0">This text is set to 700 weight.</p>
+				<p class="font-600 mb-0">This text is set to 600 weight.</p>
+				<p class="font-500 mb-0">This text is set to 500 weight.</p>
+				<p class="font-400 mb-0">This text is set to 400 weight.</p>
+				<p class="font-300 mb-0">This text is set to 300 weight.</p>
+				<p class="font-200 mb-0">This text is set to 200 weight.</p>
+			</div>
+		</div>
+		<div class="card card-style">
+			<div class="content mb-0">
+				<h3>Lists</h3>
+				<p>
+					Select the thickness of your font with ease. Add a secondary class that will change weights.
+				</p>
+				<div class="row mb-0">
+					<div class="col-4">
+						<ul class="icon-list">
+							<li><i class="bi bi-check-circle color-green-dark"></i>List</li>
+							<li><i class="bi bi-star color-yellow-dark"></i>List</li>
+							<li><i class="bi bi-heart color-red-dark"></i>List</li>
+							<li><i class="bi bi-circle color-magenta-dark"></i>List</li>
+							<li><i class="bi bi-square color-pink-light"></i>List</li>
+						</ul>
+					</div>
+					<div class="col-4">
+						<ul>
+							<li>List</li>
+							<li>List</li>
+							<li>List</li>
+							<li>List</li>
+							<li>List</li>
+						</ul>
+					</div>
+					<div class="col-4">
+						<ol>
+							<li>List</li>
+							<li>List</li>
+							<li>List</li>
+							<li>List</li>
+							<li>List</li>
+						</ol>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="card card-style">
+			<div class="content mb-0">
+				<h3 class="font-700">Highlights</h3>
+				<p class="pb-2">Showcase the most important part of a paragraph with highlights. Easy and awesome!</p>
+				<p class="mb-0">We've highlighted <mark class="highlight ps-2 font-12 pe-2 bg-blue-dark">this part</mark> of the text.</p>
+				<p class="mb-0">We've highlighted <mark class="highlight ps-2 font-12 pe-2 bg-red-dark">this part</mark> of the text.</p>
+				<p class="mb-0">We've highlighted <mark class="highlight ps-2 font-12 pe-2 bg-yellow-dark">this part</mark> of the text.</p>
+				<p class="mb-0">We've highlighted <mark class="highlight ps-2 font-12 pe-2 bg-green-dark">this part</mark> of the text.</p>
+				<p class="mb-4">We've highlighted <mark class="highlight ps-2 font-12 pe-2 bg-magenta-dark">this part</mark> of the text.</p>
+			</div>
+		</div>
+
+		<div class="card card-style py-3">
+			<div class="content px-2 text-center">
+				<h5 class="mb-n1 font-12 color-highlight font-700 text-uppercase">Time to Go Mobile</h5>
+				<h2>Get Duo Mobile Today</h2>
+				<p class="mb-3">
+					Start your next project with Duo and enjoy the power of a Progressive Web App.
+				</p>
+				<a href="https://1.envato.market/2ryjKA" target="_blank" class="default-link btn btn-m rounded-s gradient-highlight shadow-bg shadow-bg-s px-5 mb-0 mt-2">Get Duo Now</a>
+			</div>
+		</div>
+
+    </div>
+	<!-- End of Page Content-->
+</div>
+<!--End of Page ID-->
+
+<script src="scripts/bootstrap.min.js"></script>
+<script src="scripts/custom.js"></script>
+</body>

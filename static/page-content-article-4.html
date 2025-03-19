@@ -1,0 +1,262 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+<title>Duo Mobile PWA Kit</title>
+<link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="fonts/bootstrap-icons.css">
+<link rel="stylesheet" type="text/css" href="styles/style.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="manifest" href="_manifest.json">
+<meta id="theme-check" name="theme-color" content="#FFFFFF">
+<link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png"></head>
+
+<body class="theme-light">
+
+<div id="preloader"><div class="spinner-border color-highlight" role="status"></div></div>
+
+<div id="page">
+
+    <!-- Header -->
+    <div class="header-bar header-fixed header-app header-bar-detached">
+		<a data-back-button href="#"><i class="bi bi-caret-left-fill font-11 color-theme ps-2"></i></a>
+		<a href="#" class="header-title color-theme font-13">Back to Pages</a>
+		<a data-bs-toggle="offcanvas" data-bs-target="#menu-color" href="#"><i class="bi bi-palette-fill font-13 color-highlight"></i></a>
+		<a href="#" class="show-on-theme-light" data-toggle-theme><i class="bi bi-moon-fill font-13"></i></a>
+		<a href="#" class="show-on-theme-dark" data-toggle-theme ><i class="bi bi-lightbulb-fill color-yellow-dark font-13"></i></a>
+	</div>
+
+	<!-- Footer Bar-->
+    <div id="footer-bar" class="footer-bar footer-bar-detached">
+		<a href="index-pages.html" class="active-nav"><i class="bi bi-heart-fill font-15"></i><span>Pages</span></a>
+        <a href="index-components.html" ><i class="bi bi-star-fill font-17"></i><span>Features</span></a>
+        <a href="index.html"><i class="bi bi-house-fill font-16"></i><span>Home</span></a>
+        <a href="index-media.html"><i class="bi bi-image font-16"></i><span>Media</span></a>
+        <a href="#" data-bs-toggle="offcanvas" data-bs-target="#menu-main"><i class="bi bi-list"></i><span>Menu</span></a>
+    </div>
+
+	<!-- Main Sidebar-->
+	<div id="menu-main" data-menu-active="nav-pages" data-menu-load="menu-main.html"
+		style="width:280px;" class="offcanvas offcanvas-start offcanvas-detached rounded-m">
+	</div>
+	<!-- Menu Highlights-->
+	<div id="menu-color" data-menu-load="menu-highlights.html"
+		style="height:340px" class="offcanvas offcanvas-bottom offcanvas-detached rounded-m">
+	</div>
+
+    <!-- Your Page Content Goes Here-->
+    <div class="page-content header-clear-large">
+
+        <div class="card card-style">
+            <img src="images/pictures/4.jpg" class="img-fluid rounded-0" alt="img">
+            <div class="content mb-0">
+                <h1 class="font-26 pb-3">
+                    Say hello to Duo! A new way to create and manage your projects.
+                </h1>
+                <p>
+                    Duo is a Mobile PWA that provides a powerful and flexible way to create, manage and share your projects. It's a perfect tool for web designers, developers, project managers and anyone who needs to create and manage projects.
+                </p>
+                <div class="d-flex">
+                    <div class="me-auto"><span class="badge no-click gradient-red shadow-bg shadow-bg-s p-2 text-uppercase rounded-s mb-3">Business</span></div>
+                    <div class="mx-auto"><span class="font-12"><i class="bi bi-clock pe-2"></i>15th Dec</span></div>
+                    <div class="mx-auto"><span class="font-12"><i class="bi bi-chat pe-2"></i>14k </span></div>
+                    <div class="mx-auto"><span class="font-12"><i class="bi bi-heart pe-2"></i>25k</span></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card card-style mt-4">
+            <div class="content">
+				<h6 class="font-700 mb-n1 color-highlight">Share your Thoughts</h6>
+				<h1 class="pb-2">Curated for You</h1>
+                <p class="pt-2">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Curabitur aliquam non nunc quis maximus.
+                    Fusce volutpat arcu id ante maximus vestibulum.
+                    Curabitur non nisi venenatis, pharetra nisl et, ullamcorper diam.
+                    Morbi interdum varius molestie. Quisque feugiat augue id diam ornare auctor.
+                </p>
+                <div class="d-flex">
+                    <a href="#" class="font-18 rounded-s shadow-bg shadow-bg-s mx-auto shareToFacebook icon icon-xs rounded-sm bg-facebook"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="font-18 rounded-s shadow-bg shadow-bg-s mx-auto shareToWhatsApp icon icon-xs rounded-sm bg-whatsapp"><i class="bi bi-whatsapp"></i></a>
+                    <a href="#" class="font-18 rounded-s shadow-bg shadow-bg-s mx-auto shareToLinkedIn icon icon-xs rounded-sm bg-linkedin"><i class="bi bi-linkedin"></i></a>
+                    <a href="#" class="font-18 rounded-s shadow-bg shadow-bg-s mx-auto shareToMail icon icon-xs rounded-sm bg-mail"><i class="bi bi-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card card-style">
+            <div class="content">
+				<h6 class="font-700 mb-n1 color-highlight">Share your Thoughts</h6>
+				<h1 class="pb-2">Image Gallery</h1>
+                <p>
+                    This page is not WordPress, it's an HTML website. Yes, that's right. but you can convert it to WordPress yourself or hire an expert from Envato Studio.
+                </p>
+                <div class="row mb-0">
+                    <div class="col-4">
+                        <img src="images/empty.png" data-src="images/pictures/21s.jpg" class="preload-img shadow-s img-fluid rounded-s" alt="img">
+                    </div>
+                    <div class="col-4">
+                        <img src="images/empty.png" data-src="images/pictures/14s.jpg" class="preload-img shadow-s img-fluid rounded-s" alt="img">
+                    </div>
+                    <div class="col-4">
+                        <img src="images/empty.png" data-src="images/pictures/18s.jpg" class="preload-img shadow-s img-fluid rounded-s" alt="img">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card card-style">
+            <div class="content">
+				<h6 class="font-700 mb-n1 color-highlight">Share your Thoughts</h6>
+				<h1 class="pb-2">Font Weights</h1>
+                <p class="bottom-20">
+                    Select the thickness of your font with ease. Add a secondary class that will change weights.
+                </p>
+                <p class="font-900 pb-0 mb-0">This text is set to 900 weight.</p>
+                <p class="font-800 pb-0 mb-0">This text is set to 800 weight.</p>
+                <p class="font-700 pb-0 mb-0">This text is set to 700 weight.</p>
+                <p class="font-600 pb-0 mb-0">This text is set to 600 weight.</p>
+                <p class="font-500 pb-0 mb-0">This text is set to 500 weight.</p>
+                <p class="font-400 pb-0 mb-0">This text is set to 400 weight.</p>
+                <p class="font-300 pb-0 mb-0">This text is set to 300 weight.</p>
+                <p class="font-200 pb-0 mb-0">This text is set to 200 weight.</p>
+                <p class="font-100 pb-0 mb-0">This text is set to 100 weight.</p>
+            </div>
+
+            <div class="divider divider-margins mt-4 mb-3"></div>
+
+            <div class="content">
+				<h6 class="font-700 mb-n1 color-highlight">Share your Thoughts</h6>
+				<h1 class="pb-2">Style Lists</h1>
+                <p class="">
+                    Select the thickness of your font with ease. Add a secondary class that will change weights.
+                </p>
+                <div class="row mb-0">
+                    <div class="col-4">
+                        <ul class="icon-list">
+                            <li><i class="bi-check color-green-dark"></i>List</li>
+                            <li><i class="bi-star color-yellow-dark"></i>List</li>
+                            <li><i class="bi-heart color-red-dark"></i>List</li>
+                        </ul>
+                    </div>
+                    <div class="col-4">
+                        <ul>
+                            <li>List</li>
+                            <li>List</li>
+                            <li>List</li>
+                        </ul>
+                    </div>
+                    <div class="col-4">
+                        <ol>
+                            <li>List</li>
+                            <li>List</li>
+                            <li>List</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card card-style bg-6 mb-0">
+            <div class="card-body my-3">
+                <h5 class="badge gradient-highlight shadow-bg shadow-bg-s color-white px-1 py-1 font-12 mb-3">LIVE FEED</h5>
+                <h1 class="color-white">
+                    Event
+                    <br>Coverage
+                </h1>
+                <p class="color-white opacity-60 mb-0">
+                    We are here to show off the brand new Apple Watch Release. Join us and watch it live!
+                </p>
+                <a href="#" class="btn btn-s rounded-sm bg-highlight color-white mt-3 text-uppercase font-800"><i class="bi bi-play-circle pe-2"></i> WATCH LIVE</a>
+            </div>
+            <div class="card-overlay bg-black opacity-70"></div>
+        </div>
+
+        <div class="card card-style bg-white content bottom-0 p-3" id="disqus_thread"></div>
+
+        <script>
+            //To add your own Disqus, simple visit this page and follow the instructions
+            //Be sure to click create a site before implementing the embed code
+            //Embed the embed code resulted on the page as seen below.
+            //https://disqus.com/admin/install/platforms/universalcode/
+            (function() {
+                var d = document, s = d.createElement('script');
+                s.src = 'https://enableds-1.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+            })();
+        </script>
+
+
+        <div class="card card-style">
+            <div class="content mb-3">
+                <h3>You may like</h3>
+                <p>
+                    Other posts based on your current reading habbits.
+                </p>
+                <a href="#">
+                    <div class="d-flex mb-3">
+                        <div class="align-self-center me-auto">
+                            <img src="images/pictures/18l.jpg" class="rounded-m me-3" width="90">
+                        </div>
+                        <div class="align-self-center w-100">
+                            <span class="badge text-uppercase px-2 py-1 gradient-blue shadow-bg shadow-bg-xs d-block me-3 mt-n3 rounded-xs">ECONOMICS</span>
+                            <h5 class="font-15 pt-2">Global warming increases development speed of electric cars.</h5>
+                            <span class="color-theme font-11 opacity-50">25 Minutes Ago</span>
+                        </div>
+                    </div>
+                </a>
+                <div class="divider mb-3"></div>
+                <a href="#">
+                    <div class="d-flex mb-3">
+                        <div class="align-self-center me-auto">
+                            <img src="images/pictures/1l.jpg" class="rounded-m me-3" width="90">
+                        </div>
+                        <div class="align-self-center w-100">
+                            <span class="badge text-uppercase px-2 py-1 gradient-green shadow-bg shadow-bg-xs d-block me-3 mt-n3 rounded-xs">SOCIAL</span>
+                            <h5 class="font-15 pt-2">Hosting companies now charge influencers more that double. Here's why.</h5>
+                            <span class="color-theme font-11 opacity-50">25 Minutes Ago</span>
+                        </div>
+                    </div>
+                </a>
+                <div class="divider mb-3"></div>
+                <a href="#">
+                    <div class="d-flex mb-3">
+                        <div class="align-self-center me-auto">
+                            <img src="images/pictures/2l.jpg" class="rounded-m me-3" width="90">
+                        </div>
+                        <div class="align-self-center w-100">
+                            <span class="badge text-uppercase px-2 py-1 gradient-red shadow-bg shadow-bg-xs d-block me-3 mt-n3 rounded-xs">TECHNOLOGY</span>
+                            <h5 class="font-15 pt-2">Apple's sales increased tenfold after new Macbook M1 Realease.</h5>
+                            <span class="color-theme font-11 opacity-50">25 Minutes Ago</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        
+		<div class="card card-style py-3">
+			<div class="content px-2 text-center">
+				<h5 class="mb-n1 font-12 color-highlight font-700 text-uppercase">Time to Go Mobile</h5>
+				<h2>Get Duo Mobile Today</h2>
+				<p class="mb-3">
+					Start your next project with Duo and enjoy the power of a Progressive Web App.
+				</p>
+				<a href="https://1.envato.market/2ryjKA" target="_blank" class="default-link btn btn-m rounded-s gradient-highlight shadow-bg shadow-bg-s px-5 mb-0 mt-2">Get Duo Now</a>
+			</div>
+		</div>
+
+    </div>
+	<!-- End of Page Content-->
+</div>
+<!--End of Page ID-->
+
+<script src="scripts/bootstrap.min.js"></script>
+<script src="scripts/custom.js"></script>
+</body>

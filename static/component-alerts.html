@@ -1,0 +1,187 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+<title>Duo Mobile PWA Kit</title>
+<link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="fonts/bootstrap-icons.css">
+<link rel="stylesheet" type="text/css" href="styles/style.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="manifest" href="_manifest.json">
+<meta id="theme-check" name="theme-color" content="#FFFFFF">
+<link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png"></head>
+
+<body class="theme-light">
+
+<div id="preloader"><div class="spinner-border color-highlight" role="status"></div></div>
+
+<div id="page">
+
+    <!-- Header -->
+    <div class="header-bar header-fixed header-app header-bar-detached">
+		<a data-back-button href="#"><i class="bi bi-caret-left-fill font-11 color-theme ps-2"></i></a>
+		<a href="#" class="header-title color-theme font-13">Back to Components</a>
+		<a data-bs-toggle="offcanvas" data-bs-target="#menu-color" href="#"><i class="bi bi-palette-fill font-13 color-highlight"></i></a>
+		<a href="#" class="show-on-theme-light" data-toggle-theme><i class="bi bi-moon-fill font-13"></i></a>
+		<a href="#" class="show-on-theme-dark" data-toggle-theme ><i class="bi bi-lightbulb-fill color-yellow-dark font-13"></i></a>
+	</div>
+
+	<!-- Footer Bar-->
+    <div id="footer-bar" class="footer-bar footer-bar-detached">
+		<a href="index-pages.html"><i class="bi bi-heart-fill font-15"></i><span>Pages</span></a>
+        <a href="index-components.html" class="active-nav"><i class="bi bi-star-fill font-17"></i><span>Features</span></a>
+        <a href="index.html"><i class="bi bi-house-fill font-16"></i><span>Home</span></a>
+        <a href="index-media.html"><i class="bi bi-image font-16"></i><span>Media</span></a>
+        <a href="#" data-bs-toggle="offcanvas" data-bs-target="#menu-main"><i class="bi bi-list"></i><span>Menu</span></a>
+    </div>
+
+	<!-- Main Sidebar-->
+	<div id="menu-main" data-menu-active="nav-comps" data-menu-load="menu-main.html"
+		style="width:280px;" class="offcanvas offcanvas-start offcanvas-detached rounded-m">
+	</div>
+	<!-- Menu Highlights-->
+	<div id="menu-color" data-menu-load="menu-highlights.html"
+		style="height:340px" class="offcanvas offcanvas-bottom offcanvas-detached rounded-m">
+	</div>
+
+    <!-- Your Page Content Goes Here-->
+    <div class="page-content header-clear-medium">
+
+		<div class="card card-style">
+			<div class="content">
+
+				<h6 class="font-700 mb-n1 color-highlight">Interactive</h6>
+				<h1 class="pb-2">Alerts</h1>
+				<p>
+					Alert boxes are on page elements that can provide you users with
+					useful information regarding a current action they're taking.
+				</p>
+				<ul class="mb-4 ps-3">
+					<li>Card or Colored</li>
+					<li>Multi-line option.</li>
+					<li>Multi-column option</li>
+					<li>Rounded, Squared and Shadows</li>
+					<li>Default Bootstrap 5 Styles Available</li>
+				</ul>
+
+				<div class="divider"></div>
+
+				<h6 class="font-700 pb-2 opacity-50">Inside Cards</h6>
+				<div class="alert border-blue-dark alert-dismissible color-blue-dark rounded-s fade show" role="alert">
+					<strong>Attention</strong> - Border Single Alert
+					<button type="button" class="btn-close opacity-20 font-11 pt-3 mt-1" data-bs-dismiss="alert" aria-label="Close"></button>
+				</div>
+				<div class="alert bg-fade2-yellow color-theme border border-yellow-dark alert-dismissible rounded-s fade show" role="alert">
+					<strong>Warning</strong><span class="opacity-60"> - Border Single Alert</span>
+					<button type="button" class="btn-close opacity-20 font-11 pt-3 mt-1" data-bs-dismiss="alert" aria-label="Close"></button>
+				</div>
+				<div class="alert bg-fade-red color-red-dark alert-dismissible rounded-s fade show" role="alert">
+					<i class="bi bi-exclamation-triangle pe-2"></i>
+					<strong>Warning</strong> - Faded Single Alert
+					<button type="button" class="btn-close opacity-20 font-11 pt-3 mt-1" data-bs-dismiss="alert" aria-label="Close"></button>
+				</div>
+				<div class="alert bg-green-light shadow-bg shadow-bg-m alert-dismissible rounded-s fade show mb-0" role="alert">
+					<i class="bi bi-check-circle-fill pe-2"></i>
+					<strong>Awesome</strong> - Fancy Shadows!
+					<button type="button" class="btn-close opacity-10" data-bs-dismiss="alert" aria-label="Close"></button>
+				</div>
+			</div>
+		</div>
+
+		<h6 class="font-700 pb-2 mx-3 opacity-50">Outside Cards</h6>
+
+		<div class="card card-style alert-dismissible show fade p-0 bg-blue-dark shadow-bg shadow-bg-s">
+			<div class="content my-3">
+				<div class="d-flex">
+					<div class="align-self-center">
+						<i class="bi bi-check-circle-fill font-36 d-block color-white scale-box"></i>
+					</div>
+					<div class="align-self-center">
+						<p class="color-white mb-0 font-500 font-14 ps-3 pe-4 line-height-s">
+							Login Successful, <br> Welcome back, John.
+						</p>
+					</div>
+					<div class="ms-auto">
+						<button type="button" class="btn-close opacity-20 font-11 mt-n2 me-n2" data-bs-dismiss="alert" aria-label="Close"></button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="card card-style bg-fade-blue border border-fade-blue alert alert-dismissible show fade p-0 mb-3">
+			<div class="content my-3">
+				<div class="d-flex">
+					<div class="align-self-center">
+						<i class="bi bi-info-square font-33 color-blue-dark d-block"></i>
+					</div>
+					<div class="align-self-center">
+						<p class="color-blue-dark mb-0 font-500 font-14 ps-3 pe-4 line-height-s">
+							Holiday's may have a slower <br> response time than usual.
+						</p>
+					</div>
+					<div class="ms-auto">
+						<button type="button" class="btn-close opacity-20 font-11 mt-n2 me-n2" data-bs-dismiss="alert" aria-label="Close"></button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="card card-style alert alert-dismissible border border-fade-yellow show fade p-0 mb-3">
+			<div class="content my-3">
+				<div class="d-flex">
+					<div class="align-self-center">
+						<i class="bi bi-exclamation-triangle font-36 color-yellow-dark d-block"></i>
+					</div>
+					<div class="align-self-center">
+						<p class="color-yellow-dark mb-0 font-500 font-14 ps-3 pe-4 line-height-s">
+							Verification required. <br> Please check your email.
+						</p>
+					</div>
+					<div class="ms-auto">
+						<button type="button" class="btn-close opacity-20 font-11 mt-n2 me-n2" data-bs-dismiss="alert" aria-label="Close"></button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="card card-style bg-red-dark alert-dismissible show shadow-bg shadow-bg-m fade p-0">
+			<div class="content my-3">
+				<div class="d-flex">
+					<div class="align-self-center">
+						<i class="bi bi-emoji-frown-fill font-36 d-block color-white"></i>
+					</div>
+					<div class="align-self-center">
+						<p class="color-white mb-0 font-500 font-14 ps-3 pe-4 line-height-s">
+							You don't have permission <br> to perform this operation.
+						</p>
+					</div>
+					<div class="ms-auto">
+						<button type="button" class="btn-close opacity-20 font-11 mt-n2 me-n2" data-bs-dismiss="alert" aria-label="Close"></button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="card card-style py-3">
+			<div class="content px-2 text-center">
+				<h5 class="mb-n1 font-12 color-highlight font-700 text-uppercase">Time to Go Mobile</h5>
+				<h2>Get Duo Mobile Today</h2>
+				<p class="mb-3">
+					Start your next project with Duo and enjoy the power of a Progressive Web App.
+				</p>
+				<a href="https://1.envato.market/2ryjKA" target="_blank" class="default-link btn btn-m rounded-s gradient-highlight shadow-bg shadow-bg-s px-5 mb-0 mt-2">Get Duo Now</a>
+			</div>
+		</div>
+
+    </div>
+	<!-- End of Page Content-->
+</div>
+<!--End of Page ID-->
+
+<script src="scripts/bootstrap.min.js"></script>
+<script src="scripts/custom.js"></script>
+</body>

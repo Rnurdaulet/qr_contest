@@ -1,0 +1,101 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+<title>Duo Mobile PWA Kit</title>
+<link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="fonts/bootstrap-icons.css">
+<link rel="stylesheet" type="text/css" href="styles/style.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="manifest" href="_manifest.json">
+<meta id="theme-check" name="theme-color" content="#FFFFFF">
+<link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png"></head>
+
+<body class="theme-light">
+
+<div id="preloader"><div class="spinner-border color-highlight" role="status"></div></div>
+
+<div id="page">
+
+    <!-- Header -->
+    <div class="header-bar header-fixed header-app header-bar-detached">
+		<a data-back-button href="#"><i class="bi bi-caret-left-fill font-11 color-theme ps-2"></i></a>
+		<a href="#" class="header-title color-theme font-13">Back to Pages</a>
+		<a data-bs-toggle="offcanvas" data-bs-target="#menu-color" href="#"><i class="bi bi-palette-fill font-13 color-highlight"></i></a>
+		<a href="#" class="show-on-theme-light" data-toggle-theme><i class="bi bi-moon-fill font-13"></i></a>
+		<a href="#" class="show-on-theme-dark" data-toggle-theme ><i class="bi bi-lightbulb-fill color-yellow-dark font-13"></i></a>
+	</div>
+
+	<!-- Footer Bar-->
+    <div id="footer-bar" class="footer-bar footer-bar-detached">
+		<a href="index-pages.html" class="active-nav"><i class="bi bi-heart-fill font-15"></i><span>Pages</span></a>
+        <a href="index-components.html" ><i class="bi bi-star-fill font-17"></i><span>Features</span></a>
+        <a href="index.html"><i class="bi bi-house-fill font-16"></i><span>Home</span></a>
+        <a href="index-media.html"><i class="bi bi-image font-16"></i><span>Media</span></a>
+        <a href="#" data-bs-toggle="offcanvas" data-bs-target="#menu-main"><i class="bi bi-list"></i><span>Menu</span></a>
+    </div>
+
+	<!-- Main Sidebar-->
+	<div id="menu-main" data-menu-active="nav-pages" data-menu-load="menu-main.html"
+		style="width:280px;" class="offcanvas offcanvas-start offcanvas-detached rounded-m">
+	</div>
+	<!-- Menu Highlights-->
+	<div id="menu-color" data-menu-load="menu-highlights.html"
+		style="height:340px" class="offcanvas offcanvas-bottom offcanvas-detached rounded-m">
+	</div>
+
+    <!-- Your Page Content Goes Here-->
+    <div class="page-content pb-0 mb-0">
+
+		<div class="card card-style m-0 bg-transparent shadow-0 bg-10 rounded-0" data-card-height="cover">
+			<div class="card-center">
+				<div class="card card-style">
+					<div class="content">
+						<h1 class="text-center font-800 font-30 mb-2">Sign Up</h1>
+						<p class="text-center font-13 mt-n2 mb-3">Create your Account</p>
+						<div class="form-custom form-label form-icon mb-3">
+							<i class="bi bi-person-circle font-14"></i>
+							<input type="text" class="form-control rounded-xs" id="c1" placeholder="John Doe"/>
+							<label for="c1" class="color-theme">Your Name</label>
+							<span>(required)</span>
+						</div>
+						<div class="form-custom form-label form-icon mb-3">
+							<i class="bi bi-at font-16"></i>
+							<input type="text" class="form-control rounded-xs" id="c1a" placeholder="Email Address"/>
+							<label for="c1a" class="color-theme">Email Address</label>
+							<span>(required)</span>
+						</div>
+						<div class="form-custom form-label form-icon mb-3">
+							<i class="bi bi-asterisk font-12"></i>
+							<input type="text" class="form-control rounded-xs" id="c2" placeholder="Password"/>
+							<label for="c2" class="color-theme">Pasword</label>
+							<span>(required)</span>
+						</div>
+						<a href="#" class='btn rounded-sm btn-m gradient-blue text-uppercase font-700 mt-4 mb-3 btn-full shadow-bg shadow-bg-s'>Create Account</a>
+						<div class="d-flex">
+							<div>
+								<a href="page-login-2.html" class="color-theme opacity-30 font-12">Login Account</a>
+							</div>
+							<div class="ms-auto">
+								<a href="page-register-2.html" class="color-theme opacity-30 font-12">Create Account</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+    </div>
+	<!-- End of Page Content-->
+
+	
+</div>
+<!--End of Page ID-->
+
+<script src="scripts/bootstrap.min.js"></script>
+<script src="scripts/custom.js"></script>
+</body>

@@ -1,0 +1,206 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+<title>Duo Mobile PWA Kit</title>
+<link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="fonts/bootstrap-icons.css">
+<link rel="stylesheet" type="text/css" href="styles/style.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="manifest" href="_manifest.json">
+<meta id="theme-check" name="theme-color" content="#FFFFFF">
+<link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png"></head>
+
+<body class="theme-light">
+
+<div id="preloader"><div class="spinner-border color-highlight" role="status"></div></div>
+
+<div id="page">
+
+    <!-- Header -->
+    <div class="header-bar header-fixed header-app header-bar-detached">
+		<a data-back-button href="#"><i class="bi bi-caret-left-fill font-11 color-theme ps-2"></i></a>
+		<a href="#" class="header-title color-theme font-13">Back to Components</a>
+		<a data-bs-toggle="offcanvas" data-bs-target="#menu-color" href="#"><i class="bi bi-palette-fill font-13 color-highlight"></i></a>
+		<a href="#" class="show-on-theme-light" data-toggle-theme><i class="bi bi-moon-fill font-13"></i></a>
+		<a href="#" class="show-on-theme-dark" data-toggle-theme ><i class="bi bi-lightbulb-fill color-yellow-dark font-13"></i></a>
+	</div>
+
+	<!-- Footer Bar-->
+    <div id="footer-bar" class="footer-bar footer-bar-detached">
+		<a href="index-pages.html"><i class="bi bi-heart-fill font-15"></i><span>Pages</span></a>
+        <a href="index-components.html" class="active-nav"><i class="bi bi-star-fill font-17"></i><span>Features</span></a>
+        <a href="index.html"><i class="bi bi-house-fill font-16"></i><span>Home</span></a>
+        <a href="index-media.html"><i class="bi bi-image font-16"></i><span>Media</span></a>
+        <a href="#" data-bs-toggle="offcanvas" data-bs-target="#menu-main"><i class="bi bi-list"></i><span>Menu</span></a>
+    </div>
+
+	<!-- Main Sidebar-->
+	<div id="menu-main" data-menu-active="nav-comps" data-menu-load="menu-main.html"
+		style="width:280px;" class="offcanvas offcanvas-start offcanvas-detached rounded-m">
+	</div>
+	<!-- Menu Highlights-->
+	<div id="menu-color" data-menu-load="menu-highlights.html"
+		style="height:340px" class="offcanvas offcanvas-bottom offcanvas-detached rounded-m">
+	</div>
+
+    <!-- Your Page Content Goes Here-->
+    <div class="page-content header-clear-medium">
+
+		<div class="card card-style">
+			<div class="content">
+				<h6 class="font-700 mb-n1 color-highlight">Data</h6>
+				<h1 class="pb-2">Tables</h1>
+				<p>
+					Simple tables with default sizes or tables that can scroll if you're on your mobile phone.
+				</p>
+			</div>
+		</div>
+
+		<div class="card overflow-visible card-style">
+			<div class="content mb-0">
+				<h4>Classic Table</h4>
+				<p>
+					The default table with values calculated for screen width. Icons, colors and fonts supported.
+				</p>
+				<div class="table-responsive">
+					<table class="table color-theme mb-2">
+					<thead>
+						<tr>
+						  <th class="border-fade-blue" scope="col">System</th>
+						  <th class="border-fade-blue" scope="col">Share</th>
+						  <th class="border-fade-blue text-center" scope="col">Support</th>
+						</tr>
+					  </thead>
+					  <tbody>
+						<tr class="border-fade-blue">
+						  <td>Apple iOS</td>
+						  <td>35%</td>
+						  <td class="text-center"><i class="bi bi-check-circle-fill color-green-dark"></i></td>
+						</tr>
+						<tr class="border-fade-blue">
+						  <td>Google Android</td>
+						  <td>65%</td>
+						  <td class="text-center"><i class="bi bi-check-circle-fill color-green-dark"></i></td>
+						</tr>
+						<tr class="border-fade-blue">
+						  <td class="border-0">Windows Mobile</td>
+						  <td class="border-0">0%</td>
+						  <td class="border-0 text-center"><i class="bi bi-x-circle-fill color-red-dark"></i></td>
+						</tr>
+					  </tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+
+		<div class="card overflow-visible card-style">
+			<div class="content mb-0">
+				<h4>Scrolling</h4>
+				<p>
+					If your table contains too much data, this table will be scrollable. Please, note you must use
+					a mobile phone phone and swipe left or right to view.
+				</p>
+				<div class="table-responsive">
+					<table class="table color-theme mb-2">
+					<thead>
+						<tr>
+						  <th scope="col">System</th>
+						  <th scope="col">Market</th>
+						  <th scope="col">Support</th>
+						  <th scope="col">Engine</th>
+						  <th scope="col">CPU</th>
+						  <th scope="col">Latest</th>
+						</tr>
+					  </thead>
+					  <tbody>
+						<tr>
+						  <td>Apple</td>
+						  <td>35%</td>
+						  <td class="color-green-dark">Supported</td>
+						  <td>Webkit</td>
+						  <td>ARM</td>
+						  <td>15</td>
+						</tr>
+						<tr>
+						  <td>Android</td>
+						  <td>65%</td>
+						  <td class="color-green-dark">Supported</td>
+						  <td>Webkit</td>
+						  <td>x64</td>
+						  <td>12</td>
+						</tr>
+						<tr>
+						  <td class="border-0">Windows</td>
+						  <td class="border-0">0%</td>
+						  <td class="color-red-dark border-0">Deprecated</td>
+						  <td class="border-0">Explorer</td>
+						  <td class="border-0">x86</td>
+						  <td class="border-0">3.1</td>
+						</tr>
+					  </tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+
+		<div class="card overflow-visible card-style">
+			<div class="content">
+				<h4>Color, Borders, Round</h4>
+				<p>
+					You can even use colors with your tables for an added spice of style.
+				</p>
+				<div class="border border-blue-dark rounded-s overflow-hidden">
+				<table class="table color-theme border-blue-dark mb-0">
+				<thead class="rounded-s bg-blue-dark border-l">
+					<tr class="color-white">
+					  <th scope="col"><h5 class="color-white font-15 mb-0">System</h5></th>
+					  <th scope="col"><h5 class="color-white font-15 mb-0">Share</h5></th>
+					  <th scope="col"><h5 class="color-white font-15 mb-0">Support</h5></th>
+					</tr>
+				  </thead>
+				  <tbody>
+					<tr>
+					  <td><strong>iOS</strong></td>
+					  <td>35%</td>
+					  <td>Yes</td>
+					</tr>
+					<tr>
+					  <td><strong>Android</strong></td>
+					  <td>65%</td>
+					  <td>Yes</td>
+					</tr>
+					<tr>
+					  <td class="border-0"><strong>Windows</strong></td>
+					  <td class="border-0">0%</td>
+					  <td class="border-0">No</td>
+					</tr>
+				  </tbody>
+				</table>
+				</div>
+			</div>
+		</div>
+
+		<div class="card card-style py-3">
+			<div class="content px-2 text-center">
+				<h5 class="mb-n1 font-12 color-highlight font-700 text-uppercase">Time to Go Mobile</h5>
+				<h2>Get Duo Mobile Today</h2>
+				<p class="mb-3">
+					Start your next project with Duo and enjoy the power of a Progressive Web App.
+				</p>
+				<a href="https://1.envato.market/2ryjKA" target="_blank" class="default-link btn btn-m rounded-s gradient-highlight shadow-bg shadow-bg-s px-5 mb-0 mt-2">Get Duo Now</a>
+			</div>
+		</div>
+
+    </div>
+	<!-- End of Page Content-->
+</div>
+<!--End of Page ID-->
+
+<script src="scripts/bootstrap.min.js"></script>
+<script src="scripts/custom.js"></script>
+</body>

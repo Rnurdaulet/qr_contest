@@ -1,0 +1,197 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+<title>Duo Mobile PWA Kit</title>
+<link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="fonts/bootstrap-icons.css">
+<link rel="stylesheet" type="text/css" href="styles/style.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="manifest" href="_manifest.json">
+<meta id="theme-check" name="theme-color" content="#FFFFFF">
+<link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png"></head>
+
+<body class="theme-light">
+
+<div id="preloader"><div class="spinner-border color-highlight" role="status"></div></div>
+
+<div id="page">
+
+    <!-- Header -->
+    <div class="header-bar header-fixed header-app header-bar-detached">
+        <a data-bs-toggle="offcanvas" data-bs-target="#menu-main" href="#"><i class="bi bi-list color-theme"></i></a>
+        <a href="#" class="header-title color-theme">Features</a>
+        <a data-bs-toggle="offcanvas" data-bs-target="#menu-color" href="#"><i class="bi bi-palette-fill font-13 color-highlight"></i></a>
+        <a href="#" class="show-on-theme-light" data-toggle-theme><i class="bi bi-moon-fill font-13"></i></a>
+        <a href="#" class="show-on-theme-dark" data-toggle-theme ><i class="bi bi-lightbulb-fill color-yellow-dark font-13"></i></a>
+    </div>
+
+	<!-- Footer Bar-->
+    <div id="footer-bar" class="footer-bar footer-bar-detached">
+		<a href="index-pages.html" class="active-nav"><i class="bi bi-heart-fill font-15"></i><span>Pages</span></a>
+        <a href="index-components.html"><i class="bi bi-star-fill font-17"></i><span>Features</span></a>
+        <a href="index.html"><i class="bi bi-house-fill font-16"></i><span>Home</span></a>
+        <a href="index-media.html"><i class="bi bi-image font-16"></i><span>Media</span></a>
+        <a href="#" data-bs-toggle="offcanvas" data-bs-target="#menu-main"><i class="bi bi-list"></i><span>Menu</span></a>
+    </div>
+
+	<!-- Main Sidebar-->
+	<div id="menu-main" data-menu-active="nav-pages" data-menu-load="menu-main.html"
+		style="width:280px;" class="offcanvas offcanvas-start offcanvas-detached rounded-m">
+	</div>
+	<!-- Menu Highlights-->
+	<div id="menu-color" data-menu-load="menu-highlights.html"
+		style="height:340px" class="offcanvas offcanvas-bottom offcanvas-detached rounded-m">
+	</div>
+
+    <!-- Your Page Content Goes Here-->
+    <div class="page-content header-clear-medium">
+
+		<div class="card card-style">
+			<div class="card-body text-center">
+				<h5 class="mb-n1 font-12 color-highlight font-700 text-uppercase pt-1">Bootstrap 5 & Vanilla JS</h5>
+				<h1 class="font-700">Duo Pages</h1>
+				<p class="mb-3">
+					Ready built for you to use. Add any extra component you want from the Features page.
+				</p>
+			</div>
+		</div>
+
+        <a href="index-pages-site.html" class="card card-style mb-2">
+            <div class="content">
+                <div class="d-flex">
+                    <div class="align-self-center">
+                        <i class="bi bi-list-task font-18 gradient-red text-white rounded-m d-inline-block text-center me-3" style="width:40px; height:40px; line-height:43px;"></i>
+                    </div>
+                    <div class="align-self-center">
+                        <h4 class="mb-n1 font-17">Site Pages</h4>
+                        <p class="mb-0 font-12 opacity-60">Classic pages for your Mobile PWA</p>
+                    </div>
+                    <div class="align-self-center ms-auto">
+                        <i class="bi bi-chevron-right font-15 opacity-60"></i>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <a href="index-pages-system.html" class="card card-style mb-2">
+            <div class="content">
+                <div class="d-flex">
+                    <div class="align-self-center">
+                        <i class="bi bi-gear-fill font-18 gradient-green text-white rounded-m d-inline-block text-center me-3" style="width:40px; height:40px; line-height:42px;"></i>
+                    </div>
+                    <div class="align-self-center">
+                        <h4 class="mb-n1 font-17">System Pages</h4>
+                        <p class="mb-0 font-12 opacity-60">Log In / Register / OTP / Soon / 404 and more</p>
+                    </div>
+                    <div class="align-self-center ms-auto">
+                        <i class="bi bi-chevron-right font-15 opacity-60"></i>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+        <a href="index-pages-media.html" class="card card-style mb-2">
+            <div class="content">
+                <div class="d-flex">
+                    <div class="align-self-center">
+                        <i class="bi bi-image font-18 gradient-orange text-white rounded-m d-inline-block text-center me-3" style="width:40px; height:40px; line-height:40px;"></i>
+                    </div>
+                    <div class="align-self-center">
+                        <h4 class="mb-n1 font-17">Media Pages</h4>
+                        <p class="mb-0 font-12 opacity-60">Image galleries and portoflios.</p>
+                    </div>
+                    <div class="align-self-center ms-auto">
+                        <i class="bi bi-chevron-right font-15 opacity-60"></i>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+        <a href="index-pages-chat.html" class="card card-style mb-2">
+            <div class="content">
+                <div class="d-flex">
+                    <div class="align-self-center">
+                        <i class="bi bi-chat-fill font-18 gradient-blue text-white rounded-m d-inline-block text-center me-3" style="width:40px; height:40px; line-height:40px;"></i>
+                    </div>
+                    <div class="align-self-center">
+                        <h4 class="mb-n1 font-17">Chat Pages</h4>
+                        <p class="mb-0 font-12 opacity-60">Chat bubbles, list and images.</p>
+                    </div>
+                    <div class="align-self-center ms-auto">
+                        <span class="bg-green-dark font-11 font-700 rounded-s py-1 px-2">v3.2</span>
+                    </div>
+                </div>
+            </div>
+        </a>
+		
+		<a href="index-pages-content.html" class="card card-style">
+			<div class="content">
+				<div class="d-flex">
+					<div class="align-self-center">
+						<i class="bi bi-pencil-fill font-18 gradient-brown text-white rounded-m d-inline-block text-center me-3" style="width:40px; height:40px; line-height:40px;"></i>
+					</div>
+					<div class="align-self-center">
+						<h4 class="mb-n1 font-17">Content Pages</h4>
+						<p class="mb-0 font-12 opacity-60">Great starters for your pages.</p>
+					</div>
+					<div class="align-self-center ms-auto">
+						<span class="bg-green-dark font-11 font-700 rounded-s py-1 px-2">3.3</span>
+					</div>
+				</div>
+			</div>
+		</a>
+
+		
+        <div class="card card-style gradient-blue shadow-bg shadow-bg-m">
+            <div class="content">
+                <h3 class="color-white font-700 font-19">We're adding Packs</h3>
+                <p class="color-white opacity-80">
+                    Starting with Duo 3.3, we're adding Packs. Collections of ready made pages and components that you can use to build your app faster and more efficiently.
+                </p>
+            </div>
+        </div>
+
+
+        <!-- Coming Soon -->
+        <!-- 
+			<a href="index-pages-store.html" class="card card-style">
+				<div class="content">
+					<div class="d-flex">
+						<div class="align-self-center">
+							<i class="bi bi-bag-fill font-18 gradient-brown text-white rounded-m d-inline-block text-center me-3" style="width:40px; height:40px; line-height:40px;"></i>
+						</div>
+						<div class="align-self-center">
+							<h4 class="mb-n1 font-17">Store Pages</h4>
+							<p class="mb-0 font-12 opacity-60">Commerce related pages.</p>
+						</div>
+						<div class="align-self-center ms-auto">
+							<span class="bg-green-dark font-11 font-700 rounded-s py-1 px-2">v3.2</span>
+						</div>
+					</div>
+				</div>
+			</a> 
+		-->
+
+		<div class="card card-style py-3">
+			<div class="content px-2 text-center">
+				<h5 class="mb-n1 font-12 color-highlight font-700 text-uppercase">Time to Go Mobile</h5>
+				<h2>Get Duo Mobile Today</h2>
+				<p class="mb-3">
+					Start your next project with Duo and enjoy the power of a Progressive Web App.
+				</p>
+				<a href="https://1.envato.market/2ryjKA" target="_blank" class="default-link btn btn-m rounded-s gradient-highlight shadow-bg shadow-bg-s px-5 mb-0 mt-2">Get Duo Now</a>
+			</div>
+		</div>
+
+    </div>
+	<!-- End of Page Content-->
+</div>
+<!--End of Page ID-->
+
+<script src="scripts/bootstrap.min.js"></script>
+<script src="scripts/custom.js"></script>
+</body>

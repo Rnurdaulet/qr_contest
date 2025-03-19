@@ -1,0 +1,170 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+<title>Duo Mobile PWA Kit</title>
+<link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="fonts/bootstrap-icons.css">
+<link rel="stylesheet" type="text/css" href="styles/style.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="manifest" href="_manifest.json">
+<meta id="theme-check" name="theme-color" content="#FFFFFF">
+<link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png"></head>
+
+<body class="theme-light">
+
+<div id="preloader"><div class="spinner-border color-highlight" role="status"></div></div>
+
+<div id="page">
+
+    <!-- Header -->
+    <div class="header-bar header-fixed header-app header-bar-detached">
+        <a data-bs-toggle="offcanvas" data-bs-target="#menu-main" href="#"><i class="bi bi-list color-theme"></i></a>
+        <a href="#" class="header-title color-theme">Features</a>
+        <a data-bs-toggle="offcanvas" data-bs-target="#menu-color" href="#"><i class="bi bi-palette-fill font-13 color-highlight"></i></a>
+        <a href="#" class="show-on-theme-light" data-toggle-theme><i class="bi bi-moon-fill font-13"></i></a>
+        <a href="#" class="show-on-theme-dark" data-toggle-theme ><i class="bi bi-lightbulb-fill color-yellow-dark font-13"></i></a>
+    </div>
+
+	<!-- Footer Bar-->
+    <div id="footer-bar" class="footer-bar footer-bar-detached">
+		<a href="index-pages.html"><i class="bi bi-heart-fill font-15"></i><span>Pages</span></a>
+        <a href="index-components.html" class="active-nav"><i class="bi bi-star-fill font-17"></i><span>Features</span></a>
+        <a href="index.html"><i class="bi bi-house-fill font-16"></i><span>Home</span></a>
+        <a href="index-media.html"><i class="bi bi-image font-16"></i><span>Media</span></a>
+        <a href="#" data-bs-toggle="offcanvas" data-bs-target="#menu-main"><i class="bi bi-list"></i><span>Menu</span></a>
+    </div>
+
+	<!-- Main Sidebar-->
+	<div id="menu-main" data-menu-active="nav-comps" data-menu-load="menu-main.html"
+		style="width:280px;" class="offcanvas offcanvas-start offcanvas-detached rounded-m">
+	</div>
+	<!-- Menu Highlights-->
+	<div id="menu-color" data-menu-load="menu-highlights.html"
+		style="height:340px" class="offcanvas offcanvas-bottom offcanvas-detached rounded-m">
+	</div>
+
+    <!-- Your Page Content Goes Here-->
+    <div class="page-content header-clear-medium">
+
+		<div class="card card-style">
+			<div class="card-body text-center">
+				<h5 class="mb-n1 font-12 color-highlight font-700 text-uppercase pt-1">Bootstrap 5 & Vanilla JS</h5>
+				<h1>Components</h1>
+				<p class="mb-3">
+					Create any page with ease. Just use Copy & Paste with Unmatched Flexibility
+				</p>
+				<div class="divider mb-0 opacity-50"></div>
+				<div class="row mb-n3 pt-4">
+					<div class="col-6">
+						<i class="bi bi-bootstrap-fill color-magenta-dark font-50 d-block pb-2"></i>
+						<h5 class="pt-2 font-600">Bootstrap 5</h5>
+						<p>
+							Latest Generation, familiar code.
+						</p>
+					</div>
+					<div class="col-6">
+						<i class="bi bi-code-slash color-red-light font-50 d-block pb-2"></i>
+						<h5 class="pt-2 font-600">Vanilla JS & CSS3</h5>
+						<p>
+							Compatible with <br>all our ideas.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="card card-style">
+			<div class="content mb-0">
+				<h6 class="text-uppercase mt-n2">Content</h6>
+				<div class="list-group list-custom list-group-m list-group-flush rounded-xs check-visited">
+					<a href="component-accordion.html" class="list-group-item"><i class="has-bg rounded-s bi bg-green-dark bi-dash"></i><div>Accordion</div><i class="bi bi-chevron-right"></i></a>
+					<a href="component-alerts.html" class="list-group-item"><i class="has-bg rounded-s bi bg-red-dark bi-exclamation-circle"></i><div>Alerts</div><i class="bi bi-chevron-right"></i></a>
+					<a href="component-ads.html" class="list-group-item"><i class="has-bg rounded-s bi bg-mint-dark bi-currency-dollar"></i><div>Ads</div><i class="bi bi-chevron-right"></i></a>
+					<a href="component-buttons.html" class="list-group-item"><i class="has-bg rounded-s bi bg-blue-dark bi-fingerprint"></i><div>Buttons</div><i class="bi bi-chevron-right"></i></a>
+					<a href="component-cards.html" class="list-group-item"><i class="has-bg rounded-s bi bg-teal-dark bi-square"></i><div>Cards</div><i class="bi bi-chevron-right"></i></a>
+					<a href="component-carousels.html" class="list-group-item"><i class="has-bg rounded-s bi bg-orange-dark bi-image"></i><div>Carousels</div><i class="bi bi-chevron-right"></i></a>
+					<a href="component-charts.html" class="list-group-item"><i class="has-bg rounded-s bi bg-yellow-dark bi-bar-chart"></i><div>Charts</div><i class="bi bi-chevron-right"></i></a>
+					<a href="component-collapse.html" class="list-group-item"><i class="has-bg rounded-s bi bg-brown-dark bi-arrow-down"></i><div>Collapse</div><i class="bi bi-chevron-right"></i></a>
+					<a href="component-colors.html" class="list-group-item"><i class="has-bg rounded-s bi bg-red-dark bi-palette"></i><div>Colors</div><i class="bi bi-chevron-right"></i></a>
+					<a href="component-columns.html" class="list-group-item"><i class="has-bg rounded-s bi bg-mint-dark bi-columns"></i><div>Columns</div><i class="bi bi-chevron-right"></i></a>
+					<a href="component-dividers.html" class="list-group-item"><i class="has-bg rounded-s bi bg-pink-light bi-dash"></i><div>Dividers</div><i class="bi bi-chevron-right"></i></a>
+					<a href="component-dark-mode.html" class="list-group-item"><i class="has-bg rounded-s bi bg-brown-dark bi-lightbulb-fill"></i><div>Dark Mode</div><i class="bi bi-chevron-right"></i></a>
+					<a href="component-embeds.html" class="list-group-item"><i class="has-bg rounded-s bi bg-dark-dark bi-youtube"></i><div>Embeds</div><i class="bi bi-chevron-right"></i></a>
+					<a href="component-buttons.html" class="list-group-item"><i class="has-bg rounded-s bi bg-green-dark bi-heart"></i><div>Icons</div><i class="bi bi-chevron-right"></i></a>
+					<a href="component-lightbox.html" class="list-group-item"><i class="has-bg rounded-s bi bg-brown-dark bi-camera-fill"></i><div>Lightbox</div><i class="bi bi-chevron-right"></i></a>
+					<a href="component-list-group.html" class="list-group-item"><i class="has-bg rounded-s bi bg-teal-dark bi-list"></i><div>List Groups</div><i class="bi bi-chevron-right"></i></a>
+					<a href="component-user-lists.html" class="list-group-item"><i class="has-bg rounded-s bi bg-green-dark bi-person-fill"></i><div>List Users</div><i class="bi bi-chevron-right"></i></a>
+					<a href="component-notifications.html" class="list-group-item"><i class="has-bg rounded-s bi bg-orange-dark bi-exclamation-diamond"></i><div>Notifications</div><i class="bi bi-chevron-right"></i></a>
+					<a href="component-paginaton.html" class="list-group-item"><i class="has-bg rounded-s bi bg-blue-dark bi-list-nested"></i><div>Pagination</div><i class="bi bi-chevron-right"></i></a>
+					<a href="component-progress.html" class="list-group-item"><i class="has-bg rounded-s bi bg-brown-dark bi-arrow-clockwise"></i><div>Progress Bars</div><i class="bi bi-chevron-right"></i></a>
+					<a href="component-quotes.html" class="list-group-item"><i class="has-bg rounded-s bi bg-teal-dark bi-chat-quote"></i><div>Quotes</div><i class="bi bi-chevron-right"></i></a>
+					<a href="component-reviews.html" class="list-group-item"><i class="has-bg rounded-s bi bg-yellow-dark bi-star"></i><div>Reviews</div><i class="bi bi-chevron-right"></i></a>
+					<a href="component-social-share.html" class="list-group-item"><i class="has-bg rounded-s bi bg-blue-dark bi-share-fill"></i><div>Social Share</div><i class="bi bi-chevron-right"></i></a>
+					<a href="component-tables.html" class="list-group-item"><i class="has-bg rounded-s bi bg-brown-dark bi-table"></i><div>Tables</div><i class="bi bi-chevron-right"></i></a>
+					<a href="component-tabs.html" class="list-group-item"><i class="has-bg rounded-s bi bg-dark-dark bi-segmented-nav"></i><div>Tabs</div><i class="bi bi-chevron-right"></i></a>
+					<a href="component-typography.html" class="list-group-item"><i class="has-bg rounded-s bi bg-green-dark bi-type-bold"></i><div>Typography</div><i class="bi bi-chevron-right"></i></a>
+				</div>
+			</div>
+		</div>
+		<div class="card card-style">
+			<div class="content mb-0">
+				<h6 class="text-uppercase mt-n2">Page & Navigation</h6>
+				<div class="list-group list-custom list-group-m list-group-flush rounded-xs check-visited">
+					<a href="component-action-sheets.html" class="list-group-item"><i class="has-bg rounded-s bi bg-red-dark bi-lightning-fill"></i><div>Action Sheets</div><i class="bi bi-chevron-right"></i></a>
+					<a href="component-action-modals.html" class="list-group-item"><i class="has-bg rounded-s bi bg-green-dark bi-lightning-charge-fill"></i><div>Action Modals</div><i class="bi bi-chevron-right"></i></a>
+					<a href="component-sidebars.html" class="list-group-item"><i class="has-bg rounded-s bi bg-brown-dark bi-arrow-right"></i><div>Sidebars</div><i class="bi bi-chevron-right"></i></a>
+					<a href="component-headers.html" class="list-group-item"><i class="has-bg rounded-s bi bg-yellow-dark bi-dash"></i><div>Header Bars</div><i class="bi bi-chevron-right"></i></a>
+					<a href="component-footers.html" class="list-group-item"><i class="has-bg rounded-s bi bg-orange-dark bi-dash"></i><div>Footer Bars</div><i class="bi bi-chevron-right"></i></a>
+					<a href="component-page-titles.html" class="list-group-item"><i class="has-bg rounded-s bi bg-gray-dark bi-type-bold"></i><div>Page Titles</div><i class="bi bi-chevron-right"></i></a>
+					<a href="component-pwa.html" class="list-group-item"><i class="has-bg rounded-s bi bg-orange-dark bi-phone-vibrate"></i><div>PWA</div><i class="bi bi-chevron-right"></i></a>
+					<a href="component-snackbars.html" class="list-group-item"><i class="has-bg rounded-s bi bg-teal-dark bi-chevron-up"></i><div>Snackbars</div><i class="bi bi-chevron-right"></i></a>
+					<a href="component-toasts.html" class="list-group-item"><i class="has-bg rounded-s bi bg-magenta-dark bi-chevron-bar-up"></i><div>Toasts</div><i class="bi bi-chevron-right"></i></a>
+					<a href="component-preloaders.html" class="list-group-item"><i class="has-bg rounded-s bi bg-green-dark bi-arrow-clockwise"></i><div>Preloaders</div><i class="bi bi-chevron-right"></i></a>
+					<a href="component-web-share-api.html" class="list-group-item"><i class="has-bg rounded-s bi bg-teal-dark bi-share"></i><div>Web Share API</div><i class="bi bi-chevron-right"></i></a>
+					<a href="component-offline.html" class="list-group-item"><i class="has-bg rounded-s bi bg-orange-dark bi-wifi"></i><div>Offline Detection</div><i class="bi bi-chevron-right"></i></a>
+
+				</div>
+			</div>
+		</div>
+
+		<div class="card card-style">
+			<div class="content mb-0">
+				<h6 class="text-uppercase mt-n2">Form Elements</h6>
+				<div class="list-group list-custom list-group-m list-group-flush rounded-xs check-visited">
+					<a href="component-input-check-radio.html" class="list-group-item"><i class="has-bg rounded-s bi bg-green-dark bi-check-circle-fill"></i><div>Check & Radio</div><i class="bi bi-chevron-right"></i></a>
+					<a href="component-input-fields.html" class="list-group-item"><i class="has-bg rounded-s bi bg-blue-dark bi-code-slash"></i><div>Fields & Inputs</div><i class="bi bi-chevron-right"></i></a>
+					<a href="component-input-toggles.html" class="list-group-item"><i class="has-bg rounded-s bi bg-teal-dark bi-toggle-on"></i><div>Toggles & Switches</div><i class="bi bi-chevron-right"></i></a>
+					<a href="component-input-file-upload.html" class="list-group-item"><i class="has-bg rounded-s bi bg-brown-dark bi-upload"></i><div>File Upload Field</div><i class="bi bi-chevron-right"></i></a>
+					<a href="component-input-range.html" class="list-group-item"><i class="has-bg rounded-s bi bg-orange-dark bi-align-center"></i><div>Range Sliders</div><i class="bi bi-chevron-right"></i></a>
+					<a href="component-input-stepper.html" class="list-group-item"><i class="has-bg rounded-s bi bg-gray-dark bi-three-dots"></i><div>Steppers</div><i class="bi bi-chevron-right"></i></a>
+					<a href="component-geo.html" class="list-group-item"><i class="has-bg rounded-s bi bg-blue-dark bi-cursor-fill"></i><div>Geo Location</div><i class="bi bi-chevron-right"></i></a>
+					<a href="component-qr.html" class="list-group-item"><i class="has-bg rounded-s bi bg-dark-dark bi-qr-code"></i><div>QR Generator</div><i class="bi bi-chevron-right"></i></a>
+					<a href="component-form-wizard.html" class="list-group-item"><i class="has-bg rounded-s bi bg-gray-dark bi-ui-checks"></i><div>Form Wizard</div><i class="bi bi-chevron-right"></i></a>
+				</div>
+			</div>
+		</div>
+
+		<div class="card card-style py-3">
+			<div class="content px-2 text-center">
+				<h5 class="mb-n1 font-12 color-highlight font-700 text-uppercase">Time to Go Mobile</h5>
+				<h2>Get Duo Mobile Today</h2>
+				<p class="mb-3">
+					Start your next project with Duo and enjoy the power of a Progressive Web App.
+				</p>
+				<a href="https://1.envato.market/2ryjKA" target="_blank" class="default-link btn btn-m rounded-s gradient-highlight shadow-bg shadow-bg-s px-5 mb-0 mt-2">Get Duo Now</a>
+			</div>
+		</div>
+
+    </div>
+	<!-- End of Page Content-->
+</div>
+<!--End of Page ID-->
+
+<script src="scripts/bootstrap.min.js"></script>
+<script src="scripts/custom.js"></script>
+</body>

@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+
+{% block title %}Мои баллы{% endblock %}
+
+{% block content %}
+
+    <div class="card card-style mb-0 bg-transparent shadow-0 bg-3 mx-0 rounded-0" data-card-height="cover">
+        <div class="card-center">
+            <div class="card card-style">
+                <div class="content">
+                    <h1 class="text-center font-800 font-30 mb-2">{{ user.name }}!</h1>
+                    <p class="text-center font-13 mt-n2 mb-3">{{ user.department }}</p>
+                    <p>Ваши баллы: <strong>{{ user.total_points }}</strong></p>
+
+                    {% if message %}
+                        <p>{{ message }}</p>
+                    {% endif %}
+                    <button onclick="openCamera()"
+                       class='btn rounded-sm btn-m gradient-green text-uppercase font-700 mt-4 mb-3 btn-full shadow-bg shadow-bg-s'>
+                  Открыть камеру</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        function openCamera() {
+            const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+            if (/android/i.test(userAgent)) {
+                // Попытка открыть камеру на Android через intent
+                window.location.href = "intent://#Intent;action=android.media.action.IMAGE_CAPTURE;end;";
+            } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+                // Попытка открыть камеру на iOS (не всегда работает)
+                window.location.href = "camera://";
+            } else {
+                alert("Ваше устройство не поддерживает автоматическое открытие камеры.");
+            }
+        }
+    </script>
+{% endblock %}
+
+

@@ -1,0 +1,185 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+<title>Duo Mobile PWA Kit</title>
+<link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="fonts/bootstrap-icons.css">
+<link rel="stylesheet" type="text/css" href="styles/style.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="manifest" href="_manifest.json">
+<meta id="theme-check" name="theme-color" content="#FFFFFF">
+<link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png"></head>
+
+<body class="theme-light">
+
+<div id="preloader"><div class="spinner-border color-highlight" role="status"></div></div>
+
+<div id="page">
+
+    <!-- Header -->
+    <div class="header-bar header-fixed header-app header-bar-detached">
+		<a data-back-button href="#"><i class="bi bi-caret-left-fill font-11 color-theme ps-2"></i></a>
+		<a href="#" class="header-title color-theme font-13">Back to Pages</a>
+		<a data-bs-toggle="offcanvas" data-bs-target="#menu-color" href="#"><i class="bi bi-palette-fill font-13 color-highlight"></i></a>
+		<a href="#" class="show-on-theme-light" data-toggle-theme><i class="bi bi-moon-fill font-13"></i></a>
+		<a href="#" class="show-on-theme-dark" data-toggle-theme ><i class="bi bi-lightbulb-fill color-yellow-dark font-13"></i></a>
+	</div>
+
+	<!-- Footer Bar-->
+    <div id="footer-bar" class="footer-bar footer-bar-detached">
+		<a href="index-pages.html" class="active-nav"><i class="bi bi-heart-fill font-15"></i><span>Pages</span></a>
+        <a href="index-components.html" ><i class="bi bi-star-fill font-17"></i><span>Features</span></a>
+        <a href="index.html"><i class="bi bi-house-fill font-16"></i><span>Home</span></a>
+        <a href="index-media.html"><i class="bi bi-image font-16"></i><span>Media</span></a>
+        <a href="#" data-bs-toggle="offcanvas" data-bs-target="#menu-main"><i class="bi bi-list"></i><span>Menu</span></a>
+    </div>
+
+	<!-- Main Sidebar-->
+	<div id="menu-main" data-menu-active="nav-pages" data-menu-load="menu-main.html"
+		style="width:280px;" class="offcanvas offcanvas-start offcanvas-detached rounded-m">
+	</div>
+	<!-- Menu Highlights-->
+	<div id="menu-color" data-menu-load="menu-highlights.html"
+		style="height:340px" class="offcanvas offcanvas-bottom offcanvas-detached rounded-m">
+	</div>
+
+    <!-- Your Page Content Goes Here-->
+    <div class="page-content header-clear-medium">
+
+		<div class="card card-style">
+			<div class="content mt-2 mx-2 px-1 pt-1">
+				<div class="d-flex">
+					<div class="align-self-center">
+						<div>
+							<img src="images/pictures/23s.jpg" class="rounded-s" width="40">
+							<i class="ri-checkbox-circle-fill color-blue-dark"></i>
+						</div>
+					</div>
+					<div class="align-self-center">
+						<h4 class="font-14 mb-n1 ps-3">Gamer Girl <span class="opacity-40 font-400 font-12 px-1 d-inline-block"> followed you.</span></h4>
+						<p class="mb-0 font-11 ps-3">just now</p>
+					</div>
+				</div>
+
+				<div class="divider my-3"></div>
+
+				<div class="d-flex">
+					<div class="align-self-center">
+						<div>
+							<img src="images/pictures/2s.jpg" class="rounded-s" width="40">
+							<i class="ri-checkbox-circle-fill color-blue-dark"></i>
+						</div>
+					</div>
+					<div class="align-self-center">
+						<h4 class="font-14 mb-n1 ps-3">Jack Son <span class="opacity-40 font-400 font-12 px-1 d-inline-block"> sent you a friend request.</span></h4>
+						<p class="mb-0 font-11 ps-3">about 2 hours ago</p>
+					</div>
+				</div>
+
+				<div class="divider my-3"></div>
+
+				<div class="d-flex">
+					<div class="align-self-start">
+						<div>
+							<img src="images/pictures/7s.jpg" class="rounded-s" width="40">
+							<i class="bi bi-check-circle-fill position-absolute ms-n2 mt-3 pt-2 ms-n2 color-blue-dark"></i>
+						</div>
+					</div>
+					<div class="align-self-center me-3">
+						<h4 class="font-14 mb-n1 ps-3">Karla Black <span class="opacity-40 font-400 font-12 px-1 d-inline-block"> posted a new photo.</span></h4>
+						<p class="mb-0 font-11 ps-3 mb-2">about 2 hours ago</p>
+					</div>
+				</div>
+				<img src="images/pictures/3w.jpg" class="img-fluid rounded-s mb-2">
+
+				<div class="divider my-3"></div>
+
+				<div class="d-flex">
+					<div class="align-self-start">
+						<div>
+							<span class="icon icon-xxl gradient-red shadow-bg shadow-bg-s rounded-m color-white"><i class="bi bi-heart font-24"></i></span>
+						</div>
+					</div>
+					<div class="align-self-center me-3 ps-2">
+						<h5 class="font-14 mb-0 ps-1 pt-1">Duo 3.0 Released</h5>
+						<p class="ps-1 pb-1 mb-0 font-11 line-height-s opacity-80">
+							New design, more components. Bootstrap 5 and Vanilla JS.
+						</p>
+						<p class="mt-n1 opacity-50 font-11 ms-1 mb-2">about 2 hours ago</p>
+					</div>
+				</div>
+
+				<div class="divider my-2"></div>
+
+				<div class="d-flex">
+					<div class="align-self-start">
+						<div>
+							<img src="images/pictures/12s.jpg" class="rounded-xl" width="40">
+							<i class="bi bi-check-circle-fill position-absolute ms-n2 mt-3 pt-2 ms-n2 color-blue-dark"></i>
+						</div>
+					</div>
+					<div class="align-self-center me-3">
+						<h4 class="font-14 mb-n1 ps-3">Alexandra <span class="opacity-40 font-300 font-12 px-1 d-inline-block"> posted a a new album.</span></h4>
+						<p class="mb-0 font-11 ps-3 mb-2">about 2 hours ago</p>
+						<div class="row text-center row-cols-4 mb-0 ps-3">
+							<a class="col pe-1" data-gallery="gallery-2" href="images/pictures/23t.jpg" title="Cyber Punk">
+								<img src="images/empty.png" data-src="images/pictures/23s.jpg" class="preload-img img-fluid rounded-s" alt="img">
+							</a>
+							<a class="col pe-1" data-gallery="gallery-2" href="images/pictures/14t.jpg" title="Jelly Fish">
+								<img src="images/empty.png" data-src="images/pictures/14s.jpg" class="preload-img img-fluid rounded-s" alt="img">
+							</a>
+							<a class="col pe-1" data-gallery="gallery-2" href="images/pictures/5t.jpg" title="Ice Cube">
+								<img src="images/empty.png" data-src="images/pictures/5s.jpg" class="preload-img img-fluid rounded-s" alt="img">
+							</a>
+							<a class="col pe-1" data-gallery="gallery-2" href="images/pictures/7t.jpg" title="Ice Cube">
+								<img src="images/empty.png" data-src="images/pictures/7s.jpg" class="preload-img img-fluid rounded-s" alt="img">
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="divider my-3"></div>
+
+				<div class="d-flex">
+					<div class="align-self-start">
+						<div>
+							<span class="icon icon-xxl gradient-green shadow-bg shadow-bg-s rounded-m color-white"><i class="bi bi-code font-24"></i></span>
+						</div>
+					</div>
+					<div class="align-self-center me-3 ps-2">
+						<h5 class="font-14 mb-0 ps-1 pt-1">Bootstrap 5 and Vanilla JS</h5>
+						<p class="ps-1 pb-1 mb-0 font-11 line-height-s opacity-80">
+							New design, more components. Bootstrap 5 and Vanilla JS.
+						</p>
+						<p class="mt-n1 opacity-50 font-11 ms-1 mb-n2">about 2 hours ago</p>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+
+		<div class="card card-style py-3">
+			<div class="content px-2 text-center">
+				<h5 class="mb-n1 font-12 color-highlight font-700 text-uppercase">Time to Go Mobile</h5>
+				<h2>Get Duo Mobile Today</h2>
+				<p class="mb-3">
+					Start your next project with Duo and enjoy the power of a Progressive Web App.
+				</p>
+				<a href="https://1.envato.market/2ryjKA" target="_blank" class="default-link btn btn-m rounded-s gradient-highlight shadow-bg shadow-bg-s px-5 mb-0 mt-2">Get Duo Now</a>
+			</div>
+		</div>
+
+    </div>
+	<!-- End of Page Content-->
+</div>
+<!--End of Page ID-->
+
+<script src="scripts/bootstrap.min.js"></script>
+<script src="scripts/custom.js"></script>
+</body>

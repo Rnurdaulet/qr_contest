@@ -1,0 +1,213 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+<title>Duo Mobile PWA Kit</title>
+<link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="fonts/bootstrap-icons.css">
+<link rel="stylesheet" type="text/css" href="styles/style.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="manifest" href="_manifest.json">
+<meta id="theme-check" name="theme-color" content="#FFFFFF">
+<link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png"></head>
+
+<body class="theme-light">
+
+<div id="preloader"><div class="spinner-border color-highlight" role="status"></div></div>
+
+<div id="page">
+
+    <!-- Header -->
+    <div class="header-bar header-fixed header-app header-bar-detached">
+		<a data-back-button href="#"><i class="bi bi-caret-left-fill font-11 color-theme ps-2"></i></a>
+		<a href="#" class="header-title color-theme font-13">Back to Components</a>
+		<a data-bs-toggle="offcanvas" data-bs-target="#menu-color" href="#"><i class="bi bi-palette-fill font-13 color-highlight"></i></a>
+		<a href="#" class="show-on-theme-light" data-toggle-theme><i class="bi bi-moon-fill font-13"></i></a>
+		<a href="#" class="show-on-theme-dark" data-toggle-theme ><i class="bi bi-lightbulb-fill color-yellow-dark font-13"></i></a>
+	</div>
+
+	<!-- Footer Bar-->
+    <div id="footer-bar" class="footer-bar footer-bar-detached">
+		<a href="index-pages.html"><i class="bi bi-heart-fill font-15"></i><span>Pages</span></a>
+        <a href="index-components.html" class="active-nav"><i class="bi bi-star-fill font-17"></i><span>Features</span></a>
+        <a href="index.html"><i class="bi bi-house-fill font-16"></i><span>Home</span></a>
+        <a href="index-media.html"><i class="bi bi-image font-16"></i><span>Media</span></a>
+        <a href="#" data-bs-toggle="offcanvas" data-bs-target="#menu-main"><i class="bi bi-list"></i><span>Menu</span></a>
+    </div>
+
+	<!-- Main Sidebar-->
+	<div id="menu-main" data-menu-active="nav-comps" data-menu-load="menu-main.html"
+		style="width:280px;" class="offcanvas offcanvas-start offcanvas-detached rounded-m">
+	</div>
+	<!-- Menu Highlights-->
+	<div id="menu-color" data-menu-load="menu-highlights.html"
+		style="height:340px" class="offcanvas offcanvas-bottom offcanvas-detached rounded-m">
+	</div>
+
+    <!-- Your Page Content Goes Here-->
+    <div class="page-content header-clear-medium">
+
+		<div class="card card-style">
+			<div class="content">
+				<h6 class="font-700 mb-n1 color-highlight">Alert Bars</h6>
+				<h1 class="pb-2">Snackbars</h1>
+				<p>
+					Snackbars are toasts with more content that appear from the bottom of the page and can provide different messages.
+				</p>
+				<ul class="mb-0 ps-3">
+					<li>Single or Multi Lined</li>
+					<li>Coloured or Themed</li>
+					<li>Circle, Rounded or Square</li>
+					<li>Auto Hide Delay Data</li>
+					<li>Support Buttons for Actions</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="card card-style">
+			<div class="content">
+				<h4>Solid Snackbars</h4>
+				<p>
+					Snackbars with full colours and actions. Deploy via Click or Programatic.
+				</p>
+				<h6 class="opacity-30 font-11">Tap list items to see Snackbar Demos</h6>
+				<div class="list-group list-custom list-group-m rounded-xs">
+					<a data-toast="snack-1" href="#" class="list-group-item">
+						<i class="bi bi-check-circle-fill color-green-dark font-16"></i>
+						<div>Confirmation</div>
+						<i class="bi bi-chevron-right"></i>
+					</a>
+					<a data-toast="snack-2" href="#" class="list-group-item">
+						<i class="bi bi-info-circle-fill color-blue-dark font-16"></i>
+						<div>Information</div>
+						<i class="bi bi-chevron-right"></i>
+					</a>
+					<a data-toast="snack-3" href="#" class="list-group-item">
+						<i class="bi bi-x-circle-fill color-red-dark font-16"></i>
+						<div>Exclamation</div>
+						<i class="bi bi-chevron-right"></i>
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="card card-style">
+			<div class="content">
+				<h4>Skeleton Snackbars</h4>
+				<p>
+					Snackbars with borders and default highlight colors. Deploy via Click or Programatic.
+				</p>
+				<h6 class="opacity-30 font-11">Tap list items to see Snackbar Demos</h6>
+				<div class="list-group list-custom list-group-m rounded-xs">
+					<a data-toast="snack-4" href="#" class="list-group-item">
+						<i class="bi bi-check-circle-fill color-green-dark font-16"></i>
+						<div>Confirmation</div>
+						<i class="bi bi-chevron-right"></i>
+					</a>
+					<a data-toast="snack-5" href="#" class="list-group-item">
+						<i class="bi bi-info-circle-fill color-blue-dark font-16"></i>
+						<div>Information</div>
+						<i class="bi bi-chevron-right"></i>
+					</a>
+					<a data-toast="snack-6" href="#" class="list-group-item">
+						<i class="bi bi-x-circle-fill color-red-dark font-16"></i>
+						<div>Exclamation</div>
+						<i class="bi bi-chevron-right"></i>
+					</a>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="card card-style py-3">
+			<div class="content px-2 text-center">
+				<h5 class="mb-n1 font-12 color-highlight font-700 text-uppercase">Time to Go Mobile</h5>
+				<h2>Get Duo Mobile Today</h2>
+				<p class="mb-3">
+					Start your next project with Duo and enjoy the power of a Progressive Web App.
+				</p>
+				<a href="https://1.envato.market/2ryjKA" target="_blank" class="default-link btn btn-m rounded-s gradient-highlight shadow-bg shadow-bg-s px-5 mb-0 mt-2">Get Duo Now</a>
+			</div>
+		</div>
+
+    </div>
+	<!-- End of Page Content-->
+
+	<!-- Snackbar 1 Full-->
+	<div id="snack-1" class="snackbar bg-green-dark shadow-bg shadow-bg-m rounded-s shadow-l" data-bs-delay="4000">
+		<div class="d-flex">
+			<div class="align-self-center">
+				<p class="mb-0 color-white font-600 line-height-s">Your order processed.</p>
+			</div>
+			<div class="align-self-center ms-auto">
+				<a href="#" data-bs-dismiss="toast" class="bg-white px-2 py-1 my-1 d-block text-uppercase color-black font-700 font-11 rounded-xs">Okay</a>
+			</div>
+		</div>
+	</div>
+	<!-- Snackbar 2 - Full-->
+	<div id="snack-2" class="snackbar bg-blue-dark shadow-bg shadow-bg-m rounded-s shadow-l" data-bs-delay="4000">
+		<div class="d-flex">
+			<div class="align-self-center">
+				<p class="mb-0 color-white font-600 line-height-s pe-2">This website uses cookies in order to offer you the most relevant information.</p>
+			</div>
+			<div class="align-self-center ms-auto w-100">
+				<a href="#" data-bs-dismiss="toast" class="px-2 py-1 d-block text-uppercase color-white opacity-50 font-700 font-10 rounded-xs text-center">Cookie Policy</a>
+				<a href="#" data-bs-dismiss="toast" class="px-2 py-1 d-block text-uppercase color-black bg-white mb-2 font-700 font-11 rounded-xs text-center">Accept</a>
+			</div>
+		</div>
+	</div>
+	<!-- Snackbar 3 Full-->
+	<div id="snack-3" class="snackbar bg-red-dark shadow-bg shadow-bg-m rounded-s shadow-l" data-bs-delay="4000">
+		<div class="d-flex">
+			<div class="align-self-center">
+				<p class="mb-0 color-white font-600 line-height-s pe-2">Login Failed.</p>
+			</div>
+			<div class="align-self-center ms-auto">
+				<a href="#" data-bs-dismiss="toast" class="bg-white px-2 py-1 my-1 d-block text-uppercase color-black font-700 font-10 rounded-xs text-center">Reset Pasword</a>
+			</div>
+		</div>
+	</div>
+	<!-- Snackbar 1 Skeleton-->
+	<div id="snack-4" class="snackbar border border-green-dark bg-theme rounded-s shadow-xxl" data-bs-delay="4000">
+		<div class="d-flex">
+			<div class="align-self-center">
+				<p class="mb-0 color-green-dark font-600 line-height-s">Account Verified. Thank you!</p>
+			</div>
+			<div class="align-self-center ms-auto">
+				<a href="#" data-bs-dismiss="toast" class="bg-white px-2 py-1 my-1 d-block text-uppercase color-green-dark border border-green-dark font-700 font-11 rounded-xs">Close</a>
+			</div>
+		</div>
+	</div>
+	<!-- Snackbar 2 - Skeleton-->
+	<div id="snack-5" class="snackbar border border-blue-dark bg-theme rounded-s shadow-xxl" data-bs-delay="4000">
+		<div class="d-flex">
+			<div class="align-self-center">
+				<p class="mb-0 color-blue-dark font-600 line-height-s pe-3">Please verify your account before you continue.</p>
+			</div>
+			<div class="align-self-center ms-auto">
+				<a href="#" data-bs-dismiss="toast" class="px-2 py-1 d-block text-uppercase color-white bg-blue-dark font-700 font-11 rounded-xs text-center">Check</a>
+			</div>
+		</div>
+	</div>
+	<!-- Snackbar 3 Skeleton-->
+	<div id="snack-6" class="snackbar border border-red-dark bg-theme rounded-s shadow-xxl" data-bs-delay="4000">
+		<div class="d-flex">
+			<div class="align-self-center">
+				<p class="mb-0 color-red-dark font-600 line-height-s pe-2">Password Incorrect.</p>
+			</div>
+			<div class="align-self-center ms-auto">
+				<a href="#" data-bs-dismiss="toast" class="border-red-dark color-red-dark px-2 py-1 my-1 d-block text-uppercase font-700 font-10 rounded-xs text-center">Reset Pasword</a>
+			</div>
+		</div>
+	</div>
+
+</div>
+<!--End of Page ID-->
+
+<script src="scripts/bootstrap.min.js"></script>
+<script src="scripts/custom.js"></script>
+</body>

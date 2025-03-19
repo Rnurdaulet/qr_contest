@@ -1,0 +1,136 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+<title>Duo Mobile PWA Kit</title>
+<link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="fonts/bootstrap-icons.css">
+<link rel="stylesheet" type="text/css" href="styles/style.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="manifest" href="_manifest.json">
+<meta id="theme-check" name="theme-color" content="#FFFFFF">
+<link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png"></head>
+
+<body class="theme-light">
+
+<div id="preloader"><div class="spinner-border color-highlight" role="status"></div></div>
+
+<div id="page">
+
+    <!-- Header -->
+    <div class="header-bar header-fixed header-app header-bar-detached">
+		<a data-back-button href="#"><i class="bi bi-caret-left-fill font-11 color-theme ps-2"></i></a>
+		<a href="#" class="header-title color-theme font-13">Back to Media</a>
+		<a data-bs-toggle="offcanvas" data-bs-target="#menu-color" href="#"><i class="bi bi-palette-fill font-13 color-highlight"></i></a>
+		<a href="#" class="show-on-theme-light" data-toggle-theme><i class="bi bi-moon-fill font-13"></i></a>
+		<a href="#" class="show-on-theme-dark" data-toggle-theme ><i class="bi bi-lightbulb-fill color-yellow-dark font-13"></i></a>
+	</div>
+
+	<!-- Footer Bar-->
+	<div id="footer-bar" class="footer-bar footer-bar-detached">
+		<a href="index-pages.html"><i class="bi bi-heart-fill font-15"></i><span>Pages</span></a>
+		<a href="index-components.html"><i class="bi bi-star-fill font-17"></i><span>Features</span></a>
+		<a href="index.html"><i class="bi bi-house-fill font-16"></i><span>Home</span></a>
+		<a href="index-media.html" class="active-nav"><i class="bi bi-image font-16"></i><span>Media</span></a>
+		<a href="#" data-bs-toggle="offcanvas" data-bs-target="#menu-main"><i class="bi bi-list"></i><span>Menu</span></a>
+	</div>
+
+	<!-- Main Sidebar-->
+	<div id="menu-main" data-menu-active="nav-media" data-menu-load="menu-main.html"
+		style="width:280px;" class="offcanvas offcanvas-start offcanvas-detached rounded-m">
+	</div>
+	<!-- Menu Highlights-->
+	<div id="menu-color" data-menu-load="menu-highlights.html"
+		style="height:340px" class="offcanvas offcanvas-bottom offcanvas-detached rounded-m">
+	</div>
+
+    <!-- Your Page Content Goes Here-->
+    <div class="page-content header-clear-medium">
+
+		<div class="card card-style">
+			<div class="content">
+				<h6 class="font-700 mb-n1 color-highlight">Touch your Photos</h6>
+				<h1 class="pb-2">Wide View</h1>
+				<p class="mb-0 mt-n1">
+					Wide Galleries allow you to use full cards with captions, icons and place them in a list view.
+				</p>
+			</div>
+		</div>
+
+		<a href="images/pictures/14t.jpg" title="Caption Title" class="card card-style bg-14 mb-3" style="height:180px" data-gallery="gallery-3">
+			<div class="card-top p-3">
+				<span class="btn btn-xxs bg-white color-black float-end">Tap to View</span>
+			</div>
+			<div class="card-bottom p-3">
+				<h3 class="color-white mb-0">Bottom Caption</h3>
+				<p class="color-white mb-0 font-13 opacity-70">Add captions, call to actions, icons and more!</p>
+			</div>
+			<div class="card-overlay bg-gradient-fade"></div>
+		</a>
+
+		<a href="images/pictures/12t.jpg" title="Caption Title" class="card card-style bg-12 mb-3" style="height:180px" data-gallery="gallery-3">
+			<div class="card-center text-end p-3">
+				<h3 class="color-white mb-0">Center Caption</h3>
+				<p class="color-white mb-0 font-13 opacity-70">The Sky is the limit!</p>
+			</div>
+			<div class="card-center text-start p-3">
+				<i class="bi bi-clock-fill color-white font-30"></i>
+			</div>
+			<div class="card-overlay bg-black opacity-70"></div>
+		</a>
+
+		<a href="images/pictures/6t.jpg" title="Caption Title" class="card card-style bg-6" style="height:230px" data-gallery="gallery-3">
+			<div class="card-center text-center p-3">
+				<h3 class="color-white font-18 mb-n1">Any Caption</h3>
+				<p class="color-white mb-0 font-14 opacity-70">There's no Limit</p>
+			</div>
+			<div class="card-center text-start p-3">
+				<i class="bi bi-arrow-left color-white font-30"></i>
+			</div>
+			<div class="card-center text-end p-3">
+				<i class="bi bi-arrow-right color-white font-30"></i>
+			</div>
+			<div class="card-top text-end p-3">
+				<i class="bi bi-arrow-up-right color-white font-30"></i>
+			</div>
+			<div class="card-top text-start p-3">
+				<i class="bi bi-arrow-up-left color-white font-30"></i>
+			</div>
+			<div class="card-top text-center p-3">
+				<i class="bi bi-arrow-up color-white font-30"></i>
+			</div>
+			<div class="card-bottom text-start p-3">
+				<i class="bi bi-arrow-down-left color-white font-30"></i>
+			</div>
+			<div class="card-bottom text-end p-3">
+				<i class="bi bi-arrow-down-right color-white font-30"></i>
+			</div>
+			<div class="card-bottom text-center p-3">
+				<i class="bi bi-arrow-down color-white font-30"></i>
+			</div>
+			<div class="card-overlay bg-black opacity-80"></div>
+		</a>
+
+		<div class="card card-style py-3">
+			<div class="content px-2 text-center">
+				<h5 class="mb-n1 font-12 color-highlight font-700 text-uppercase">Time to Go Mobile</h5>
+				<h2>Get Duo Mobile Today</h2>
+				<p class="mb-3">
+					Start your next project with Duo and enjoy the power of a Progressive Web App.
+				</p>
+				<a href="https://1.envato.market/2ryjKA" target="_blank" class="default-link btn btn-m rounded-s gradient-highlight shadow-bg shadow-bg-s px-5 mb-0 mt-2">Get Duo Now</a>
+			</div>
+		</div>
+
+    </div>
+	<!-- End of Page Content-->
+</div>
+<!--End of Page ID-->
+
+<script src="scripts/bootstrap.min.js"></script>
+<script src="scripts/custom.js"></script>
+</body>
