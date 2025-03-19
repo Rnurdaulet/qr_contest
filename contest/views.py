@@ -66,6 +66,10 @@ def rankingView(request):
     return render(request, "contest/ranking.html")
 
 
+def walkthroughView(request):
+    return render(request, "contest/walkthrough.html")
+
+
 
 from django.http import JsonResponse
 from django.views import View
