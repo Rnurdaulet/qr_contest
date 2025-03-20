@@ -5,86 +5,86 @@
 {% block content %}
     <!-- Контент страницы -->
     <div class="page-content header-clear-medium">
-        <div class="card card-style mb-0 bg-transparent shadow-0 bg-3 mx-0 rounded-0" data-card-height="cover">
-            <div class="card-center">
-                <div class="card card-style">
-                    <div class="content">
-                        <h1>🏆 Рейтинг</h1>
-                        <table>
-                            <thead>
-                            <tr>
-                                <th>📌 Департамент</th>
-                                <th>🥣 Баллы</th>
-                            </tr>
-                            </thead>
-                            <tbody id="department-ranking">
-                            <tr>
-                                <td colspan="2">Загрузка...</td>
-                            </tr>
-                            </tbody>
-                        </table>
+        <div class="card card-style">
 
-                        <h1>🏅 Топ-10 пользователей</h1>
-                        <table>
-                            <thead>
-                            <tr>
-                                <th>👤 Пользователь</th>
-                                <th>🥣 Баллы</th>
-                                <th>📌 Департамент</th>
-                            </tr>
-                            </thead>
-                            <tbody id="user-ranking">
-                            <tr>
-                                <td colspan="3">Загрузка...</td>
-                            </tr>
-                            </tbody>
-                        </table>
+            <div class="card card-style">
+                <div class="content">
+                    <h1>🏆 Рейтинг</h1>
+                    <table>
+                        <thead>
+                        <tr>
+                            <th>📌 Департамент</th>
+                            <th>🥣 Баллы</th>
+                        </tr>
+                        </thead>
+                        <tbody id="department-ranking">
+                        <tr>
+                            <td colspan="2">Загрузка...</td>
+                        </tr>
+                        </tbody>
+                    </table>
 
-                        <script>
-                            async function fetchRanking() {
-                                try {
-                                    const response = await fetch("/api/ranking/");
-                                    const data = await response.json();
+                    <h1>🏅 Топ-10 пользователей</h1>
+                    <table>
+                        <thead>
+                        <tr>
+                            <th>👤 Пользователь</th>
+                            <th>🥣 Баллы</th>
+                            <th>📌 Департамент</th>
+                        </tr>
+                        </thead>
+                        <tbody id="user-ranking">
+                        <tr>
+                            <td colspan="3">Загрузка...</td>
+                        </tr>
+                        </tbody>
+                    </table>
 
-                                    // Заполняем таблицу департаментов
-                                    const departmentTable = document.getElementById("department-ranking");
-                                    departmentTable.innerHTML = ""; // Очищаем перед обновлением
+                    <script>
+                        async function fetchRanking() {
+                            try {
+                                const response = await fetch("/api/ranking/");
+                                const data = await response.json();
 
-                                    data.department_ranking.forEach(dept => {
-                                        const row = `<tr>
+                                // Заполняем таблицу департаментов
+                                const departmentTable = document.getElementById("department-ranking");
+                                departmentTable.innerHTML = ""; // Очищаем перед обновлением
+
+                                data.department_ranking.forEach(dept => {
+                                    const row = `<tr>
                                     <td>${dept.department}</td>
                                     <td>${dept.total_score}</td>
                                 </tr>`;
-                                        departmentTable.innerHTML += row;
-                                    });
+                                    departmentTable.innerHTML += row;
+                                });
 
-                                    // Заполняем таблицу пользователей
-                                    const userTable = document.getElementById("user-ranking");
-                                    userTable.innerHTML = ""; // Очищаем перед обновлением
+                                // Заполняем таблицу пользователей
+                                const userTable = document.getElementById("user-ranking");
+                                userTable.innerHTML = ""; // Очищаем перед обновлением
 
-                                    data.user_ranking.forEach(user => {
-                                        const row = `<tr>
+                                data.user_ranking.forEach(user => {
+                                    const row = `<tr>
                                     <td>${user.username}</td>
                                     <td>${user.score}</td>
                                     <td>${user.department || "-"}</td>
                                 </tr>`;
-                                        userTable.innerHTML += row;
-                                    });
+                                    userTable.innerHTML += row;
+                                });
 
-                                    console.log("Данные обновлены");
-                                } catch (error) {
-                                    console.error("Ошибка при загрузке рейтинга:", error);
-                                }
+                                console.log("Данные обновлены");
+                            } catch (error) {
+                                console.error("Ошибка при загрузке рейтинга:", error);
                             }
+                        }
 
-                            // Загружаем данные при загрузке страницы
-                            fetchRanking();
+                        // Загружаем данные при загрузке страницы
+                        fetchRanking();
 
-                            // Обновляем данные каждые 5 минут (300000 миллисекунд)
-                            setInterval(fetchRanking, 500);
-                        </script>
-                    </div>
+                        // Обновляем данные каждые 5 минут (300000 миллисекунд)
+                        setInterval(fetchRanking, 500);
+                    </script>
                 </div>
+
             </div>
         </div>
     </div>
