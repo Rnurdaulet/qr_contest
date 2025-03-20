@@ -52,16 +52,27 @@ def process_qr(request):
     return render(request, "contest/user_dashboard.html", {"user": user, "message": message})
 
 
+# def user_dashboard(request):
+#     """Страница личного кабинета пользователя"""
+#     user_id = request.session.get("user_id")
+#     if not user_id:
+#         return redirect("register_user")
+#
+#     user = get_object_or_404(User, user_id=user_id)
+#     return render(request, "contest/user_dashboard.html", {"user": user})
+
 def user_dashboard(request):
     """Страница личного кабинета пользователя"""
     user_id = request.session.get("user_id")
     if not user_id:
         return redirect("register_user")
 
-    user = get_object_or_404(User, user_id=user_id)
+    # Попытка получить пользователя, если не найден — редирект
+    user = User.objects.filter(user_id=user_id).first()
+    if not user:
+        return redirect("register_user")
+
     return render(request, "contest/user_dashboard.html", {"user": user})
-
-
 def rankingView(request):
     return render(request, "contest/ranking.html")
 
