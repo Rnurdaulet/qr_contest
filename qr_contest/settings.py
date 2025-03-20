@@ -117,12 +117,15 @@ ENV = config('ENV', default='dev')  # По умолчанию dev
 
 STATIC_URL = '/static/'
 
-if ENV == 'prod':
-    STATIC_ROOT = config('STATIC_ROOT', default='/home/oin/qr_contest/static/')
-    STATICFILES_DIRS = []
-else:
-    STATICFILES_DIRS =  [BASE_DIR / 'static']
-    STATIC_ROOT = None  # Django требует None в DEV, иначе collectstatic будет срабатывать
+STATIC_ROOT = config('STATIC_ROOT', default='/home/oin/qr_contest/static/')
+STATICFILES_DIRS = []
+
+# if ENV == 'prod':
+#     STATIC_ROOT = config('STATIC_ROOT', default='/home/oin/qr_contest/static/')
+#     STATICFILES_DIRS = []
+# else:
+#     STATICFILES_DIRS =  [BASE_DIR / 'static']
+#     STATIC_ROOT = None  # Django требует None в DEV, иначе collectstatic будет срабатывать
 
 # MEDIA (для загруженных пользователем файлов)
 MEDIA_URL = '/media/'
