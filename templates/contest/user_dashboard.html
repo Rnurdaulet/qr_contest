@@ -13,32 +13,22 @@
                     <p>Ваши баллы: <strong>{{ user.total_points }}</strong></p>
 
                     {% if message %}
-                        <p>{{ message }}</p>
+                        <p></p>
+
+
+                        <div class="alert border-blue-dark alert-dismissible color-blue-dark rounded-s fade show"
+                             role="alert">
+                            <strong>Внимание! </strong> {{ message }}
+                            <button type="button" class="btn-close opacity-20 font-11 pt-3 mt-1" data-bs-dismiss="alert"
+                                    aria-label="Close"></button>
+                        </div>
+
                     {% endif %}
-                    <button onclick="openCamera()"
-                       class='btn rounded-sm btn-m gradient-green text-uppercase font-700 mt-4 mb-3 btn-full shadow-bg shadow-bg-s'>
-                  Открыть камеру</button>
+
                 </div>
             </div>
         </div>
     </div>
-
-
-    <script>
-        function openCamera() {
-            const userAgent = navigator.userAgent || navigator.vendor || window.opera;
-
-            if (/android/i.test(userAgent)) {
-                // Попытка открыть камеру на Android через intent
-                window.location.href = "intent://#Intent;action=android.media.action.IMAGE_CAPTURE;end;";
-            } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
-                // Попытка открыть камеру на iOS (не всегда работает)
-                window.location.href = "camera://";
-            } else {
-                alert("Ваше устройство не поддерживает автоматическое открытие камеры.");
-            }
-        }
-    </script>
 {% endblock %}
 
 
