@@ -3,18 +3,22 @@
 {% block title %}Регистрация{% endblock %}
 
 {% block content %}
+    <!-- Контент страницы -->
+    <div class="page-content mb-0 pb-0">
+        <div class="card card-style mb-0 bg-transparent shadow-0 bg-3 mx-0 rounded-0" data-card-height="cover">
+            <div class="card-center">
+                <div class="card card-style">
+                    <div class="content">
+                        <h1 class="text-center font-800 font-30 mb-2">Регистрация</h1>
 
-    <div class="card card-style mb-0 bg-transparent shadow-0 bg-3 mx-0 rounded-0" data-card-height="cover">
-        <div class="card-center">
-            <div class="card card-style">
-                <div class="content">
-                    <h1 class="text-center font-800 font-30 mb-2">Регистрация</h1>
-
-                    <form method="post">
-                        {% csrf_token %}
-                        {{ form.as_p }}
-                        <button class="btn btn-full bg-green-dark rounded-xs text-uppercase font-700 w-100 btn-s mt-4" type="submit">Зарегистрироваться</button>
-                    </form>
+                        <form method="post">
+                            {% csrf_token %}
+                            {{ form.as_p }}
+                            <button class="btn btn-full bg-green-dark rounded-xs text-uppercase font-700 w-100 btn-s mt-4"
+                                    type="submit">Зарегистрироваться
+                            </button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>

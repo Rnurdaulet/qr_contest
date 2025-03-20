@@ -5,94 +5,99 @@
 
 {% block content %}
 
+    <!-- Контент страницы -->
+    <div class="page-content mb-0 pb-0">
 
-    <div class="card-top mt-5" style="padding-left: 15px;padding-right: 15px;">
-        <h1 class="text-center font-10 mb-n3 color-white opacity-40">Наурыз мейрамы құтты болсын! Береке, молшылық және
-            қуаныш әкелсін!</h1>
-    </div>
 
-    <div class="splide single-slider slider-no-dots slider-no-arrows" id="single-slider-nauryz"
-         data-splide='{"interval":5000}'>
-        <div class="splide__track">
-            <div class="splide__list">
-                <div class="splide__slide">
-                    <div class="card bg-dark-dark rounded-0"
-                         style="background-image:url({% static 'images/w2.png' %}); background-size:cover;"
-                         data-card-height="cover">
-                        <div class="card-center">
-                            <h1 class="color-white font-40 text-center">Сканируй QR-коды</h1>
-                            <p class="color-white text-center opacity-70">Находи их в самых неожиданных местах</p>
-                            <p class="color-white font-16 text-center boxed-text-xl">
-                                Каждый отсканированный QR-код приносит тебе баллы.
-                            </p>
-                            <p class="color-white font-16 text-center boxed-text-xl">
-                                Свайпни вправо! ➡️
-                            </p>
+        <div class="card-top mt-5" style="padding-left: 15px;padding-right: 15px;">
+            <h1 class="text-center font-10 mb-n3 color-white opacity-40">Наурыз мейрамы құтты болсын! Береке, молшылық
+                және
+                қуаныш әкелсін!</h1>
+        </div>
+
+        <div class="splide single-slider slider-no-dots slider-no-arrows" id="single-slider-nauryz"
+             data-splide='{"interval":5000}'>
+            <div class="splide__track">
+                <div class="splide__list">
+                    <div class="splide__slide">
+                        <div class="card bg-dark-dark rounded-0"
+                             style="background-image:url({% static 'images/w2.png' %}); background-size:cover;"
+                             data-card-height="cover">
+                            <div class="card-center">
+                                <h1 class="color-white font-40 text-center">Сканируй QR-коды</h1>
+                                <p class="color-white text-center opacity-70">Находи их в самых неожиданных местах</p>
+                                <p class="color-white font-16 text-center boxed-text-xl">
+                                    Каждый отсканированный QR-код приносит тебе баллы.
+                                </p>
+                                <p class="color-white font-16 text-center boxed-text-xl">
+                                    Свайпни вправо! ➡️
+                                </p>
+                            </div>
+                            <div class="card-overlay bg-black opacity-40 rounded-0"></div>
+                            <div class="card-overlay bg-gradient-fade rounded-0"></div>
                         </div>
-                        <div class="card-overlay bg-black opacity-40 rounded-0"></div>
-                        <div class="card-overlay bg-gradient-fade rounded-0"></div>
                     </div>
-                </div>
 
-                <div class="splide__slide">
-                    <div class="card bg-dark-dark rounded-0"
-                         style="background-image:url({% static 'images/w1.png' %}); background-size:cover;"
-                         data-card-height="cover">
-                        <div class="card-center">
-                            <h1 class="color-white font-40 text-center">Зарабатывай баллы</h1>
-                            <p class="color-white text-center opacity-70">Будь быстрее остальных</p>
-                            <p class="color-white font-16 text-center boxed-text-xl">
-                                Коллеги видят, кто самый активный. Стань лидером!
-                            </p>
-                            <p class="color-white font-16 text-center boxed-text-xl">
-                                Свайпни вправо! ➡️
-                            </p>
+                    <div class="splide__slide">
+                        <div class="card bg-dark-dark rounded-0"
+                             style="background-image:url({% static 'images/w1.png' %}); background-size:cover;"
+                             data-card-height="cover">
+                            <div class="card-center">
+                                <h1 class="color-white font-40 text-center">Зарабатывай баллы</h1>
+                                <p class="color-white text-center opacity-70">Будь быстрее остальных</p>
+                                <p class="color-white font-16 text-center boxed-text-xl">
+                                    Коллеги видят, кто самый активный. Стань лидером!
+                                </p>
+                                <p class="color-white font-16 text-center boxed-text-xl">
+                                    Свайпни вправо! ➡️
+                                </p>
+                            </div>
+                            <div class="card-overlay bg-black opacity-40 rounded-0"></div>
+                            <div class="card-overlay bg-gradient-fade rounded-0"></div>
                         </div>
-                        <div class="card-overlay bg-black opacity-40 rounded-0"></div>
-                        <div class="card-overlay bg-gradient-fade rounded-0"></div>
                     </div>
-                </div>
 
-                <div class="splide__slide">
-                    <div class="card bg-dark-dark rounded-0"
-                         style="background-image:url({% static 'images/w3.png' %}); background-size:cover;"
-                         data-card-height="cover">
-                        <div class="card-center">
-                            <h1 class="color-white font-40 text-center">Добавляй ингредиент</h1>
-                            <p class="color-white text-center opacity-70">Кто первый – выбирает лучшее!</p>
-                            <p class="color-white font-16 text-center boxed-text-xl">
-                                Первые, кто наберёт 5 баллов выбирают ингредиенты для Наурыз коже!
-                                Количество ограничено — не упусти свой шанс!
-                            </p>
-                            <p class="color-white font-16 text-center boxed-text-xl">
-                                Свайпни вправо! ➡️
-                            </p>
+                    <div class="splide__slide">
+                        <div class="card bg-dark-dark rounded-0"
+                             style="background-image:url({% static 'images/w3.png' %}); background-size:cover;"
+                             data-card-height="cover">
+                            <div class="card-center">
+                                <h1 class="color-white font-40 text-center">Добавляй ингредиент</h1>
+                                <p class="color-white text-center opacity-70">Кто первый – выбирает лучшее!</p>
+                                <p class="color-white font-16 text-center boxed-text-xl">
+                                    Первые, кто наберёт 5 баллов выбирают ингредиенты для Наурыз коже!
+                                    Количество ограничено — не упусти свой шанс!
+                                </p>
+                                <p class="color-white font-16 text-center boxed-text-xl">
+                                    Свайпни вправо! ➡️
+                                </p>
+                            </div>
+                            <div class="card-overlay bg-black opacity-40 rounded-0"></div>
+                            <div class="card-overlay bg-gradient-fade rounded-0"></div>
                         </div>
-                        <div class="card-overlay bg-black opacity-40 rounded-0"></div>
-                        <div class="card-overlay bg-gradient-fade rounded-0"></div>
                     </div>
-                </div>
 
-                <div class="splide__slide">
-                    <div class="card bg-dark-dark rounded-0"
-                         style="background-image:url({% static 'images/3.png' %}); background-size:cover;"
-                         data-card-height="cover">
-                        <div class="card-center">
-                            <h1 class="color-white font-40 text-center">Дарите пожелания</h1>
-                            <p class="color-white text-center opacity-70">Добавляя ингредиент, скажи тёплые слова</p>
-                            <p class="color-white font-16 text-center boxed-text-xl">
-                                Добавляй ингредиент — и пожелай что-то доброе коллегам.
-                                Вместе создадим вкусное и праздничное Наурыз коже!
-                            </p>
+                    <div class="splide__slide">
+                        <div class="card bg-dark-dark rounded-0"
+                             style="background-image:url({% static 'images/3.png' %}); background-size:cover;"
+                             data-card-height="cover">
+                            <div class="card-center">
+                                <h1 class="color-white font-40 text-center">Дарите пожелания</h1>
+                                <p class="color-white text-center opacity-70">Добавляя ингредиент, скажи тёплые
+                                    слова</p>
+                                <p class="color-white font-16 text-center boxed-text-xl">
+                                    Добавляй ингредиент — и пожелай что-то доброе коллегам.
+                                    Вместе создадим вкусное и праздничное Наурыз коже!
+                                </p>
+                            </div>
+                            <div class="card-overlay bg-black opacity-40 rounded-0"></div>
+                            <div class="card-overlay bg-gradient-fade rounded-0"></div>
                         </div>
-                        <div class="card-overlay bg-black opacity-40 rounded-0"></div>
-                        <div class="card-overlay bg-gradient-fade rounded-0"></div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
 
 {% endblock %}
 
