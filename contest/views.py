@@ -70,6 +70,7 @@ def user_dashboard(request):
     # Попытка получить пользователя, если не найден — редирект
     user = User.objects.filter(user_id=user_id).first()
     if not user:
+        request.session.pop("user_id", None)
         return redirect("register_user")
 
     return render(request, "contest/user_dashboard.html", {"user": user})
