@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-6(+g79jj$gq%)62dar8qgonl+3l(lfj9+6$q^r13mkv6r9g^e!
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['nauryz.odx.kz','185.129.49.151','localhost']
+ALLOWED_HOSTS = ['nauryz.odx.kz','185.129.49.151','localhost','127.0.0.1']
 
 CSRF_TRUSTED_ORIGINS = ['https://nauryz.odx.kz']
 
