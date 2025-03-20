@@ -33,7 +33,7 @@ class QRCode(models.Model):
     @property
     def qr_full_url(self):
         """Генерирует полный URL QR-кода"""
-        return f"{settings.QR_URL}?qr={self.code}"
+        return f"{settings.QR_URL}scan/?qr={self.code}"
 
     def generate_qr(self):
         """Генерирует изображение QR-кода с `segno` на основе `QR_URL + UUID`"""
