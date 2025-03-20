@@ -27,6 +27,10 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['nauryz.odx.kz','185.129.49.151','localhost']
 
+CSRF_TRUSTED_ORIGINS = ['https://nauryz.odx.kz']
+
+
+
 # Application definition
 
 INSTALLED_APPS = [
@@ -136,5 +140,5 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
 # Базовый URL для генерации QR-кодов
-# QR_URL = "https://nauryz.odx.kz/"
-QR_URL = "http://127.0.0.1:8000/"
+QR_URL = "https://nauryz.odx.kz/"
+# QR_URL = "http://127.0.0.1:8000/"
