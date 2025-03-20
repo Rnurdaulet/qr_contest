@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-6(+g79jj$gq%)62dar8qgonl+3l(lfj9+6$q^r13mkv6r9g^e!
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['nauryz.odx.kz','185.129.49.151','localhost']
 
 # Application definition
 
@@ -118,7 +118,7 @@ ENV = config('ENV', default='dev')  # По умолчанию dev
 STATIC_URL = '/static/'
 
 if ENV == 'prod':
-    STATIC_ROOT = config('STATIC_ROOT', default='/home/oin/sm-logistic/static/')
+    STATIC_ROOT = config('STATIC_ROOT', default='/home/oin/qr_contest/static/')
     STATICFILES_DIRS = []
 else:
     STATICFILES_DIRS =  [BASE_DIR / 'static']
